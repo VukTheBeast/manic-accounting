@@ -4,6 +4,7 @@ import { hasLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import InteractiveLedgerBackground from "@/components/InteractiveLedgerBackground";
 import { routing, type Locale } from "@/i18n/routing";
 import { site } from "@/lib/site";
 import "../globals.css";
@@ -109,11 +110,12 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${display.variable} ${sans.variable} ${mono.variable}`}>
       <body>
+        <InteractiveLedgerBackground />
         <a href="#main-content" className="skip-link">
           {navigation("skip")}
         </a>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <div className="relative z-10">{children}</div>
         </NextIntlClientProvider>
       </body>
     </html>

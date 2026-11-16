@@ -26,6 +26,11 @@
 @layer base {
   body {
     @apply bg-paper font-sans text-body antialiased;
+    background-image:
+      linear-gradient(var(--color-grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-attachment: fixed;
   }
   :focus-visible {
     outline: 3px solid #0b6b4f;
@@ -39,11 +44,7 @@
   }
   /* graph-paper background, like ledger paper */
   .ledger-paper {
-    background-color: #fbfbf6;
-    background-image:
-      linear-gradient(#dcebdd 1px, transparent 1px),
-      linear-gradient(90deg, #dcebdd 1px, transparent 1px);
-    background-size: 32px 32px;
+    background-color: transparent;
   }
   .card {
     @apply rounded-card border-2 border-ink bg-white shadow-hard;
