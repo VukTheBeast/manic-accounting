@@ -26,7 +26,13 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 24px;
+    scroll-padding-top: 132px;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      scroll-padding-top: 84px;
+    }
   }
   body {
     @apply bg-paper font-sans text-body antialiased;
