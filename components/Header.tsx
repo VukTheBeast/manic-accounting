@@ -12,6 +12,7 @@ const siteName = site.name;
 const links = [
   { href: "/#services", label: "services", section: "services" },
   { href: "/#cashflow", label: "tool", section: "cashflow" },
+  { href: "/tools", label: "tools", section: null },
   { href: "/#process", label: "process", section: "process" },
   { href: "/#about", label: "about", section: "about" },
 ] as const;
@@ -28,7 +29,7 @@ export default function Header() {
     }
 
     const sections = links
-      .map(({ section }) => document.getElementById(section))
+      .map(({ section }) => (section ? document.getElementById(section) : null))
       .filter((section): section is HTMLElement => section !== null);
 
     const observer = new IntersectionObserver(
@@ -68,7 +69,9 @@ export default function Header() {
           className="ml-auto hidden items-center gap-1 xl:flex"
         >
           {links.map((link) => {
-            const active = pathname === "/" && activeSection === link.section;
+            const active = link.section
+              ? pathname === "/" && activeSection === link.section
+              : pathname.startsWith("/tools");
             return (
               <Link
                 key={link.href}
@@ -141,7 +144,9 @@ export default function Header() {
             className="mobile-menu grid w-full grid-cols-2 gap-2 border-t-2 border-ink pt-3 xl:hidden"
           >
             {links.map((link) => {
-              const active = pathname === "/" && activeSection === link.section;
+              const active = link.section
+                ? pathname === "/" && activeSection === link.section
+                : pathname.startsWith("/tools");
               return (
                 <Link
                   key={link.href}

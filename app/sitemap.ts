@@ -9,6 +9,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const contactLanguages = Object.fromEntries(
     routing.locales.map((locale) => [locale, `${site.url}/${locale}/contact`]),
   );
+  const toolsLanguages = Object.fromEntries(
+    routing.locales.map((locale) => [locale, `${site.url}/${locale}/tools`]),
+  );
+  const forecastLanguages = Object.fromEntries(
+    routing.locales.map((locale) => [
+      locale,
+      `${site.url}/${locale}/tools/three-statement-forecast`,
+    ]),
+  );
 
   return routing.locales.flatMap((locale) => [
     {
@@ -24,6 +33,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly" as const,
       priority: 0.8,
       alternates: { languages: contactLanguages },
+    },
+    {
+      url: `${site.url}/${locale}/tools`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+      alternates: { languages: toolsLanguages },
+    },
+    {
+      url: `${site.url}/${locale}/tools/three-statement-forecast`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+      alternates: { languages: forecastLanguages },
     },
   ]);
 }

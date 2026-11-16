@@ -156,7 +156,10 @@
   .workflow-section *::after,
   .cashflow-tool *,
   .cashflow-tool *::before,
-  .cashflow-tool *::after {
+  .cashflow-tool *::after,
+  .free-tool *,
+  .free-tool *::before,
+  .free-tool *::after {
     transition-duration: 0.01ms !important;
   }
 }
