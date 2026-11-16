@@ -11,6 +11,7 @@ import Services from "@/components/Services";
 import Process from "@/components/Process";
 import About from "@/components/About";
 import ContactCta from "@/components/ContactCta";
+import WorkflowAnimation from "@/components/WorkflowAnimation";
 import { getServices } from "@/lib/services";
 import { site } from "@/lib/site";
 
@@ -85,6 +86,7 @@ export default async function Home({
         </section>
 
         <Services />
+        <WorkflowAnimation />
 
         <section id="cashflow" className="mx-auto max-w-[1200px] scroll-mt-4 px-5 pb-24 sm:px-8">
           <div className="overline mb-3">{t("toolOverline")}</div>

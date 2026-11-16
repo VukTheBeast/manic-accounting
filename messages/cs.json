@@ -112,6 +112,38 @@
       "sendFailed": "Zprávu se nyní nepodařilo odeslat. Použijte prosím přímý e-mailový odkaz níže."
     }
   },
+  "Workflow": {
+    "overline": "OD VSTUPNÍCH DAT K UŽITEČNÝM ODPOVĚDÍM",
+    "title": "Neuspořádaná data dovnitř. Jasná rozhodnutí ven.",
+    "intro": "Skutečná práce probíhá mezi převzetím podkladů a předáním výsledku: kontrola, párování, odsouhlasení a vysvětlení toho, co se změnilo.",
+    "phaseLabel": "Fáze účetního procesu",
+    "phase": {
+      "input": "Shromáždit",
+      "process": "Zpracovat",
+      "output": "Předat"
+    },
+    "inputTitle": "VSTUPNÍ DATA",
+    "incoming": "PŘICHÁZÍ",
+    "input": {
+      "invoices": "Faktury a účtenky",
+      "bank": "Bankovní a karetní výpisy",
+      "payroll": "Mzdové a daňové podklady"
+    },
+    "workbook": "pracovni-soubor.xlsx",
+    "process": {
+      "check": "ZKONTROLOVAT",
+      "match": "SPÁROVAT",
+      "explain": "VYSVĚTLIT"
+    },
+    "outputTitle": "PŘIPRAVENO K POUŽITÍ",
+    "ready": "HOTOVO",
+    "output": {
+      "close": "Čistá měsíční uzávěrka",
+      "vat": "Připravené podklady pro DPH",
+      "forecast": "13týdenní výhled cash flow"
+    },
+    "caption": "Žádná magie. Opakovatelný proces, ve kterém lze každé číslo dohledat až ke zdroji."
+  },
   "CashFlow": {
     "opening": "Peníze na účtu dnes",
     "cashIn": "Týdenní příjmy (platby zákazníků)",

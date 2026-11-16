@@ -112,6 +112,38 @@
       "sendFailed": "Poruka trenutno nije mogla da bude poslata. Koristite direktan imejl link ispod."
     }
   },
+  "Workflow": {
+    "overline": "OD IZVORNIH PODATAKA DO KORISNIH ODGOVORA",
+    "title": "Neuredni ulazi. Jasne odluke.",
+    "intro": "Pravi posao se odvija između prijema dokumentacije i isporuke rezultata: provera, povezivanje, usaglašavanje i objašnjavanje onoga što se promenilo.",
+    "phaseLabel": "Faze računovodstvenog procesa",
+    "phase": {
+      "input": "Prikupi",
+      "process": "Obradi",
+      "output": "Isporuči"
+    },
+    "inputTitle": "IZVORNI PODACI",
+    "incoming": "STIŽE",
+    "input": {
+      "invoices": "Fakture i računi",
+      "bank": "Izvodi banke i kartica",
+      "payroll": "Podaci o zaradama i porezima"
+    },
+    "workbook": "radni-fajl.xlsx",
+    "process": {
+      "check": "PROVERI",
+      "match": "POVEŽI",
+      "explain": "OBJASNI"
+    },
+    "outputTitle": "SPREMNO ZA UPOTREBU",
+    "ready": "SPREMNO",
+    "output": {
+      "close": "Uredno mesečno zatvaranje",
+      "vat": "Spremni podaci za PDV",
+      "forecast": "13-nedeljna prognoza gotovine"
+    },
+    "caption": "Nije magija. To je ponovljiv proces u kojem se svaki broj može pratiti do izvora."
+  },
   "CashFlow": {
     "opening": "Novac na računu danas",
     "cashIn": "Nedeljni prilivi (uplate kupaca)",

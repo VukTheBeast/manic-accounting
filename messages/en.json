@@ -112,6 +112,38 @@
       "sendFailed": "The message could not be sent right now. Please use the direct email link below."
     }
   },
+  "Workflow": {
+    "overline": "FROM SOURCE DATA TO USEFUL ANSWERS",
+    "title": "Messy inputs in. Clear decisions out.",
+    "intro": "The real work sits between receiving the files and delivering the answer: checking, matching, reconciling and explaining what changed.",
+    "phaseLabel": "Accounting workflow stages",
+    "phase": {
+      "input": "Collect",
+      "process": "Work through",
+      "output": "Deliver"
+    },
+    "inputTitle": "SOURCE DATA",
+    "incoming": "INCOMING",
+    "input": {
+      "invoices": "Invoices and receipts",
+      "bank": "Bank and card exports",
+      "payroll": "Payroll and tax data"
+    },
+    "workbook": "working-file.xlsx",
+    "process": {
+      "check": "CHECK",
+      "match": "MATCH",
+      "explain": "EXPLAIN"
+    },
+    "outputTitle": "READY TO USE",
+    "ready": "READY",
+    "output": {
+      "close": "Clean month-end close",
+      "vat": "VAT figures ready",
+      "forecast": "13-week cash forecast"
+    },
+    "caption": "Not magic. A repeatable process, with every number traceable back to its source."
+  },
   "CashFlow": {
     "opening": "Cash in the bank today",
     "cashIn": "Cash in per week (customer payments)",
