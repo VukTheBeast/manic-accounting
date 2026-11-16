@@ -1,6 +1,6 @@
 # Project context for GitHub Copilot
 
-Website for **Manić Accounting**, a one-person accounting side business (bookkeeping, month-end close,
+Website for **Manic Accounting**, a one-person accounting side business (bookkeeping, month-end close,
 budgets and forecasts, 13-week cash flow, VAT and tax preparation) aimed at small businesses and freelancers.
 
 ## Stack

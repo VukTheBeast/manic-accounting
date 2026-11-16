@@ -1,4 +1,4 @@
-# Manić Accounting website
+# Manic Accounting website
 
 Next.js (App Router) + React + Tailwind CSS v4. English, Czech and Serbian Latin versions are
 available under `/en`, `/cs` and `/sr`. The site includes two interactive demos (ledger and
@@ -36,7 +36,7 @@ Search the project for `[` placeholders and `your-domain.com`:
    ```
    RESEND_API_KEY=re_xxx
    CONTACT_TO_EMAIL=his-real-address@example.com
-   CONTACT_FROM_EMAIL="Manić Accounting <onboarding@resend.dev>"
+   CONTACT_FROM_EMAIL="Manic Accounting <onboarding@resend.dev>"
    ```
    `onboarding@resend.dev` works for testing. For production, verify his domain in Resend and use an
    address on it.

@@ -13,7 +13,7 @@ const siteUrl = (() => {
 })();
 
 export const site = {
-  name: "Manić Accounting",
+  name: "Manic Accounting",
   tagline: "Manic about your numbers. Calm about your books.",
   description:
     "Bookkeeping, month-end close, budgets, 13-week cash flow and VAT preparation for small businesses and freelancers.",

@@ -76,7 +76,7 @@ export async function sendContactMessage(
   const key = process.env.RESEND_API_KEY;
   const to = process.env.CONTACT_TO_EMAIL;
   const from =
-    process.env.CONTACT_FROM_EMAIL ?? "Manić Accounting <onboarding@resend.dev>";
+    process.env.CONTACT_FROM_EMAIL ?? "Manic Accounting <onboarding@resend.dev>";
 
   if (!key || !to) {
     return {

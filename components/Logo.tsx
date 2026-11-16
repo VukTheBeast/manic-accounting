@@ -37,7 +37,7 @@ export function Wordmark({ light = false }: { light?: boolean }) {
       <span
         className={`font-display text-[26px] font-bold ${light ? "text-paper" : "text-ink"}`}
       >
-        Manić
+        Manic
       </span>
       <span
         className={`mt-[3px] text-[10px] font-bold tracking-[2.2px] ${light ? "text-marker" : "text-ledger"}`}
