@@ -5,7 +5,7 @@ Next.js (App Router) + React + Tailwind CSS v4. Two pages (`/` and `/contact`), 
 
 ## Run it locally (VS Code)
 
-1. Install **Node.js 20+** (https://nodejs.org) and open this folder in VS Code (`File > Open Folder`).
+1. Install **Node.js 20.19+** (Node.js 22 LTS recommended) and open this folder in VS Code (`File > Open Folder`).
 2. Open the terminal (`Ctrl+` ` ) and run:
    ```bash
    npm install
@@ -14,7 +14,8 @@ Next.js (App Router) + React + Tailwind CSS v4. Two pages (`/` and `/contact`), 
    ```
 3. Open http://localhost:3000. Edits show up instantly.
 
-Useful commands: `npm run build` (production build), `npm run lint` (type check).
+Useful commands: `npm run build` (production build), `npm run lint` (ESLint),
+`npm run typecheck` (TypeScript) and `npm run check` (both).
 
 ## Things to replace before launch
 

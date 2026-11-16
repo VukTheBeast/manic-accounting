@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { LogoMark, Wordmark } from "./Logo";
+import { site } from "@/lib/site";
+
+const siteName = site.name;
 
 const links = [
   { href: "/#services", label: "What I do" },
@@ -11,16 +14,16 @@ const links = [
 export default function Header() {
   return (
     <header className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-x-8 gap-y-4 px-5 py-5 sm:px-8">
-      <Link href="/" className="flex items-center gap-3">
+      <Link href="/" className="flex min-h-11 items-center gap-3" aria-label={`${siteName} home`}>
         <LogoMark />
         <Wordmark />
       </Link>
-      <nav className="flex flex-wrap items-center gap-x-7 gap-y-2.5 sm:ml-auto">
+      <nav aria-label="Primary navigation" className="flex flex-wrap items-center gap-x-5 gap-y-2 sm:ml-auto">
         {links.map((l) => (
           <Link
             key={l.href}
             href={l.href}
-            className="text-sm font-bold text-ink hover:text-ledger"
+            className="inline-flex min-h-11 items-center px-1 text-sm font-bold text-ink hover:text-ledger"
           >
             {l.label}
           </Link>

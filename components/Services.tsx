@@ -42,8 +42,8 @@ export default function Services() {
       <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))] gap-5">
         {cards.map((s) => (
           <div key={s.id} className="card flex flex-col gap-3.5 p-7">
-            <div className="flex size-12 items-center justify-center rounded-full bg-[#fff4b8]">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B6B4F" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <div className="flex size-12 items-center justify-center rounded-full bg-marker/40 text-ledger">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 {ICONS[s.id as Exclude<ServiceId, "unsure">]}
               </svg>
             </div>

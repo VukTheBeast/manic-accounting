@@ -31,16 +31,18 @@ export default function About() {
       </div>
 
       <div className="flex min-w-0 flex-[1_1_380px] flex-col gap-4">
-        {/* Replace with: <Image src="/photo.jpg" ... /> once you have a photo in /public */}
-        <div className="flex h-[280px] items-center justify-center rounded-card border-2 border-dashed border-[#9aa39c] bg-[#e6ebe0] text-sm font-bold">
-          [YOUR PHOTO: relaxed, not in a tie]
+        <div className="flex h-[280px] flex-col items-center justify-center gap-3 rounded-card border-2 border-ink bg-ledger-tint text-ledger shadow-hard" role="img" aria-label="Manić Accounting monogram">
+          <span className="font-display text-8xl leading-none font-bold" aria-hidden="true">M</span>
+          <span className="max-w-[240px] text-center text-sm font-bold">
+            Manic about the numbers. Calm when explaining them.
+          </span>
         </div>
         <div className="card flex flex-col gap-3.5 p-6">
           <div className="text-xs font-bold tracking-[0.6px] text-ink">THE SHORT VERSION</div>
           {FACTS.map(([k, v], i) => (
             <div
               key={k}
-              className={`flex justify-between gap-4 text-[15px] ${i < FACTS.length - 1 ? "border-b border-[#dde3dc] pb-3" : ""}`}
+              className={`flex justify-between gap-4 text-[15px] ${i < FACTS.length - 1 ? "border-b border-mute/25 pb-3" : ""}`}
             >
               <span>{k}</span>
               <strong className="text-right text-ink">{v}</strong>

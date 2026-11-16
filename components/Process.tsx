@@ -23,7 +23,7 @@ const STEPS = [
 
 export default function Process() {
   return (
-    <section id="process" className="scroll-mt-4 bg-ink text-[#d5dbd3]">
+    <section id="process" className="scroll-mt-4 bg-ink text-paper/80">
       <div className="mx-auto max-w-[1200px] px-5 pt-22 pb-24 sm:px-8">
         <div className="mb-3 text-xs font-bold tracking-[0.6px] text-marker">HOW WE WORK</div>
         <h2 className="mb-12 max-w-[720px] font-display text-[clamp(32px,7.5vw,46px)] leading-[1.08] font-bold text-paper">

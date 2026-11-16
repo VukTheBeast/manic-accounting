@@ -16,7 +16,7 @@ export function LogoMark({
 }) {
   const c = colors[variant];
   return (
-    <svg width={size} height={size} viewBox="0 0 64 64" role="img" aria-label="Manić logo">
+    <svg width={size} height={size} viewBox="0 0 64 64" aria-hidden="true" focusable="false">
       <rect width="64" height="64" rx="18" fill={c.bg} />
       <path
         d="M15 49V30L32 46L49 30V49"

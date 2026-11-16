@@ -1,10 +1,35 @@
+const vercelHost =
+  process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;
+const configuredUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (vercelHost ? `https://${vercelHost}` : undefined);
+
+const siteUrl = (() => {
+  try {
+    return new URL(configuredUrl ?? "http://localhost:3000").origin;
+  } catch {
+    return "http://localhost:3000";
+  }
+})();
+
 export const site = {
   name: "Manić Accounting",
   tagline: "Manic about your numbers. Calm about your books.",
   description:
     "Bookkeeping, month-end close, budgets, 13-week cash flow and VAT preparation for small businesses and freelancers.",
-  // Replace via NEXT_PUBLIC_CONTACT_EMAIL in .env.local
+  url: siteUrl,
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@your-domain.com",
-  phone: "[YOUR PHONE or LINKEDIN]",
-  legal: "[BUSINESS REGISTRATION / TAX ID]",
-};
+  phone: process.env.NEXT_PUBLIC_CONTACT_PHONE ?? "",
+  legal: process.env.NEXT_PUBLIC_LEGAL_TEXT ?? "",
+  locale: "en_GB",
+  keywords: [
+    "accounting for small businesses",
+    "freelance accountant",
+    "bookkeeping services",
+    "month-end close",
+    "13-week cash flow forecast",
+    "budgeting and forecasting",
+    "VAT preparation",
+    "management reporting",
+  ],
+} as const;
