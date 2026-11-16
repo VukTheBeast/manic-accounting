@@ -30,13 +30,13 @@
     "headlineTwo": "Calm about your books.",
     "intro": "Hi, I’m Manić. I’ve spent a decade inside the finance teams of big multinationals. Now I take on a handful of smaller businesses who want clean books, filed taxes and a cash flow they can see coming.",
     "bookCall": "Book a free intro call",
-    "tryTool": "Try the cash-flow tool",
+    "tryTool": "Test repayment capacity",
     "trustOne": "A decade in finance and controlling",
     "trustTwo": "VAT and tax filing across Czechia, Bulgaria and Romania",
     "trustThree": "Month-end close for EU, US and Canadian entities",
-    "toolOverline": "PLAY WITH THE NUMBERS",
-    "toolTitle": "Will you have cash in week 8?",
-    "toolIntro": "A tiny version of the 13-week cash flow forecast I build for clients. Move the sliders, and watch when the bank balance dips below zero. Amounts are in your own currency."
+    "toolOverline": "TEST THE REPAYMENT PLAN",
+    "toolTitle": "How much debt can the business safely repay?",
+    "toolIntro": "This 13-week view connects debt repayments to the thing that matters: cash left after running the business. Adjust the plan, protect a minimum buffer and stress-test what happens when sales slip or costs rise."
   },
   "Services": {
     "overline": "WHAT I DO",
@@ -145,15 +145,51 @@
     "caption": "Not magic. A repeatable process, with every number traceable back to its source."
   },
   "CashFlow": {
+    "scenarioLabel": "13-WEEK SCENARIO",
+    "analysisTitle": "Debt repayment capacity",
+    "scenario": {
+      "base": "Base plan",
+      "salesDip": "Sales −15%",
+      "costRise": "Costs +10%"
+    },
+    "scenarioNote": {
+      "base": "The current plan, using the weekly inflows and operating costs below.",
+      "salesDip": "Customer receipts are reduced by 15%. A useful check before promising a repayment schedule.",
+      "costRise": "Operating costs are increased by 10% to show how quickly repayment headroom can narrow."
+    },
     "opening": "Cash in the bank today",
     "cashIn": "Cash in per week (customer payments)",
-    "cashOut": "Cash out per week (salaries, suppliers, rent)",
+    "cashOut": "Operating costs per week",
+    "debtPayment": "Planned debt repayment per week",
     "oneOff": "One-off payment in week 8 (VAT, tax, equipment)",
-    "chartTitle": "BANK BALANCE, WEEK BY WEEK",
-    "chartLabel": "Bar chart of the projected bank balance over 13 weeks. {verdict}",
-    "legend": "Week · dashed line = zero cash · green above, red below",
-    "negative": "Cash goes negative in week {week} (lowest point: {amount}). That is a conversation for week 1, not a surprise in week {week}.",
-    "positive": "Cash stays positive for all 13 weeks. Lowest point: {amount} in week {week}."
+    "cashBuffer": "Minimum cash buffer to protect",
+    "safeWeekly": "ESTIMATED SAFE REPAYMENT",
+    "perWeek": "per week while keeping the buffer",
+    "plannedTotal": "PLANNED DEBT REPAID",
+    "overThirteenWeeks": "across the next 13 weeks",
+    "bufferHeadroom": "LOWEST BUFFER HEADROOM",
+    "bufferShortfall": "BUFFER SHORTFALL",
+    "lowestInWeek": "lowest point in week {week}",
+    "chartTitle": "CASH AFTER OPERATIONS AND DEBT",
+    "chartLabel": "Interactive chart of projected cash after operating costs and debt repayments over 13 weeks. {verdict}",
+    "coverage": "Weekly operating cash covers planned debt {ratio}×",
+    "coverageNone": "Add a planned repayment to see operating cover",
+    "bufferLine": "minimum buffer",
+    "weekSelectorLabel": "Select a week to inspect",
+    "weekDetail": "Week {week}: projected cash {amount}",
+    "selectedWeek": "WEEK {week} PROJECTED CASH",
+    "weekStatus": {
+      "aboveBuffer": "Buffer protected",
+      "belowBuffer": "Below buffer",
+      "belowZero": "Cash shortfall"
+    },
+    "decisionTitle": "WHAT REALLY MATTERS",
+    "verdict": {
+      "healthy": "The plan keeps the cash buffer intact. Planned repayment is {planned} per week; the estimated safe ceiling is {safe}.",
+      "tight": "Cash stays above zero, but the buffer is missed by {amount} in week {week}. Reduce or reschedule repayments before the plan becomes fragile.",
+      "shortfall": "The plan runs short of cash. The lowest point misses the buffer by {amount} in week {week}. The debt schedule needs to change before it is committed."
+    },
+    "disclaimer": "This is a planning illustration, not a lending decision. A real review also checks repayment terms, interest, tax timing, seasonality and the reliability of customer collections."
   },
   "Ledger": {
     "title": "TRY IT: GENERAL LEDGER",

@@ -30,13 +30,13 @@
     "headlineTwo": "Klid ve vašem účetnictví.",
     "intro": "Dobrý den, jsem Manić. Deset let jsem pracoval ve finančních týmech velkých nadnárodních společností. Teď pomáhám několika menším firmám, které chtějí čisté účetnictví, včas podané daně a cash flow bez nepříjemných překvapení.",
     "bookCall": "Domluvit bezplatný úvodní hovor",
-    "tryTool": "Vyzkoušet cash-flow nástroj",
+    "tryTool": "Otestovat schopnost splácet",
     "trustOne": "Deset let ve financích a controllingu",
     "trustTwo": "DPH a daňová podání v Česku, Bulharsku a Rumunsku",
     "trustThree": "Měsíční uzávěrky pro společnosti v EU, USA a Kanadě",
-    "toolOverline": "POHRAJTE SI S ČÍSLY",
-    "toolTitle": "Budete mít v 8. týdnu dost peněz?",
-    "toolIntro": "Zjednodušená verze 13týdenního výhledu cash flow, který připravuji klientům. Posouvejte hodnoty a sledujte, kdy zůstatek na účtu klesne pod nulu. Částky jsou ve vaší vlastní měně."
+    "toolOverline": "OTESTUJTE PLÁN SPLÁCENÍ",
+    "toolTitle": "Kolik dluhu může firma bezpečně splácet?",
+    "toolIntro": "Tento 13týdenní pohled propojuje splátky dluhu s tím podstatným: kolik hotovosti zůstane po provozu firmy. Upravte plán, chraňte minimální rezervu a otestujte pokles tržeb nebo růst nákladů."
   },
   "Services": {
     "overline": "CO DĚLÁM",
@@ -145,15 +145,51 @@
     "caption": "Žádná magie. Opakovatelný proces, ve kterém lze každé číslo dohledat až ke zdroji."
   },
   "CashFlow": {
+    "scenarioLabel": "13TÝDENNÍ SCÉNÁŘ",
+    "analysisTitle": "Schopnost splácet dluh",
+    "scenario": {
+      "base": "Základní plán",
+      "salesDip": "Tržby −15 %",
+      "costRise": "Náklady +10 %"
+    },
+    "scenarioNote": {
+      "base": "Aktuální plán podle týdenních příjmů a provozních nákladů uvedených níže.",
+      "salesDip": "Příjmy od zákazníků jsou sníženy o 15 %. Užitečná kontrola před přislíbením splátkového kalendáře.",
+      "costRise": "Provozní náklady jsou zvýšeny o 10 %, aby bylo vidět, jak rychle se prostor pro splácení zmenšuje."
+    },
     "opening": "Peníze na účtu dnes",
     "cashIn": "Týdenní příjmy (platby zákazníků)",
-    "cashOut": "Týdenní výdaje (mzdy, dodavatelé, nájem)",
+    "cashOut": "Týdenní provozní náklady",
+    "debtPayment": "Plánovaná týdenní splátka dluhu",
     "oneOff": "Jednorázová platba v 8. týdnu (DPH, daň, vybavení)",
-    "chartTitle": "ZŮSTATEK NA ÚČTU PO TÝDNECH",
-    "chartLabel": "Sloupcový graf předpokládaného zůstatku na účtu za 13 týdnů. {verdict}",
-    "legend": "Týden · přerušovaná čára = nula · zeleně nad nulou, červeně pod nulou",
-    "negative": "Peníze klesnou pod nulu v {week}. týdnu (nejnižší bod: {amount}). To je téma pro 1. týden, ne překvapení v {week}. týdnu.",
-    "positive": "Peníze zůstanou v plusu po celých 13 týdnů. Nejnižší bod: {amount} v {week}. týdnu."
+    "cashBuffer": "Minimální hotovostní rezerva",
+    "safeWeekly": "ODHAD BEZPEČNÉ SPLÁTKY",
+    "perWeek": "týdně při zachování rezervy",
+    "plannedTotal": "PLÁNOVANÁ SPLÁCENÁ ČÁSTKA",
+    "overThirteenWeeks": "během příštích 13 týdnů",
+    "bufferHeadroom": "NEJNIŽŠÍ REZERVA NAVÍC",
+    "bufferShortfall": "CHYBĚJÍCÍ REZERVA",
+    "lowestInWeek": "nejnižší bod v {week}. týdnu",
+    "chartTitle": "HOTOVOST PO PROVOZU A SPLÁTKÁCH",
+    "chartLabel": "Interaktivní graf očekávané hotovosti po provozních nákladech a splátkách dluhu během 13 týdnů. {verdict}",
+    "coverage": "Týdenní provozní hotovost kryje plánovanou splátku {ratio}×",
+    "coverageNone": "Přidejte plánovanou splátku a uvidíte její krytí",
+    "bufferLine": "minimální rezerva",
+    "weekSelectorLabel": "Vyberte týden pro detail",
+    "weekDetail": "{week}. týden: očekávaná hotovost {amount}",
+    "selectedWeek": "OČEKÁVANÁ HOTOVOST V {week}. TÝDNU",
+    "weekStatus": {
+      "aboveBuffer": "Rezerva zachována",
+      "belowBuffer": "Pod rezervou",
+      "belowZero": "Nedostatek hotovosti"
+    },
+    "decisionTitle": "NA ČEM OPRAVDU ZÁLEŽÍ",
+    "verdict": {
+      "healthy": "Plán zachovává hotovostní rezervu. Plánovaná splátka je {planned} týdně; odhadovaný bezpečný strop je {safe}.",
+      "tight": "Hotovost zůstává nad nulou, ale v {week}. týdnu chybí do rezervy {amount}. Snižte nebo přesuňte splátky dříve, než bude plán příliš křehký.",
+      "shortfall": "V plánu dojde hotovost. V {week}. týdnu chybí do rezervy {amount}. Splátkový kalendář je potřeba změnit před jeho potvrzením."
+    },
+    "disclaimer": "Jde o plánovací ilustraci, nikoli úvěrové rozhodnutí. Skutečná analýza zohledňuje také podmínky úvěru, úroky, termíny daní, sezónnost a spolehlivost plateb zákazníků."
   },
   "Ledger": {
     "title": "VYZKOUŠEJTE: HLAVNÍ KNIHA",

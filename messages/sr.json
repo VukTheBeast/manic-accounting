@@ -30,13 +30,13 @@
     "headlineTwo": "Miran zbog vaših knjiga.",
     "intro": "Zdravo, ja sam Manić. Deset godina sam proveo u finansijskim timovima velikih međunarodnih kompanija. Sada pomažem manjem broju preduzeća koja žele uredne knjige, poreze predate na vreme i tok gotovine bez neprijatnih iznenađenja.",
     "bookCall": "Zakažite besplatan uvodni razgovor",
-    "tryTool": "Isprobajte alat za tok gotovine",
+    "tryTool": "Testirajte sposobnost otplate",
     "trustOne": "Deset godina u finansijama i kontrolingu",
     "trustTwo": "PDV i poreske prijave u Češkoj, Bugarskoj i Rumuniji",
     "trustThree": "Mesečno zatvaranje za firme u EU, SAD i Kanadi",
-    "toolOverline": "POIGRAJTE SE BROJKAMA",
-    "toolTitle": "Da li ćete imati gotovine u 8. nedelji?",
-    "toolIntro": "Mala verzija 13-nedeljnog pregleda toka gotovine koji pravim za klijente. Pomerajte klizače i pratite kada stanje na računu pada ispod nule. Iznosi su u vašoj valuti."
+    "toolOverline": "TESTIRAJTE PLAN OTPLATE",
+    "toolTitle": "Koliko duga firma može bezbedno da otplaćuje?",
+    "toolIntro": "Ovaj 13-nedeljni pregled povezuje otplatu duga sa onim što je zaista važno: gotovinom koja ostaje posle poslovanja. Prilagodite plan, zaštitite minimalnu rezervu i testirajte pad prodaje ili rast troškova."
   },
   "Services": {
     "overline": "ŠTA RADIM",
@@ -145,15 +145,51 @@
     "caption": "Nije magija. To je ponovljiv proces u kojem se svaki broj može pratiti do izvora."
   },
   "CashFlow": {
+    "scenarioLabel": "13-NEDELJNI SCENARIO",
+    "analysisTitle": "Sposobnost otplate duga",
+    "scenario": {
+      "base": "Osnovni plan",
+      "salesDip": "Prodaja −15%",
+      "costRise": "Troškovi +10%"
+    },
+    "scenarioNote": {
+      "base": "Trenutni plan prema nedeljnim prilivima i operativnim troškovima ispod.",
+      "salesDip": "Uplate kupaca su smanjene za 15%. Korisna provera pre dogovaranja plana otplate.",
+      "costRise": "Operativni troškovi su povećani za 10% da pokažu koliko brzo prostor za otplatu može da se smanji."
+    },
     "opening": "Novac na računu danas",
     "cashIn": "Nedeljni prilivi (uplate kupaca)",
-    "cashOut": "Nedeljni odlivi (plate, dobavljači, zakup)",
+    "cashOut": "Nedeljni operativni troškovi",
+    "debtPayment": "Planirana nedeljna otplata duga",
     "oneOff": "Jednokratno plaćanje u 8. nedelji (PDV, porez, oprema)",
-    "chartTitle": "STANJE NA RAČUNU PO NEDELJAMA",
-    "chartLabel": "Stubičasti grafikon projektovanog stanja na računu tokom 13 nedelja. {verdict}",
-    "legend": "Nedelja · isprekidana linija = nula · zeleno iznad, crveno ispod",
-    "negative": "Gotovina pada ispod nule u {week}. nedelji (najniža tačka: {amount}). O tome se razgovara u 1. nedelji, a ne kada postane iznenađenje u {week}. nedelji.",
-    "positive": "Gotovina ostaje pozitivna svih 13 nedelja. Najniža tačka: {amount} u {week}. nedelji."
+    "cashBuffer": "Minimalna gotovinska rezerva",
+    "safeWeekly": "PROCENJENA BEZBEDNA OTPLATA",
+    "perWeek": "nedeljno uz očuvanu rezervu",
+    "plannedTotal": "PLANIRANA OTPLATA DUGA",
+    "overThirteenWeeks": "tokom narednih 13 nedelja",
+    "bufferHeadroom": "NAJNIŽI VIŠAK IZNAD REZERVE",
+    "bufferShortfall": "MANJAK DO REZERVE",
+    "lowestInWeek": "najniža tačka u {week}. nedelji",
+    "chartTitle": "GOTOVINA POSLE POSLOVANJA I DUGA",
+    "chartLabel": "Interaktivni grafikon projektovane gotovine posle operativnih troškova i otplate duga tokom 13 nedelja. {verdict}",
+    "coverage": "Nedeljna operativna gotovina pokriva planiranu otplatu {ratio}×",
+    "coverageNone": "Dodajte planiranu otplatu da vidite pokriće",
+    "bufferLine": "minimalna rezerva",
+    "weekSelectorLabel": "Izaberite nedelju za detalje",
+    "weekDetail": "{week}. nedelja: projektovana gotovina {amount}",
+    "selectedWeek": "PROJEKTOVANA GOTOVINA U {week}. NEDELJI",
+    "weekStatus": {
+      "aboveBuffer": "Rezerva sačuvana",
+      "belowBuffer": "Ispod rezerve",
+      "belowZero": "Nedostatak gotovine"
+    },
+    "decisionTitle": "ŠTA JE ZAISTA VAŽNO",
+    "verdict": {
+      "healthy": "Plan čuva gotovinsku rezervu. Planirana otplata je {planned} nedeljno; procenjeni bezbedni maksimum je {safe}.",
+      "tight": "Gotovina ostaje iznad nule, ali u {week}. nedelji nedostaje {amount} do rezerve. Smanjite ili pomerite otplate pre nego što plan postane previše rizičan.",
+      "shortfall": "U planu ponestaje gotovine. U {week}. nedelji nedostaje {amount} do rezerve. Plan otplate mora da se promeni pre nego što bude dogovoren."
+    },
+    "disclaimer": "Ovo je ilustracija za planiranje, a ne odluka o kreditiranju. Prava analiza uključuje i uslove otplate, kamatu, poreske rokove, sezonalnost i pouzdanost naplate od kupaca."
   },
   "Ledger": {
     "title": "ISPROBAJTE: GLAVNA KNJIGA",
