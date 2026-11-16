@@ -23,6 +23,7 @@ export default function Home() {
     name: site.name,
     url: site.url,
     logo: `${site.url}/icon.svg`,
+    image: `${site.url}/vukman-manic-accounting.webp`,
     description: site.description,
     ...(site.email.endsWith("@your-domain.com") ? {} : { email: site.email }),
     serviceType: SERVICES.filter(({ id }) => id !== "unsure").map(

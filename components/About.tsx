@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const FACTS: [string, string][] = [
@@ -31,11 +32,15 @@ export default function About() {
       </div>
 
       <div className="flex min-w-0 flex-[1_1_380px] flex-col gap-4">
-        <div className="flex h-[280px] flex-col items-center justify-center gap-3 rounded-card border-2 border-ink bg-ledger-tint text-ledger shadow-hard" role="img" aria-label="Manić Accounting monogram">
-          <span className="font-display text-8xl leading-none font-bold" aria-hidden="true">M</span>
-          <span className="max-w-[240px] text-center text-sm font-bold">
-            Manic about the numbers. Calm when explaining them.
-          </span>
+        <div className="overflow-hidden rounded-card border-2 border-ink bg-paper shadow-hard">
+          <Image
+            src="/vukman-manic-accounting.webp"
+            alt="Vukman Manić at his desk"
+            width={1200}
+            height={800}
+            sizes="(min-width: 768px) 40vw, 100vw"
+            className="h-auto w-full"
+          />
         </div>
         <div className="card flex flex-col gap-3.5 p-6">
           <div className="text-xs font-bold tracking-[0.6px] text-ink">THE SHORT VERSION</div>
