@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #14171a;
+  --color-ledger: #0b6b4f;
+  --color-ledger-tint: #ddefe6;
+  --color-marker: #ffe14d;
+  --color-marker-dark: #f2cf1f;
+  --color-paper: #fbfbf6;
+  --color-body: #3d4650;
+  --color-grid: #dcebdd;
+  --color-red-pen: #b3202f;
+  --color-red-tint: #fbe0e2;
+  --color-mute: #6b746e;
+
+  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-sans: var(--font-plex-sans), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  --shadow-hard: 5px 5px 0 #14171a;
+  --shadow-hard-sm: 3px 3px 0 #14171a;
+
+  --radius-card: 14px;
+}
+
+@layer base {
+  body {
+    @apply bg-paper font-sans text-body antialiased;
+  }
+  :focus-visible {
+    outline: 3px solid #0b6b4f;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* graph-paper background, like ledger paper */
+  .ledger-paper {
+    background-color: #fbfbf6;
+    background-image:
+      linear-gradient(#dcebdd 1px, transparent 1px),
+      linear-gradient(90deg, #dcebdd 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  .card {
+    @apply rounded-card border-2 border-ink bg-white shadow-hard;
+  }
+  .overline {
+    @apply text-xs font-bold tracking-[0.6px] text-ledger;
+  }
+  .h2 {
+    @apply font-display text-[clamp(32px,7.5vw,46px)] leading-[1.08] font-bold text-ink;
+  }
+  .btn-marker {
+    @apply inline-flex min-h-12 items-center justify-center rounded-[10px] border-2 border-ink bg-marker px-6 py-4 text-[17px] font-bold text-ink shadow-hard-sm transition-colors hover:bg-marker-dark;
+  }
+  .btn-ghost {
+    @apply inline-flex min-h-12 items-center justify-center rounded-[10px] border-2 border-ink px-6 py-4 text-[17px] font-bold text-ink transition-colors hover:bg-ledger-tint;
+  }
+  .btn-dark {
+    @apply inline-flex min-h-12 items-center justify-center rounded-[10px] bg-ink px-6 py-4 text-[17px] font-bold text-white transition-colors hover:bg-ledger;
+  }
+  .field {
+    @apply min-h-12 w-full rounded-[10px] border-2 border-ink bg-white px-4 py-3.5 text-base text-ink;
+  }
+}
