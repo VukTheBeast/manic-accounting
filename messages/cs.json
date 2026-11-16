@@ -78,14 +78,12 @@
   "ContactCta": {
     "title": "Řekněte mi, co vám nedá spát.",
     "text": "Pozdní faktury, nepodané DPH nebo tabulka, kterou se nikdo neodváží otevřít. Vyberte téma, napište pár řádků a odpovím do dvou pracovních dnů.",
-    "button": "Napsat mi",
-    "email": "nebo napište na {email}"
+    "button": "Napsat mi"
   },
   "ContactPage": {
     "overline": "KONTAKT",
     "title": "Řekněte mi, co vám nedá spát.",
     "intro": "Vyberte, s čím potřebujete pomoci, napište pár řádků a odešlete. Odpovím do dvou pracovních dnů. Úvodní hovor je zdarma.",
-    "direct": "CHCETE NAPSAT PŘÍMO?",
     "helpful": "POMŮŽE ZMÍNIT",
     "tipOne": "Jaký typ podnikání provozujete",
     "tipTwo": "Přibližný počet faktur za měsíc",
@@ -101,16 +99,12 @@
     "sending": "Odesílám…",
     "promise": "Odpovím do dvou pracovních dnů. Úvodní hovor je zdarma.",
     "successTitle": "Přijato. Má dáti dal.",
-    "directLink": "Napište mi přímo e-mailem",
-    "directSuffix": "a zpráva bude předvyplněná.",
-    "mailtoSubject": "Poptávka: {service}",
-    "mailtoBody": "Dobrý den,\n\npotřebuji pomoci s: {service}\n\n{message}\n\n{name}\n{email}",
     "status": {
       "success": "Děkuji za zprávu. Odpovím do dvou pracovních dnů.",
       "invalid": "Zkontrolujte prosím jméno, e-mailovou adresu a zprávu a zkuste to znovu.",
       "rateLimited": "Z tohoto připojení bylo odesláno příliš mnoho zpráv. Zkuste to znovu za {minutes, plural, one {# minutu} few {# minuty} other {# minut}}.",
-      "notConfigured": "Online odesílání zatím není nastaveno. Použijte prosím přímý e-mailový odkaz níže.",
-      "sendFailed": "Zprávu se nyní nepodařilo odeslat. Použijte prosím přímý e-mailový odkaz níže."
+      "notConfigured": "Kontaktní formulář zatím není nastaven. Zkuste to prosím později.",
+      "sendFailed": "Zprávu se nyní nepodařilo odeslat. Zkuste to prosím později."
     }
   },
   "Workflow": {

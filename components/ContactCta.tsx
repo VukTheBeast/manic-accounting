@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { site } from "@/lib/site";
 
 export default function ContactCta() {
   const t = useTranslations("ContactCta");
@@ -16,9 +15,8 @@ export default function ContactCta() {
             {t("text")}
           </p>
         </div>
-        <div className="flex flex-col items-start gap-2.5">
+        <div className="flex items-start">
           <Link href="/contact" className="btn-dark">{t("button")}</Link>
-          <span className="text-sm font-semibold text-ink">{t("email", { email: site.email })}</span>
         </div>
       </div>
     </section>

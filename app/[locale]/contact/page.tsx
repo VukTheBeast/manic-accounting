@@ -60,13 +60,6 @@ export default async function ContactPage({
 
         <div className="flex flex-wrap items-start gap-8">
           <div className="flex min-w-0 flex-[1_1_300px] flex-col gap-5">
-            <div className="card flex flex-col gap-3.5 p-6">
-              <div className="text-xs font-bold tracking-[0.6px] text-ink">{t("direct")}</div>
-              <a href={`mailto:${site.email}`} className="text-xl font-bold break-words text-ink hover:text-ledger">
-                {site.email}
-              </a>
-              {site.phone && <div className="text-[15px] leading-relaxed">{site.phone}</div>}
-            </div>
             <div className="card flex flex-col gap-3 p-6">
               <div className="text-xs font-bold tracking-[0.6px] text-ink">{t("helpful")}</div>
               {TIPS.map((tip) => (

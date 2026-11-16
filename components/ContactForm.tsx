@@ -5,7 +5,6 @@ import { useActionState, useState } from "react";
 import { sendContactMessage, type ContactFormState } from "@/app/contact/actions";
 import type { Locale } from "@/i18n/routing";
 import { getServices, serviceById } from "@/lib/services";
-import { site } from "@/lib/site";
 
 const initialContactFormState: ContactFormState = {
   status: "idle",
@@ -33,11 +32,6 @@ export default function ContactForm() {
       : state.code === "none"
         ? ""
         : t(`status.${state.code}`);
-
-  // Fallback if the email API is not configured yet
-  const mailto =
-    `mailto:${site.email}?subject=${encodeURIComponent(t("mailtoSubject", { service: svc.label }))}` +
-    `&body=${encodeURIComponent(t("mailtoBody", { service: svc.label, message, name, email }))}`;
 
   if (state.status === "success") {
     return (
@@ -107,8 +101,7 @@ export default function ContactForm() {
 
       {state.status === "error" && (
         <p role="alert" aria-live="assertive" className="rounded-[10px] bg-red-tint p-3.5 text-sm font-semibold leading-normal text-red-pen">
-          {statusMessage}{" "}
-          <a href={mailto} className="underline">{t("directLink")}</a> {t("directSuffix")}
+          {statusMessage}
         </p>
       )}
     </form>

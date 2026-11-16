@@ -78,14 +78,12 @@
   "ContactCta": {
     "title": "Tell me what keeps you up at night.",
     "text": "Late invoices, an unfiled VAT return, a spreadsheet nobody dares open. Pick a topic, write a few lines and I will reply within two working days.",
-    "button": "Write to me",
-    "email": "or email {email}"
+    "button": "Write to me"
   },
   "ContactPage": {
     "overline": "CONTACT",
     "title": "Tell me what keeps you up at night.",
     "intro": "Choose what you need help with, write a few lines, and send. I reply within two working days. The intro call is free.",
-    "direct": "PREFER TO WRITE DIRECTLY?",
     "helpful": "HELPFUL TO MENTION",
     "tipOne": "What kind of business you run",
     "tipTwo": "Roughly how many invoices a month",
@@ -101,16 +99,12 @@
     "sending": "Sending…",
     "promise": "I reply within two working days. The intro call is free.",
     "successTitle": "Received. Debit equals credit.",
-    "directLink": "Email me directly instead",
-    "directSuffix": "and the message will be pre-filled.",
-    "mailtoSubject": "Enquiry: {service}",
-    "mailtoBody": "Hi,\n\nI need help with: {service}\n\n{message}\n\n{name}\n{email}",
     "status": {
       "success": "Thanks for writing. I will reply within two working days.",
       "invalid": "Please check your name, email address and message, then try again.",
       "rateLimited": "Too many messages were sent from this connection. Please try again in {minutes, plural, one {# minute} other {# minutes}}.",
-      "notConfigured": "Online sending is not configured yet. Please use the direct email link below.",
-      "sendFailed": "The message could not be sent right now. Please use the direct email link below."
+      "notConfigured": "The contact form is not configured yet. Please try again later.",
+      "sendFailed": "The message could not be sent right now. Please try again later."
     }
   },
   "Workflow": {

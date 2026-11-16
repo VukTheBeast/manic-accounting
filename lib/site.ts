@@ -18,8 +18,6 @@ export const site = {
   description:
     "Bookkeeping, month-end close, budgets, 13-week cash flow and VAT preparation for small businesses and freelancers.",
   url: siteUrl,
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@your-domain.com",
-  phone: process.env.NEXT_PUBLIC_CONTACT_PHONE ?? "",
   legal: process.env.NEXT_PUBLIC_LEGAL_TEXT ?? "",
   locale: "en_GB",
   keywords: [

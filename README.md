@@ -24,7 +24,7 @@ Search the project for `[` placeholders and `your-domain.com`:
 
 | What | Where |
 | --- | --- |
-| Email, phone, business registration number | `lib/site.ts` and `.env.local` |
+| Site URL and legal text | `lib/site.ts` and `.env.local` |
 | Service names and descriptions | `lib/services.ts` (all three languages) |
 | Other translated content | `messages/en.json`, `messages/cs.json`, `messages/sr.json` |
 | Colors, fonts | `app/globals.css` (`@theme` block) |
@@ -42,8 +42,8 @@ Search the project for `[` placeholders and `your-domain.com`:
    address on it.
 3. Restart `npm run dev` and send a test message.
 
-Until this is configured, the form shows a localized direct-email fallback. A hidden honeypot and
-server-side rate limiting block common spam attempts.
+The recipient address and Resend API key are server-only environment variables and are never rendered
+on the website. A hidden honeypot and server-side rate limiting block common spam attempts.
 
 ## Deploy (free)
 

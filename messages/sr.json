@@ -78,14 +78,12 @@
   "ContactCta": {
     "title": "Recite mi šta vam ne da da spavate.",
     "text": "Zakasnele fakture, nepodneta PDV prijava ili tabela koju niko ne sme da otvori. Izaberite temu, napišite nekoliko redova i odgovoriću u roku od dva radna dana.",
-    "button": "Pišite mi",
-    "email": "ili pošaljite poruku na {email}"
+    "button": "Pišite mi"
   },
   "ContactPage": {
     "overline": "KONTAKT",
     "title": "Recite mi šta vam ne da da spavate.",
     "intro": "Izaberite za šta vam treba pomoć, napišite nekoliko redova i pošaljite. Odgovaram u roku od dva radna dana. Uvodni razgovor je besplatan.",
-    "direct": "ŽELITE DA PIŠETE DIREKTNO?",
     "helpful": "KORISNO JE DA POMENETE",
     "tipOne": "Kojom vrstom posla se bavite",
     "tipTwo": "Otprilike koliko faktura imate mesečno",
@@ -101,16 +99,12 @@
     "sending": "Šaljem…",
     "promise": "Odgovaram u roku od dva radna dana. Uvodni razgovor je besplatan.",
     "successTitle": "Primljeno. Duguje jednako potražuje.",
-    "directLink": "Pošaljite mi imejl direktno",
-    "directSuffix": "i poruka će biti unapred popunjena.",
-    "mailtoSubject": "Upit: {service}",
-    "mailtoBody": "Zdravo,\n\npotrebna mi je pomoć sa: {service}\n\n{message}\n\n{name}\n{email}",
     "status": {
       "success": "Hvala na poruci. Odgovoriću u roku od dva radna dana.",
       "invalid": "Proverite ime, imejl adresu i poruku, pa pokušajte ponovo.",
       "rateLimited": "Sa ove veze je poslato previše poruka. Pokušajte ponovo za {minutes, plural, one {# minut} few {# minuta} other {# minuta}}.",
-      "notConfigured": "Onlajn slanje još nije podešeno. Koristite direktan imejl link ispod.",
-      "sendFailed": "Poruka trenutno nije mogla da bude poslata. Koristite direktan imejl link ispod."
+      "notConfigured": "Kontakt formular još nije podešen. Pokušajte ponovo kasnije.",
+      "sendFailed": "Poruka trenutno nije mogla da bude poslata. Pokušajte ponovo kasnije."
     }
   },
   "Workflow": {

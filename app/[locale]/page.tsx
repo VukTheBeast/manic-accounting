@@ -36,7 +36,6 @@ export default async function Home({
     logo: `${site.url}/icon.svg`,
     image: `${site.url}/vukman-manic-accounting.webp`,
     description: metadata("description"),
-    ...(site.email.endsWith("@your-domain.com") ? {} : { email: site.email }),
     inLanguage: locale,
     serviceType: services.filter(({ id }) => id !== "unsure").map(
       ({ label }) => label,
