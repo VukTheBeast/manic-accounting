@@ -1,12 +1,24 @@
 "use server";
 
 import { headers } from "next/headers";
-import { SERVICES, serviceById } from "@/lib/services";
+import { hasLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+import { getServices, serviceById } from "@/lib/services";
 import { checkContactRateLimit } from "@/lib/rate-limit";
+
+export type ContactFormCode =
+  | "none"
+  | "success"
+  | "invalid"
+  | "rateLimited"
+  | "notConfigured"
+  | "sendFailed";
 
 export type ContactFormState = {
   status: "idle" | "success" | "error";
-  message: string;
+  code: ContactFormCode;
+  minutes?: number;
 };
 
 const value = (formData: FormData, key: string, maxLength: number) => {
@@ -23,22 +35,27 @@ export async function sendContactMessage(
   if (value(formData, "website", 200)) {
     return {
       status: "success",
-      message: "Thanks for writing. I will reply within two working days.",
+      code: "success",
     };
   }
 
+  const localeValue = value(formData, "locale", 5);
+  const locale = hasLocale(routing.locales, localeValue)
+    ? localeValue
+    : routing.defaultLocale;
   const name = value(formData, "name", 120);
   const email = value(formData, "email", 200);
   const serviceId = value(formData, "service", 40);
   const message = value(formData, "message", 5000);
-  const service = SERVICES.some(({ id }) => id === serviceId)
-    ? serviceById(serviceId)
-    : serviceById("unsure");
+  const services = getServices(locale);
+  const service = services.some(({ id }) => id === serviceId)
+    ? serviceById(serviceId, locale)
+    : serviceById("unsure", locale);
 
   if (!name || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return {
       status: "error",
-      message: "Please check your name, email address and message, then try again.",
+      code: "invalid",
     };
   }
 
@@ -51,7 +68,8 @@ export async function sendContactMessage(
     const minutes = Math.max(1, Math.ceil(rateLimit.retryAfterSeconds / 60));
     return {
       status: "error",
-      message: `Too many messages were sent from this connection. Please try again in ${minutes} minute${minutes === 1 ? "" : "s"}.`,
+      code: "rateLimited",
+      minutes,
     };
   }
 
@@ -63,9 +81,11 @@ export async function sendContactMessage(
   if (!key || !to) {
     return {
       status: "error",
-      message: "Online sending is not configured yet. Please use the direct email link below.",
+      code: "notConfigured",
     };
   }
+
+  const t = await getTranslations({ locale, namespace: "Email" });
 
   try {
     const response = await fetch("https://api.resend.com/emails", {
@@ -78,8 +98,11 @@ export async function sendContactMessage(
         from,
         to,
         reply_to: email,
-        subject: `Enquiry: ${singleLine(service.label)} (${singleLine(name)})`,
-        text: `Name: ${name}\nEmail: ${email}\nService: ${service.label}\n\n${message}`,
+        subject: t("subject", {
+          service: singleLine(service.label),
+          name: singleLine(name),
+        }),
+        text: `${t("name")}: ${name}\n${t("email")}: ${email}\n${t("service")}: ${service.label}\n\n${message}`,
       }),
       cache: "no-store",
       signal: AbortSignal.timeout(10_000),
@@ -91,19 +114,19 @@ export async function sendContactMessage(
       });
       return {
         status: "error",
-        message: "The message could not be sent right now. Please use the direct email link below.",
+        code: "sendFailed",
       };
     }
   } catch (error) {
     console.error("Contact form delivery failed", error);
     return {
       status: "error",
-      message: "The message could not be sent right now. Please use the direct email link below.",
+      code: "sendFailed",
     };
   }
 
   return {
     status: "success",
-    message: "Thanks for writing. I will reply within two working days.",
+    code: "success",
   };
 }

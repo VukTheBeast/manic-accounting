@@ -1,0 +1,161 @@
+{
+  "Metadata": {
+    "title": "Manić Accounting: Opsednut vašim brojkama. Miran zbog vaših knjiga.",
+    "description": "Knjigovodstvo, mesečno zatvaranje, budžeti, 13-nedeljni tok gotovine i priprema PDV-a za mala preduzeća i preduzetnike.",
+    "keywords": "računovodstvo za mala preduzeća|knjigovođa za preduzetnike|knjigovodstvene usluge|mesečno zatvaranje|13-nedeljni tok gotovine|budžeti i prognoze|priprema PDV-a|menadžersko izveštavanje",
+    "contactTitle": "Kontakt",
+    "contactDescription": "Recite mi šta vam ne da da spavate. Odgovaram u roku od dva radna dana."
+  },
+  "Navigation": {
+    "services": "Šta radim",
+    "tool": "Isprobajte alat",
+    "process": "Kako radimo",
+    "about": "O meni",
+    "bookCall": "Zakažite poziv",
+    "home": "Početna stranica {name}",
+    "language": "Izaberite jezik",
+    "primary": "Glavna navigacija",
+    "skip": "Pređite na glavni sadržaj"
+  },
+  "Languages": {
+    "en": "English",
+    "cs": "Čeština",
+    "sr": "Srpski"
+  },
+  "Home": {
+    "overline": "RAČUNOVODSTVO ZA MALA PREDUZEĆA I PREDUZETNIKE",
+    "headlineOne": "Opsednut vašim brojkama.",
+    "headlineTwo": "Miran zbog vaših knjiga.",
+    "intro": "Zdravo, ja sam Manić. Deset godina sam proveo u finansijskim timovima velikih međunarodnih kompanija. Sada pomažem manjem broju preduzeća koja žele uredne knjige, poreze predate na vreme i tok gotovine bez neprijatnih iznenađenja.",
+    "bookCall": "Zakažite besplatan uvodni razgovor",
+    "tryTool": "Isprobajte alat za tok gotovine",
+    "trustOne": "Deset godina u finansijama i kontrolingu",
+    "trustTwo": "PDV i poreske prijave u Češkoj, Bugarskoj i Rumuniji",
+    "trustThree": "Mesečno zatvaranje za firme u EU, SAD i Kanadi",
+    "toolOverline": "POIGRAJTE SE BROJKAMA",
+    "toolTitle": "Da li ćete imati gotovine u 8. nedelji?",
+    "toolIntro": "Mala verzija 13-nedeljnog pregleda toka gotovine koji pravim za klijente. Pomerajte klizače i pratite kada stanje na računu pada ispod nule. Iznosi su u vašoj valuti."
+  },
+  "Services": {
+    "overline": "ŠTA RADIM",
+    "title": "Dosadne stvari, urađene kako treba.",
+    "intro": "Mesečno zatvaranje, poreski rokovi, usaglašavanja i prognoze. Stvari koje nikada ne deluju hitno — sve dok odjednom ne postanu."
+  },
+  "Process": {
+    "overline": "KAKO RADIMO",
+    "title": "Bez žargona. Bez iznenađenja. Pomalo opsesivno.",
+    "stepOneTitle": "Uvodni razgovor",
+    "stepOneText": "Trideset minuta, besplatno. Kažete mi šta vas muči. Ja iskreno kažem da li mogu da pomognem.",
+    "stepTwoTitle": "Provera zdravlja knjiga",
+    "stepTwoText": "Pregledam ono što imate i jednostavno objasnim šta nije u redu, uz rešenje za svaku stavku.",
+    "stepThreeTitle": "Postavljamo ritam",
+    "stepThreeText": "Mesečno zatvaranje, kalendar izveštavanja i poreski rokovi na jednom mestu. Uvek znate šta se kada dešava.",
+    "stepFourTitle": "Mirna sigurnost",
+    "stepFourText": "Brojke stižu na vreme i imaju smisla. Ja ostajem pomalo opsednut, da vi ne morate."
+  },
+  "About": {
+    "overline": "O MENI",
+    "title": "Da, Manić je zaista moje prezime.",
+    "paragraphOne": "Svi naprave istu šalu, pa sam od nje napravio brend. Iza igre reči stoji deset godina u finansijama i kontrolingu: od glavne knjige i usaglašavanja do vođenja finansijskog tima i upravljanja troškovima kroz globalne funkcije međunarodne kompanije.",
+    "paragraphTwo": "Zatvarao sam knjige za firme u Evropi, SAD i Kanadi, pravio automatizacije za računovodstvene timove i podnosio PDV prijave u tri zemlje. Preko dana radim kao finansijski kontrolor. Sada istu posvećenost donosim nekolicini manjih preduzeća koja je takođe zaslužuju.",
+    "button": "Hajde da pričamo o brojkama",
+    "photoAlt": "Vukman Manić za radnim stolom",
+    "shortVersion": "UKRATKO",
+    "factFinance": "U finansijama",
+    "factFinanceValue": "10 godina",
+    "factTeams": "Vodio finansijske timove u",
+    "factTeamsValue": "Češkoj i SAD",
+    "factVat": "PDV prijave",
+    "factVatValue": "CZ · BG · RO",
+    "factAutomation": "Automatizacija",
+    "factAutomationValue": "RPA/RDA u računovodstvu",
+    "factWorking": "Način rada",
+    "factWorkingValue": "Prvenstveno na daljinu"
+  },
+  "ContactCta": {
+    "title": "Recite mi šta vam ne da da spavate.",
+    "text": "Zakasnele fakture, nepodneta PDV prijava ili tabela koju niko ne sme da otvori. Izaberite temu, napišite nekoliko redova i odgovoriću u roku od dva radna dana.",
+    "button": "Pišite mi",
+    "email": "ili pošaljite poruku na {email}"
+  },
+  "ContactPage": {
+    "overline": "KONTAKT",
+    "title": "Recite mi šta vam ne da da spavate.",
+    "intro": "Izaberite za šta vam treba pomoć, napišite nekoliko redova i pošaljite. Odgovaram u roku od dva radna dana. Uvodni razgovor je besplatan.",
+    "direct": "ŽELITE DA PIŠETE DIREKTNO?",
+    "helpful": "KORISNO JE DA POMENETE",
+    "tipOne": "Kojom vrstom posla se bavite",
+    "tipTwo": "Otprilike koliko faktura imate mesečno",
+    "tipThree": "Da li se neki rok već približava"
+  },
+  "ContactForm": {
+    "name": "Vaše ime",
+    "email": "Vaš imejl",
+    "service": "Za šta vam je potrebna pomoć?",
+    "message": "Nekoliko redova o vašoj situaciji",
+    "website": "Veb-sajt",
+    "send": "Pošaljite poruku",
+    "sending": "Šaljem…",
+    "promise": "Odgovaram u roku od dva radna dana. Uvodni razgovor je besplatan.",
+    "successTitle": "Primljeno. Duguje jednako potražuje.",
+    "directLink": "Pošaljite mi imejl direktno",
+    "directSuffix": "i poruka će biti unapred popunjena.",
+    "mailtoSubject": "Upit: {service}",
+    "mailtoBody": "Zdravo,\n\npotrebna mi je pomoć sa: {service}\n\n{message}\n\n{name}\n{email}",
+    "status": {
+      "success": "Hvala na poruci. Odgovoriću u roku od dva radna dana.",
+      "invalid": "Proverite ime, imejl adresu i poruku, pa pokušajte ponovo.",
+      "rateLimited": "Sa ove veze je poslato previše poruka. Pokušajte ponovo za {minutes, plural, one {# minut} few {# minuta} other {# minuta}}.",
+      "notConfigured": "Onlajn slanje još nije podešeno. Koristite direktan imejl link ispod.",
+      "sendFailed": "Poruka trenutno nije mogla da bude poslata. Koristite direktan imejl link ispod."
+    }
+  },
+  "CashFlow": {
+    "opening": "Novac na računu danas",
+    "cashIn": "Nedeljni prilivi (uplate kupaca)",
+    "cashOut": "Nedeljni odlivi (plate, dobavljači, zakup)",
+    "oneOff": "Jednokratno plaćanje u 8. nedelji (PDV, porez, oprema)",
+    "chartTitle": "STANJE NA RAČUNU PO NEDELJAMA",
+    "chartLabel": "Stubičasti grafikon projektovanog stanja na računu tokom 13 nedelja. {verdict}",
+    "legend": "Nedelja · isprekidana linija = nula · zeleno iznad, crveno ispod",
+    "negative": "Gotovina pada ispod nule u {week}. nedelji (najniža tačka: {amount}). O tome se razgovara u 1. nedelji, a ne kada postane iznenađenje u {week}. nedelji.",
+    "positive": "Gotovina ostaje pozitivna svih 13 nedelja. Najniža tačka: {amount} u {week}. nedelji."
+  },
+  "Ledger": {
+    "title": "ISPROBAJTE: GLAVNA KNJIGA",
+    "intro": "Kliknite na stavku da je proknjižite. Sve mora da se slaže. Opsesivno.",
+    "nothing": "Još ništa nije proknjiženo",
+    "balanced": "Izbalansirano",
+    "balancedStamp": "SLAŽE SE",
+    "offBy": "Razlika {amount}",
+    "invoiceTitle": "Faktura klijentu br. 1042",
+    "invoiceMeta": "Duguje Potraživanja · Potražuje Prihodi",
+    "rentTitle": "Zakup, novembar",
+    "rentMeta": "Duguje Trošak zakupa · Potražuje Banka",
+    "laptopTitle": "Novi laptop",
+    "laptopMeta": "Duguje Oprema · Potražuje Banka",
+    "laptopFixedMeta": "Duguje Oprema · Potražuje Banka 2.000 + Obaveze 500",
+    "debits": "Duguje {amount}",
+    "credits": "Potražuje {amount}",
+    "difference": "Razlika {amount}",
+    "short": "Na strani potražuje nedostaje {amount}. Nešto je proknjiženo samo na jednoj strani.",
+    "fix": "Pronađi iznos koji nedostaje",
+    "reset": "Resetuj glavnu knjigu"
+  },
+  "Email": {
+    "subject": "Upit: {service} ({name})",
+    "name": "Ime",
+    "email": "Imejl",
+    "service": "Usluga"
+  },
+  "Errors": {
+    "notFoundOverline": "404 · NEDOSTAJE STAVKA",
+    "notFoundTitle": "Ova stranica nije u glavnoj knjizi.",
+    "notFoundText": "Link je možda star ili je stranica premeštena. Knjige se i dalje slažu.",
+    "home": "Nazad na početnu stranicu",
+    "errorOverline": "NEŠTO SE NE SLAŽE",
+    "errorTitle": "Došlo je do neočekivane greške na stranici.",
+    "errorText": "Bez računovodstvene drame. Pokušajte ponovo.",
+    "retry": "Pokušajte ponovo"
+  }
+}

@@ -1,4 +1,6 @@
-import { SERVICES, type ServiceId } from "@/lib/services";
+import { useLocale, useTranslations } from "next-intl";
+import type { Locale } from "@/i18n/routing";
+import { getServices, type ServiceId } from "@/lib/services";
 
 const ICONS: Record<Exclude<ServiceId, "unsure">, React.ReactNode> = {
   bookkeeping: (
@@ -30,15 +32,15 @@ const ICONS: Record<Exclude<ServiceId, "unsure">, React.ReactNode> = {
 };
 
 export default function Services() {
-  const cards = SERVICES.filter((s) => s.id !== "unsure");
+  const locale = useLocale() as Locale;
+  const t = useTranslations("Services");
+  const cards = getServices(locale).filter((service) => service.id !== "unsure");
+
   return (
     <section id="services" className="mx-auto max-w-[1200px] scroll-mt-4 px-5 pt-10 pb-24 sm:px-8">
-      <div className="overline mb-3">WHAT I DO</div>
-      <h2 className="h2 mb-4 max-w-[720px]">The boring stuff, done properly.</h2>
-      <p className="mb-10 max-w-[640px] text-[17px] leading-relaxed">
-        Month-end, tax deadlines, reconciliations, forecasts. The things that never feel urgent
-        until they very much are.
-      </p>
+      <div className="overline mb-3">{t("overline")}</div>
+      <h2 className="h2 mb-4 max-w-[720px]">{t("title")}</h2>
+      <p className="mb-10 max-w-[640px] text-[17px] leading-relaxed">{t("intro")}</p>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))] gap-5">
         {cards.map((s) => (
           <div key={s.id} className="card flex flex-col gap-3.5 p-7">

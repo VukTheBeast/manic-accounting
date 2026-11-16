@@ -1,22 +1,25 @@
 "use client";
 
+import { useFormatter, useTranslations } from "next-intl";
 import { useState } from "react";
-
-const fmt = (n: number) => Math.round(n).toLocaleString("en-US");
 
 type Entry = { title: string; meta: string; dr: number; cr: number };
 
 /** Hero demo: post journal entries and make the ledger balance. */
 export default function LedgerDemo() {
+  const t = useTranslations("Ledger");
+  const format = useFormatter();
+  const fmt = (number: number) =>
+    format.number(Math.round(number), { maximumFractionDigits: 0 });
   const [posted, setPosted] = useState([false, false, false]);
   const [fixed, setFixed] = useState(false);
 
   const entries: Entry[] = [
-    { title: "Client invoice #1042", meta: "Dr Receivables · Cr Revenue", dr: 4800, cr: 4800 },
-    { title: "Rent, November", meta: "Dr Rent expense · Cr Bank", dr: 1200, cr: 1200 },
+    { title: t("invoiceTitle"), meta: t("invoiceMeta"), dr: 4800, cr: 4800 },
+    { title: t("rentTitle"), meta: t("rentMeta"), dr: 1200, cr: 1200 },
     {
-      title: "New laptop",
-      meta: fixed ? "Dr Equipment · Cr Bank 2,000 + Payables 500" : "Dr Equipment · Cr Bank",
+      title: t("laptopTitle"),
+      meta: fixed ? t("laptopFixedMeta") : t("laptopMeta"),
       dr: 2500,
       cr: fixed ? 2500 : 2000,
     },
@@ -30,10 +33,10 @@ export default function LedgerDemo() {
   const canFix = any && diff !== 0 && !fixed;
 
   const status = !any
-    ? { label: "Nothing posted yet", cls: "bg-[#ecefe6] text-body" }
+    ? { label: t("nothing"), cls: "bg-[#ecefe6] text-body" }
     : diff === 0
-      ? { label: "Balanced", cls: "bg-ledger-tint text-ledger" }
-      : { label: `Off by ${fmt(Math.abs(diff))}`, cls: "bg-red-tint text-red-pen" };
+      ? { label: t("balanced"), cls: "bg-ledger-tint text-ledger" }
+      : { label: t("offBy", { amount: fmt(Math.abs(diff)) }), cls: "bg-red-tint text-red-pen" };
 
   const toggle = (i: number) =>
     setPosted((p) => p.map((v, idx) => (idx === i ? !v : v)));
@@ -42,18 +45,18 @@ export default function LedgerDemo() {
     <div className="relative">
       {allPosted && diff === 0 && (
         <div className="absolute top-[-22px] right-2 z-10 -rotate-[8deg] rounded-[10px] border-[3px] border-ledger bg-white px-3.5 py-1 font-display text-[22px] font-bold tracking-wide text-ledger">
-          BALANCED
+          {t("balancedStamp")}
         </div>
       )}
       <div className="card flex flex-col gap-4 p-6">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <div className="text-xs font-bold tracking-[0.6px] text-ink">TRY IT: GENERAL LEDGER</div>
+          <div className="text-xs font-bold tracking-[0.6px] text-ink">{t("title")}</div>
           <div className={`rounded-md px-3 py-1.5 text-[12.5px] font-bold ${status.cls}`}>
             {status.label}
           </div>
         </div>
         <p className="text-sm leading-normal">
-          Click an entry to post it. Everything has to balance. Obsessively.
+          {t("intro")}
         </p>
 
         <div className="flex flex-col gap-2.5">
@@ -92,22 +95,22 @@ export default function LedgerDemo() {
         </div>
 
         <div className="flex flex-wrap gap-x-6 gap-y-2 border-t border-[#dde3dc] pt-3.5 font-mono text-sm font-semibold text-ink tabular-nums">
-          <span>Debits {fmt(debit)}</span>
-          <span>Credits {fmt(credit)}</span>
-          <span>Difference {fmt(Math.abs(diff))}</span>
+          <span>{t("debits", { amount: fmt(debit) })}</span>
+          <span>{t("credits", { amount: fmt(credit) })}</span>
+          <span>{t("difference", { amount: fmt(Math.abs(diff)) })}</span>
         </div>
 
         {canFix && (
           <div className="flex flex-wrap items-center gap-3 rounded-[10px] bg-red-tint p-3.5">
             <p className="min-w-[200px] flex-1 text-sm font-semibold leading-normal text-red-pen">
-              Credits are {fmt(Math.abs(diff))} short. Something was posted to one side only.
+              {t("short", { amount: fmt(Math.abs(diff)) })}
             </p>
             <button
               type="button"
               onClick={() => setFixed(true)}
               className="min-h-11 rounded-[10px] border-2 border-ink bg-marker px-4 py-3 text-sm font-bold text-ink hover:bg-marker-dark"
             >
-              Find the missing amount
+              {t("fix")}
             </button>
           </div>
         )}
@@ -121,7 +124,7 @@ export default function LedgerDemo() {
             }}
             className="min-h-11 text-xs font-bold text-ledger underline-offset-2 hover:underline"
           >
-            Reset the ledger
+            {t("reset")}
           </button>
         </div>
       </div>

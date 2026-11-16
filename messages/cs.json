@@ -1,0 +1,161 @@
+{
+  "Metadata": {
+    "title": "Manić Accounting: Posedlý vašimi čísly. Klid ve vašem účetnictví.",
+    "description": "Vedení účetnictví, měsíční uzávěrky, rozpočty, 13týdenní cash flow a příprava DPH pro malé firmy a OSVČ.",
+    "keywords": "účetnictví pro malé firmy|účetní pro OSVČ|vedení účetnictví|měsíční uzávěrka|13týdenní cash flow|rozpočty a výhledy|příprava DPH|manažerský reporting",
+    "contactTitle": "Kontakt",
+    "contactDescription": "Řekněte mi, co vám nedá spát. Odpovím do dvou pracovních dnů."
+  },
+  "Navigation": {
+    "services": "Co dělám",
+    "tool": "Vyzkoušet nástroj",
+    "process": "Jak spolupracujeme",
+    "about": "O mně",
+    "bookCall": "Domluvit hovor",
+    "home": "Domovská stránka {name}",
+    "language": "Vybrat jazyk",
+    "primary": "Hlavní navigace",
+    "skip": "Přeskočit na hlavní obsah"
+  },
+  "Languages": {
+    "en": "English",
+    "cs": "Čeština",
+    "sr": "Srpski"
+  },
+  "Home": {
+    "overline": "ÚČETNICTVÍ PRO MALÉ FIRMY A OSVČ",
+    "headlineOne": "Posedlý vašimi čísly.",
+    "headlineTwo": "Klid ve vašem účetnictví.",
+    "intro": "Dobrý den, jsem Manić. Deset let jsem pracoval ve finančních týmech velkých nadnárodních společností. Teď pomáhám několika menším firmám, které chtějí čisté účetnictví, včas podané daně a cash flow bez nepříjemných překvapení.",
+    "bookCall": "Domluvit bezplatný úvodní hovor",
+    "tryTool": "Vyzkoušet cash-flow nástroj",
+    "trustOne": "Deset let ve financích a controllingu",
+    "trustTwo": "DPH a daňová podání v Česku, Bulharsku a Rumunsku",
+    "trustThree": "Měsíční uzávěrky pro společnosti v EU, USA a Kanadě",
+    "toolOverline": "POHRAJTE SI S ČÍSLY",
+    "toolTitle": "Budete mít v 8. týdnu dost peněz?",
+    "toolIntro": "Zjednodušená verze 13týdenního výhledu cash flow, který připravuji klientům. Posouvejte hodnoty a sledujte, kdy zůstatek na účtu klesne pod nulu. Částky jsou ve vaší vlastní měně."
+  },
+  "Services": {
+    "overline": "CO DĚLÁM",
+    "title": "Nudné věci, udělané pořádně.",
+    "intro": "Měsíční uzávěrky, daňové termíny, odsouhlasení a výhledy. Věci, které nikdy nepůsobí naléhavě — dokud najednou nejsou."
+  },
+  "Process": {
+    "overline": "JAK SPOLUPRACUJEME",
+    "title": "Bez žargonu. Bez překvapení. Trochu posedle.",
+    "stepOneTitle": "Úvodní hovor",
+    "stepOneText": "Třicet minut zdarma. Řeknete mi, co vás trápí. Já vám upřímně řeknu, jestli dokážu pomoci.",
+    "stepTwoTitle": "Kontrola zdraví účetnictví",
+    "stepTwoText": "Projdu, co máte, a srozumitelně vysvětlím, co nesedí a jak každý bod napravit.",
+    "stepThreeTitle": "Nastavení rytmu",
+    "stepThreeText": "Měsíční uzávěrka, kalendář reportingu a pevné daňové termíny. Vždy víte, co se kdy děje.",
+    "stepFourTitle": "Klidná jistota",
+    "stepFourText": "Čísla přicházejí včas a dávají smysl. Já zůstanu trochu posedlý, abyste vy nemuseli."
+  },
+  "About": {
+    "overline": "O MNĚ",
+    "title": "Ano, Manić je opravdu moje příjmení.",
+    "paragraphOne": "Ten vtip udělá každý, tak jsem z něj udělal značku. Za slovní hříčkou je deset let ve financích a controllingu: od hlavní knihy a odsouhlasení až po vedení finančního týmu a řízení nákladů napříč globálními funkcemi nadnárodní společnosti.",
+    "paragraphTwo": "Uzavíral jsem účetnictví společností v Evropě, USA a Kanadě, stavěl automatizace pro účetní týmy a podával DPH ve třech zemích. Přes den pracuji jako finanční controller. Teď stejnou důslednost přináším několika menším firmám, které si ji také zaslouží.",
+    "button": "Pojďme probrat čísla",
+    "photoAlt": "Vukman Manić u pracovního stolu",
+    "shortVersion": "STRUČNĚ",
+    "factFinance": "Ve financích",
+    "factFinanceValue": "10 let",
+    "factTeams": "Vedl finanční týmy v",
+    "factTeamsValue": "Česku a USA",
+    "factVat": "Podání DPH",
+    "factVatValue": "CZ · BG · RO",
+    "factAutomation": "Automatizace",
+    "factAutomationValue": "RPA/RDA v účetnictví",
+    "factWorking": "Spolupráce",
+    "factWorkingValue": "Především na dálku"
+  },
+  "ContactCta": {
+    "title": "Řekněte mi, co vám nedá spát.",
+    "text": "Pozdní faktury, nepodané DPH nebo tabulka, kterou se nikdo neodváží otevřít. Vyberte téma, napište pár řádků a odpovím do dvou pracovních dnů.",
+    "button": "Napsat mi",
+    "email": "nebo napište na {email}"
+  },
+  "ContactPage": {
+    "overline": "KONTAKT",
+    "title": "Řekněte mi, co vám nedá spát.",
+    "intro": "Vyberte, s čím potřebujete pomoci, napište pár řádků a odešlete. Odpovím do dvou pracovních dnů. Úvodní hovor je zdarma.",
+    "direct": "CHCETE NAPSAT PŘÍMO?",
+    "helpful": "POMŮŽE ZMÍNIT",
+    "tipOne": "Jaký typ podnikání provozujete",
+    "tipTwo": "Přibližný počet faktur za měsíc",
+    "tipThree": "Jakýkoli termín, který se už blíží"
+  },
+  "ContactForm": {
+    "name": "Vaše jméno",
+    "email": "Váš e-mail",
+    "service": "S čím potřebujete pomoci?",
+    "message": "Pár řádků o vaší situaci",
+    "website": "Web",
+    "send": "Odeslat zprávu",
+    "sending": "Odesílám…",
+    "promise": "Odpovím do dvou pracovních dnů. Úvodní hovor je zdarma.",
+    "successTitle": "Přijato. Má dáti dal.",
+    "directLink": "Napište mi přímo e-mailem",
+    "directSuffix": "a zpráva bude předvyplněná.",
+    "mailtoSubject": "Poptávka: {service}",
+    "mailtoBody": "Dobrý den,\n\npotřebuji pomoci s: {service}\n\n{message}\n\n{name}\n{email}",
+    "status": {
+      "success": "Děkuji za zprávu. Odpovím do dvou pracovních dnů.",
+      "invalid": "Zkontrolujte prosím jméno, e-mailovou adresu a zprávu a zkuste to znovu.",
+      "rateLimited": "Z tohoto připojení bylo odesláno příliš mnoho zpráv. Zkuste to znovu za {minutes, plural, one {# minutu} few {# minuty} other {# minut}}.",
+      "notConfigured": "Online odesílání zatím není nastaveno. Použijte prosím přímý e-mailový odkaz níže.",
+      "sendFailed": "Zprávu se nyní nepodařilo odeslat. Použijte prosím přímý e-mailový odkaz níže."
+    }
+  },
+  "CashFlow": {
+    "opening": "Peníze na účtu dnes",
+    "cashIn": "Týdenní příjmy (platby zákazníků)",
+    "cashOut": "Týdenní výdaje (mzdy, dodavatelé, nájem)",
+    "oneOff": "Jednorázová platba v 8. týdnu (DPH, daň, vybavení)",
+    "chartTitle": "ZŮSTATEK NA ÚČTU PO TÝDNECH",
+    "chartLabel": "Sloupcový graf předpokládaného zůstatku na účtu za 13 týdnů. {verdict}",
+    "legend": "Týden · přerušovaná čára = nula · zeleně nad nulou, červeně pod nulou",
+    "negative": "Peníze klesnou pod nulu v {week}. týdnu (nejnižší bod: {amount}). To je téma pro 1. týden, ne překvapení v {week}. týdnu.",
+    "positive": "Peníze zůstanou v plusu po celých 13 týdnů. Nejnižší bod: {amount} v {week}. týdnu."
+  },
+  "Ledger": {
+    "title": "VYZKOUŠEJTE: HLAVNÍ KNIHA",
+    "intro": "Kliknutím zaúčtujte položku. Všechno musí sedět. Posedle.",
+    "nothing": "Zatím nic nezaúčtováno",
+    "balanced": "Vyrovnáno",
+    "balancedStamp": "SEDÍ",
+    "offBy": "Rozdíl {amount}",
+    "invoiceTitle": "Faktura klientovi č. 1042",
+    "invoiceMeta": "MD Pohledávky · D Výnosy",
+    "rentTitle": "Nájem, listopad",
+    "rentMeta": "MD Náklady na nájem · D Banka",
+    "laptopTitle": "Nový notebook",
+    "laptopMeta": "MD Vybavení · D Banka",
+    "laptopFixedMeta": "MD Vybavení · D Banka 2 000 + Závazky 500",
+    "debits": "Má dáti {amount}",
+    "credits": "Dal {amount}",
+    "difference": "Rozdíl {amount}",
+    "short": "Na straně Dal chybí {amount}. Něco bylo zaúčtováno jen na jednu stranu.",
+    "fix": "Najít chybějící částku",
+    "reset": "Vynulovat hlavní knihu"
+  },
+  "Email": {
+    "subject": "Poptávka: {service} ({name})",
+    "name": "Jméno",
+    "email": "E-mail",
+    "service": "Služba"
+  },
+  "Errors": {
+    "notFoundOverline": "404 · CHYBĚJÍCÍ POLOŽKA",
+    "notFoundTitle": "Tato stránka není v hlavní knize.",
+    "notFoundText": "Odkaz může být starý nebo se stránka přesunula. Účetnictví stále sedí.",
+    "home": "Zpět na domovskou stránku",
+    "errorOverline": "NĚCO NESEDÍ",
+    "errorTitle": "Na stránce došlo k neočekávané chybě.",
+    "errorText": "Žádné účetní drama. Zkuste stránku znovu.",
+    "retry": "Zkusit znovu"
+  }
+}

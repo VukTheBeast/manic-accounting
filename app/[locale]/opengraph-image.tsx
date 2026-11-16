@@ -1,11 +1,41 @@
 import { ImageResponse } from "next/og";
+import { hasLocale } from "next-intl";
+import { routing } from "@/i18n/routing";
 import { site } from "@/lib/site";
 
-export const alt = `${site.name}: ${site.tagline}`;
+export const alt = site.name;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function OpenGraphImage() {
+const content = {
+  en: {
+    lineOne: "Manic about your numbers.",
+    lineTwo: "Calm about your books.",
+    services: "Bookkeeping · month-end close · cash flow · VAT preparation",
+  },
+  cs: {
+    lineOne: "Posedlý vašimi čísly.",
+    lineTwo: "Klid ve vašem účetnictví.",
+    services: "Účetnictví · měsíční uzávěrky · cash flow · příprava DPH",
+  },
+  sr: {
+    lineOne: "Opsednut vašim brojkama.",
+    lineTwo: "Miran zbog vaših knjiga.",
+    services: "Knjigovodstvo · mesečno zatvaranje · tok gotovine · priprema PDV-a",
+  },
+} as const;
+
+export default async function OpenGraphImage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale: localeParam } = await params;
+  const locale = hasLocale(routing.locales, localeParam)
+    ? localeParam
+    : routing.defaultLocale;
+  const text = content[locale];
+
   return new ImageResponse(
     (
       <div
@@ -41,7 +71,7 @@ export default function OpenGraphImage() {
             {site.name.toUpperCase()}
           </div>
           <div style={{ display: "flex", flexDirection: "column", fontSize: 68, fontWeight: 700, lineHeight: 1.05 }}>
-            <span>Manic about your numbers.</span>
+            <span>{text.lineOne}</span>
             <span
               style={{
                 backgroundColor: "#ffe14d",
@@ -52,11 +82,11 @@ export default function OpenGraphImage() {
                 alignSelf: "flex-start",
               }}
             >
-              Calm about your books.
+              {text.lineTwo}
             </span>
           </div>
           <div style={{ display: "flex", fontSize: 28 }}>
-            Bookkeeping · month-end close · cash flow · VAT preparation
+            {text.services}
           </div>
         </div>
       </div>

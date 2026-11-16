@@ -1,17 +1,16 @@
 "use client";
 
+import { useFormatter, useTranslations } from "next-intl";
 import { useState } from "react";
-
-const fmt = (n: number) => Math.round(n).toLocaleString("en-US");
 
 type Key = "opening" | "cin" | "cout" | "oneoff";
 
-const SLIDERS: { key: Key; id: string; label: string; max: number }[] = [
-  { key: "opening", id: "sl-open", label: "Cash in the bank today", max: 60000 },
-  { key: "cin", id: "sl-in", label: "Cash in per week (customer payments)", max: 30000 },
-  { key: "cout", id: "sl-out", label: "Cash out per week (salaries, suppliers, rent)", max: 30000 },
-  { key: "oneoff", id: "sl-one", label: "One-off payment in week 8 (VAT, tax, equipment)", max: 50000 },
-];
+const SLIDERS = [
+  { key: "opening", id: "sl-open", label: "opening", max: 60000 },
+  { key: "cin", id: "sl-in", label: "cashIn", max: 30000 },
+  { key: "cout", id: "sl-out", label: "cashOut", max: 30000 },
+  { key: "oneoff", id: "sl-one", label: "oneOff", max: 50000 },
+] as const satisfies readonly { key: Key; id: string; label: string; max: number }[];
 
 const WEEKS = 13;
 const CHART_H = 240;
@@ -19,6 +18,10 @@ const PAD = 12;
 
 /** Mini 13-week cash flow forecast. */
 export default function CashFlowTool() {
+  const t = useTranslations("CashFlow");
+  const format = useFormatter();
+  const fmt = (number: number) =>
+    format.number(Math.round(number), { maximumFractionDigits: 0 });
   const [v, setV] = useState<Record<Key, number>>({
     opening: 20000,
     cin: 10000,
@@ -46,8 +49,8 @@ export default function CashFlowTool() {
 
   const negative = firstNeg > 0;
   const verdict = negative
-    ? `Cash goes negative in week ${firstNeg} (lowest point: ${fmt(lowest)}). That is a conversation for week 1, not a surprise in week ${firstNeg}.`
-    : `Cash stays positive for all 13 weeks. Lowest point: ${fmt(lowest)} in week ${lowWeek}.`;
+    ? t("negative", { week: firstNeg, amount: fmt(lowest) })
+    : t("positive", { week: lowWeek, amount: fmt(lowest) });
 
   return (
     <div className="card flex flex-wrap gap-x-10 gap-y-8 p-[clamp(20px,4vw,32px)]">
@@ -56,7 +59,7 @@ export default function CashFlowTool() {
           <div key={s.key} className="flex flex-col gap-1.5">
             <div className="flex items-baseline justify-between gap-3">
               <label htmlFor={s.id} className="text-[12.5px] font-bold text-ink">
-                {s.label}
+                {t(s.label)}
               </label>
               <span className="font-mono text-[17px] font-semibold text-ink tabular-nums">
                 {fmt(v[s.key])}
@@ -77,10 +80,10 @@ export default function CashFlowTool() {
       </div>
 
       <div className="flex min-w-0 flex-[2_1_480px] flex-col gap-4">
-        <div className="text-xs font-bold tracking-[0.6px] text-ink">BANK BALANCE, WEEK BY WEEK</div>
+        <div className="text-xs font-bold tracking-[0.6px] text-ink">{t("chartTitle")}</div>
         <div
           role="img"
-          aria-label={`Bar chart of the projected bank balance over 13 weeks. ${verdict}`}
+          aria-label={t("chartLabel", { verdict })}
           className="relative overflow-hidden rounded-[10px] bg-paper"
           style={{ height: CHART_H }}
         >
@@ -112,7 +115,7 @@ export default function CashFlowTool() {
           ))}
         </div>
         <p className="text-xs font-semibold">
-          Week · dashed line = zero cash · green above, red below
+          {t("legend")}
         </p>
         <div
           className={`rounded-[10px] p-4 text-[15px] leading-normal font-bold ${

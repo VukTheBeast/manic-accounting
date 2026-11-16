@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: site.name,
     short_name: "Manić",
     description: site.description,
-    start_url: "/",
+    start_url: "/en",
     display: "standalone",
     background_color: "#fbfbf6",
     theme_color: "#0b6b4f",

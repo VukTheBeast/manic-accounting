@@ -1,0 +1,161 @@
+{
+  "Metadata": {
+    "title": "Manić Accounting: Manic about your numbers. Calm about your books.",
+    "description": "Bookkeeping, month-end close, budgets, 13-week cash flow and VAT preparation for small businesses and freelancers.",
+    "keywords": "accounting for small businesses|freelance accountant|bookkeeping services|month-end close|13-week cash flow forecast|budgeting and forecasting|VAT preparation|management reporting",
+    "contactTitle": "Contact",
+    "contactDescription": "Tell me what keeps you up at night. Replies within two working days."
+  },
+  "Navigation": {
+    "services": "What I do",
+    "tool": "Try the tool",
+    "process": "How we work",
+    "about": "About",
+    "bookCall": "Book a call",
+    "home": "{name} home",
+    "language": "Choose language",
+    "primary": "Primary navigation",
+    "skip": "Skip to main content"
+  },
+  "Languages": {
+    "en": "English",
+    "cs": "Čeština",
+    "sr": "Srpski"
+  },
+  "Home": {
+    "overline": "ACCOUNTING FOR SMALL BUSINESSES & FREELANCERS",
+    "headlineOne": "Manic about your numbers.",
+    "headlineTwo": "Calm about your books.",
+    "intro": "Hi, I’m Manić. I’ve spent a decade inside the finance teams of big multinationals. Now I take on a handful of smaller businesses who want clean books, filed taxes and a cash flow they can see coming.",
+    "bookCall": "Book a free intro call",
+    "tryTool": "Try the cash-flow tool",
+    "trustOne": "A decade in finance and controlling",
+    "trustTwo": "VAT and tax filing across Czechia, Bulgaria and Romania",
+    "trustThree": "Month-end close for EU, US and Canadian entities",
+    "toolOverline": "PLAY WITH THE NUMBERS",
+    "toolTitle": "Will you have cash in week 8?",
+    "toolIntro": "A tiny version of the 13-week cash flow forecast I build for clients. Move the sliders, and watch when the bank balance dips below zero. Amounts are in your own currency."
+  },
+  "Services": {
+    "overline": "WHAT I DO",
+    "title": "The boring stuff, done properly.",
+    "intro": "Month-end, tax deadlines, reconciliations, forecasts. The things that never feel urgent until they very much are."
+  },
+  "Process": {
+    "overline": "HOW WE WORK",
+    "title": "No jargon. No surprises. Slightly obsessive.",
+    "stepOneTitle": "Intro call",
+    "stepOneText": "Thirty minutes, free. You tell me what hurts. I tell you honestly whether I can help.",
+    "stepTwoTitle": "Books health-check",
+    "stepTwoText": "I go through what you have and tell you what is off, in plain language, with a fix for each point.",
+    "stepThreeTitle": "Set the rhythm",
+    "stepThreeText": "A monthly close, a reporting calendar and tax deadlines locked in. You always know what happens when.",
+    "stepFourTitle": "Quiet confidence",
+    "stepFourText": "Numbers arrive on time and make sense. I carry on being a little bit manic so you do not have to be."
+  },
+  "About": {
+    "overline": "ABOUT",
+    "title": "Yes, Manić is my real surname.",
+    "paragraphOne": "Everybody makes the joke, so I made it the brand. Behind the pun is a decade in finance and controlling: from general ledger and reconciliations to leading a finance team and steering costs across global functions of a multinational.",
+    "paragraphTwo": "I have closed the books for entities in Europe, the US and Canada, built process automation for accounting teams, and filed VAT in three countries. By day I am a finance controller. Now I am bringing the same obsessiveness to a few smaller businesses who deserve it too.",
+    "button": "Let’s talk numbers",
+    "photoAlt": "Vukman Manić at his desk",
+    "shortVersion": "THE SHORT VERSION",
+    "factFinance": "In finance",
+    "factFinanceValue": "10 years",
+    "factTeams": "Led finance teams in",
+    "factTeamsValue": "Czechia and the US",
+    "factVat": "VAT filing",
+    "factVatValue": "CZ · BG · RO",
+    "factAutomation": "Automation",
+    "factAutomationValue": "RPA/RDA in accounting",
+    "factWorking": "Working",
+    "factWorkingValue": "Remote-first"
+  },
+  "ContactCta": {
+    "title": "Tell me what keeps you up at night.",
+    "text": "Late invoices, an unfiled VAT return, a spreadsheet nobody dares open. Pick a topic, write a few lines and I will reply within two working days.",
+    "button": "Write to me",
+    "email": "or email {email}"
+  },
+  "ContactPage": {
+    "overline": "CONTACT",
+    "title": "Tell me what keeps you up at night.",
+    "intro": "Choose what you need help with, write a few lines, and send. I reply within two working days. The intro call is free.",
+    "direct": "PREFER TO WRITE DIRECTLY?",
+    "helpful": "HELPFUL TO MENTION",
+    "tipOne": "What kind of business you run",
+    "tipTwo": "Roughly how many invoices a month",
+    "tipThree": "Any deadline that is already looming"
+  },
+  "ContactForm": {
+    "name": "Your name",
+    "email": "Your email",
+    "service": "What do you need help with?",
+    "message": "A few lines about your situation",
+    "website": "Website",
+    "send": "Send message",
+    "sending": "Sending…",
+    "promise": "I reply within two working days. The intro call is free.",
+    "successTitle": "Received. Debit equals credit.",
+    "directLink": "Email me directly instead",
+    "directSuffix": "and the message will be pre-filled.",
+    "mailtoSubject": "Enquiry: {service}",
+    "mailtoBody": "Hi,\n\nI need help with: {service}\n\n{message}\n\n{name}\n{email}",
+    "status": {
+      "success": "Thanks for writing. I will reply within two working days.",
+      "invalid": "Please check your name, email address and message, then try again.",
+      "rateLimited": "Too many messages were sent from this connection. Please try again in {minutes, plural, one {# minute} other {# minutes}}.",
+      "notConfigured": "Online sending is not configured yet. Please use the direct email link below.",
+      "sendFailed": "The message could not be sent right now. Please use the direct email link below."
+    }
+  },
+  "CashFlow": {
+    "opening": "Cash in the bank today",
+    "cashIn": "Cash in per week (customer payments)",
+    "cashOut": "Cash out per week (salaries, suppliers, rent)",
+    "oneOff": "One-off payment in week 8 (VAT, tax, equipment)",
+    "chartTitle": "BANK BALANCE, WEEK BY WEEK",
+    "chartLabel": "Bar chart of the projected bank balance over 13 weeks. {verdict}",
+    "legend": "Week · dashed line = zero cash · green above, red below",
+    "negative": "Cash goes negative in week {week} (lowest point: {amount}). That is a conversation for week 1, not a surprise in week {week}.",
+    "positive": "Cash stays positive for all 13 weeks. Lowest point: {amount} in week {week}."
+  },
+  "Ledger": {
+    "title": "TRY IT: GENERAL LEDGER",
+    "intro": "Click an entry to post it. Everything has to balance. Obsessively.",
+    "nothing": "Nothing posted yet",
+    "balanced": "Balanced",
+    "balancedStamp": "BALANCED",
+    "offBy": "Off by {amount}",
+    "invoiceTitle": "Client invoice #1042",
+    "invoiceMeta": "Dr Receivables · Cr Revenue",
+    "rentTitle": "Rent, November",
+    "rentMeta": "Dr Rent expense · Cr Bank",
+    "laptopTitle": "New laptop",
+    "laptopMeta": "Dr Equipment · Cr Bank",
+    "laptopFixedMeta": "Dr Equipment · Cr Bank 2,000 + Payables 500",
+    "debits": "Debits {amount}",
+    "credits": "Credits {amount}",
+    "difference": "Difference {amount}",
+    "short": "Credits are {amount} short. Something was posted to one side only.",
+    "fix": "Find the missing amount",
+    "reset": "Reset the ledger"
+  },
+  "Email": {
+    "subject": "Enquiry: {service} ({name})",
+    "name": "Name",
+    "email": "Email",
+    "service": "Service"
+  },
+  "Errors": {
+    "notFoundOverline": "404 · MISSING ENTRY",
+    "notFoundTitle": "This page is not in the ledger.",
+    "notFoundText": "The link may be old, or the page may have moved. The books still balance.",
+    "home": "Back to the home page",
+    "errorOverline": "SOMETHING DID NOT BALANCE",
+    "errorTitle": "That page hit an unexpected error.",
+    "errorText": "No accounting drama required. Try the page again.",
+    "retry": "Try again"
+  }
+}
