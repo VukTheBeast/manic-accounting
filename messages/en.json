@@ -15,7 +15,9 @@
     "home": "{name} home",
     "language": "Choose language",
     "primary": "Primary navigation",
-    "skip": "Skip to main content"
+    "skip": "Skip to main content",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
   },
   "Languages": {
     "en": "English",

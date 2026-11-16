@@ -20,6 +20,7 @@ export default function Header() {
   const t = useTranslations("Navigation");
   const pathname = usePathname();
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     if (pathname !== "/") {
@@ -54,7 +55,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b-2 border-ink bg-paper">
-      <div className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-x-5 gap-y-2 px-5 py-3 sm:px-8">
+      <div className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-x-3 gap-y-3 px-4 py-3 sm:px-8">
         <Link href="/" className="flex min-h-11 items-center gap-3" aria-label={t("home", { name: siteName })}>
           <LogoMark />
           <span className="hidden sm:block">
@@ -64,7 +65,7 @@ export default function Header() {
 
         <nav
           aria-label={t("primary")}
-          className="order-3 flex w-full items-center gap-2 overflow-x-auto pb-1 lg:order-none lg:ml-auto lg:w-auto lg:overflow-visible lg:pb-0"
+          className="ml-auto hidden items-center gap-1 xl:flex"
         >
           {links.map((link) => {
             const active = pathname === "/" && activeSection === link.section;
@@ -84,24 +85,13 @@ export default function Header() {
               </Link>
             );
           })}
-          <Link
-            href="/contact"
-            aria-current={pathname === "/contact" ? "page" : undefined}
-            className={`inline-flex min-h-11 shrink-0 items-center rounded-md px-3 text-sm font-bold transition-colors sm:hidden ${
-              pathname === "/contact"
-                ? "bg-ledger-tint text-ledger"
-                : "text-ink hover:bg-ledger-tint hover:text-ledger"
-            }`}
-          >
-            {t("bookCall")}
-          </Link>
         </nav>
 
-        <div className="ml-auto flex items-center gap-3 lg:ml-0">
+        <div className="ml-auto flex items-center gap-2 xl:ml-2">
           <Link
             href="/contact"
             aria-current={pathname === "/contact" ? "page" : undefined}
-            className={`hidden rounded-[10px] border-2 border-ink px-5 py-3 text-[15px] font-bold shadow-hard-sm transition-colors sm:inline-flex ${
+            className={`hidden rounded-[10px] border-2 border-ink px-5 py-3 text-[15px] font-bold shadow-hard-sm transition-colors xl:inline-flex ${
               pathname === "/contact"
                 ? "bg-ledger text-white"
                 : "bg-marker text-ink hover:bg-marker-dark"
@@ -110,7 +100,81 @@ export default function Header() {
             {t("bookCall")}
           </Link>
           <LanguageSwitcher />
+          <button
+            type="button"
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-navigation"
+            aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
+            onClick={() => setMobileOpen((open) => !open)}
+            className="flex size-11 items-center justify-center rounded-[10px] border-2 border-ink bg-white text-ink transition-colors hover:bg-ledger-tint xl:hidden"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.9"
+              strokeLinecap="round"
+              aria-hidden="true"
+            >
+              {mobileOpen ? (
+                <>
+                  <path d="M5 5l14 14" />
+                  <path d="M19 5L5 19" />
+                </>
+              ) : (
+                <>
+                  <path d="M4 6h16" />
+                  <path d="M4 12h16" />
+                  <path d="M4 18h16" />
+                </>
+              )}
+            </svg>
+          </button>
         </div>
+
+        {mobileOpen && (
+          <nav
+            id="mobile-navigation"
+            aria-label={t("primary")}
+            className="mobile-menu grid w-full grid-cols-2 gap-2 border-t-2 border-ink pt-3 xl:hidden"
+          >
+            {links.map((link) => {
+              const active = pathname === "/" && activeSection === link.section;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  aria-current={active ? "location" : undefined}
+                  onClick={() => {
+                    setActiveSection(link.section);
+                    setMobileOpen(false);
+                  }}
+                  className={`flex min-h-12 items-center justify-center rounded-[10px] px-3 text-center text-sm font-bold transition-colors ${
+                    active
+                      ? "bg-ledger text-white"
+                      : "border-2 border-ink bg-white text-ink hover:bg-ledger-tint"
+                  }`}
+                >
+                  {t(link.label)}
+                </Link>
+              );
+            })}
+            <Link
+              href="/contact"
+              aria-current={pathname === "/contact" ? "page" : undefined}
+              onClick={() => setMobileOpen(false)}
+              className={`col-span-2 flex min-h-12 items-center justify-center rounded-[10px] border-2 border-ink px-4 text-center text-sm font-bold shadow-hard-sm ${
+                pathname === "/contact"
+                  ? "bg-ledger text-white"
+                  : "bg-marker text-ink hover:bg-marker-dark"
+              }`}
+            >
+              {t("bookCall")}
+            </Link>
+          </nav>
+        )}
       </div>
     </header>
   );

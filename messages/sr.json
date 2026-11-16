@@ -15,7 +15,9 @@
     "home": "Početna stranica {name}",
     "language": "Izaberite jezik",
     "primary": "Glavna navigacija",
-    "skip": "Pređite na glavni sadržaj"
+    "skip": "Pređite na glavni sadržaj",
+    "openMenu": "Otvori navigacioni meni",
+    "closeMenu": "Zatvori navigacioni meni"
   },
   "Languages": {
     "en": "English",

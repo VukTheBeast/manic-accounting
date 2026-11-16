@@ -15,7 +15,9 @@
     "home": "Domovská stránka {name}",
     "language": "Vybrat jazyk",
     "primary": "Hlavní navigace",
-    "skip": "Přeskočit na hlavní obsah"
+    "skip": "Přeskočit na hlavní obsah",
+    "openMenu": "Otevřít navigační nabídku",
+    "closeMenu": "Zavřít navigační nabídku"
   },
   "Languages": {
     "en": "English",

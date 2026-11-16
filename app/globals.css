@@ -26,16 +26,11 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 132px;
-  }
-
-  @media (min-width: 1024px) {
-    html {
-      scroll-padding-top: 84px;
-    }
+    scroll-padding-top: 84px;
   }
   body {
     @apply bg-paper font-sans text-body antialiased;
+    overflow-x: clip;
     background-image:
       linear-gradient(var(--color-grid) 1px, transparent 1px),
       linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
@@ -62,6 +57,17 @@
   }
 }
 
+@keyframes mobile-menu-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -70,11 +76,18 @@
   section[id]:target {
     animation: none;
   }
+
+  .mobile-menu {
+    animation: none;
+  }
 }
 
 @layer components {
   .skip-link {
     @apply fixed top-3 left-3 z-50 -translate-y-24 rounded-[10px] border-2 border-ink bg-marker px-4 py-3 font-bold text-ink shadow-hard-sm transition-transform focus:translate-y-0;
+  }
+  .mobile-menu {
+    animation: mobile-menu-arrive 180ms ease-out;
   }
   /* graph-paper background, like ledger paper */
   .ledger-paper {
