@@ -27,6 +27,8 @@ const value = (formData: FormData, key: string, maxLength: number) => {
 };
 
 const singleLine = (input: string) => input.replace(/[\r\n]+/g, " ");
+const redactEmails = (input: string) =>
+  input.replace(/[^\s@]+@[^\s@]+\.[^\s@]+/g, "[email]");
 
 export async function sendContactMessage(
   _previousState: ContactFormState,
@@ -109,8 +111,24 @@ export async function sendContactMessage(
     });
 
     if (!response.ok) {
+      const errorBody: unknown = await response.json().catch(() => null);
+      const resendError =
+        errorBody && typeof errorBody === "object"
+          ? {
+              name:
+                "name" in errorBody && typeof errorBody.name === "string"
+                  ? errorBody.name
+                  : undefined,
+              message:
+                "message" in errorBody && typeof errorBody.message === "string"
+                  ? redactEmails(errorBody.message)
+                  : undefined,
+            }
+          : {};
+
       console.error("Resend rejected a contact form request", {
         status: response.status,
+        ...resendError,
       });
       return {
         status: "error",
