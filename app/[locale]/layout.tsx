@@ -58,7 +58,10 @@ export async function generateMetadata({
     category: "finance",
     alternates: {
       canonical: `/${locale}`,
-      languages: languageAlternates,
+      languages: {
+        ...languageAlternates,
+        "x-default": "/en",
+      },
     },
     openGraph: {
       type: "website",

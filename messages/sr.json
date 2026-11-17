@@ -1,14 +1,14 @@
 {
   "Metadata": {
     "title": "Manic Accounting: Opsednut vašim brojkama. Miran zbog vaših knjiga.",
-    "description": "Knjigovodstvo, mesečno zatvaranje, budžeti, 13-nedeljni tok gotovine i priprema PDV-a za mala preduzeća i preduzetnike.",
-    "keywords": "računovodstvo za mala preduzeća|knjigovođa za preduzetnike|knjigovodstvene usluge|mesečno zatvaranje|13-nedeljni tok gotovine|budžeti i prognoze|priprema PDV-a|menadžersko izveštavanje",
+    "description": "Računovodstvene usluge i finansijski alati uvek besplatni za mala preduzeća i preduzetnike: knjigovodstvo, tok gotovine, cene i prognoze.",
+    "keywords": "računovodstvo za mala preduzeća|knjigovođa za preduzetnike|knjigovodstvene usluge|mesečno zatvaranje|13-nedeljni tok gotovine|budžeti i prognoze|priprema PDV-a|menadžersko izveštavanje|besplatni finansijski alati|kalkulator tačke pokrića",
     "contactTitle": "Kontakt",
     "contactDescription": "Recite mi šta vam ne da da spavate. Odgovaram u roku od dva radna dana."
   },
   "Navigation": {
     "services": "Šta radim",
-    "tools": "Besplatni alati",
+    "tools": "Uvek besplatni alati",
     "process": "Kako radimo",
     "about": "O meni",
     "bookCall": "Zakažite poziv",
@@ -30,7 +30,7 @@
     "headlineTwo": "Miran zbog vaših knjiga.",
     "intro": "Zdravo, ja sam Manic. Deset godina sam proveo u finansijskim timovima velikih međunarodnih kompanija. Sada pomažem manjem broju preduzeća koja žele uredne knjige, poreze predate na vreme i tok gotovine bez neprijatnih iznenađenja.",
     "bookCall": "Zakažite besplatan uvodni razgovor",
-    "tryTool": "Istražite besplatne alate",
+    "tryTool": "Istražite alate koji su uvek besplatni",
     "trustOne": "Deset godina u finansijama i kontrolingu",
     "trustTwo": "PDV i poreske prijave u Češkoj, Bugarskoj i Rumuniji",
     "trustThree": "Mesečno zatvaranje za firme u EU, SAD i Kanadi"
@@ -136,11 +136,11 @@
     "caption": "Nije magija. To je ponovljiv proces u kojem se svaki broj može pratiti do izvora."
   },
   "FreeToolsPreview": {
-    "overline": "BESPLATNI FINANSIJSKI ALATI",
+    "overline": "FINANSIJSKI ALATI UVEK BESPLATNI",
     "title": "Korisni odgovori pre još jedne tabele.",
-    "intro": "Isprobajte praktične alate za planiranje namenjene malim i srednjim firmama. Bez registracije, slanja podataka i finansijskog pozorišta.",
-    "browseAll": "Pogledajte sve besplatne alate",
-    "free": "BESPLATAN ALAT",
+    "intro": "Isprobajte praktične alate za planiranje za male i srednje firme. Uvek će biti besplatni, bez registracije, slanja podataka i finansijskog pozorišta.",
+    "browseAll": "Pogledajte sve alate koji su uvek besplatni",
+    "free": "UVEK BESPLATNO",
     "debtTitle": "Sposobnost otplate duga",
     "debtText": "Testirajte 13-nedeljni plan otplate, zaštitite minimalnu rezervu gotovine i vidite procenjeni bezbedni nedeljni maksimum.",
     "openDebt": "Testirajte sposobnost otplate",
@@ -157,14 +157,15 @@
     }
   },
   "ToolsPage": {
-    "metaTitle": "Besplatni finansijski alati za mala i srednja uslužna preduzeća",
-    "metaDescription": "Besplatni finansijski alati za mala i srednja preduzeća, uključujući kapacitet otplate, cene i tačku pokrića i prognozu tri izveštaja sa izvozom u Excel.",
-    "keywords": "besplatni finansijski alati|kalkulator tačke pokrića|kalkulator profitne marže|kalkulator sposobnosti otplate duga|finansijski model tri izveštaja|prognoza toka gotovine|finansijski alati za mala preduzeća",
-    "overline": "BESPLATNI FINANSIJSKI ALATI",
-    "title": "Korisni finansijski alati. Bez registracije. Bez arheologije po tabelama.",
-    "intro": "Za mala i srednja uslužna preduzeća kojima treba jasniji odgovor pre još jednog sastanka. Alati rade u pregledaču, podaci ostaju privatni, a koristan rezultat možete preuzeti.",
-    "available": "Dostupno sada",
-    "free": "BESPLATNO",
+    "metaTitle": "Finansijski kalkulatori i alati uvek besplatni",
+    "metaDescription": "Finansijski alati uvek besplatni za male firme: cene i tačka pokrića, sposobnost otplate duga i povezana prognoza tri izveštaja sa Excel izvozom.",
+    "keywords": "besplatni finansijski alati za mala preduzeća|besplatan kalkulator tačke pokrića|kalkulator profitne marže|kalkulator sposobnosti otplate duga|besplatan finansijski model tri izveštaja|prognoza toka gotovine|poslovni finansijski kalkulatori",
+    "overline": "FINANSIJSKI ALATI UVEK BESPLATNI",
+    "title": "Korisni finansijski alati. Uvek besplatni. Bez registracije.",
+    "intro": "Za mala i srednja uslužna preduzeća kojima treba jasniji odgovor pre sastanka. Svaki alat je i ostaće besplatan. Vaši podaci ostaju u pregledaču.",
+    "available": "Počnite od onoga što vlasnicima najčešće treba",
+    "free": "UVEK BESPLATNO",
+    "backToTools": "Nazad na sve alate koji su uvek besplatni",
     "debtTitle": "13-nedeljna sposobnost otplate duga",
     "debtText": "Proverite da li se planirane otplate uklapaju u gotovinu koju firma stvara i šta se dešava kada prodaja oslabi ili troškovi porastu.",
     "debtOne": "Procenjeni bezbedni nedeljni maksimum otplate",
@@ -176,7 +177,7 @@
     "forecastOne": "12 meseci, 24 meseca, 3 godine ili prilagođen period",
     "forecastTwo": "Ručne DSO i DPO pretpostavke za obrtni kapital",
     "forecastThree": "Interaktivni rezultati i radna sveska za Excel",
-    "openForecast": "Napravite besplatnu prognozu",
+    "openForecast": "Napravite prognozu koja je uvek besplatna",
     "breakEvenTitle": "Cene, marža i tačka pokrića",
     "breakEvenText": "Pogledajte kako se povezuju cena, varijabilni troškovi, fiksni troškovi i obim prodaje i koliko morate prodati pre nego što počne dobit.",
     "breakEvenOne": "Doprinos po prodaji i marža",
@@ -191,14 +192,14 @@
     }
   },
   "DebtCapacityPage": {
-    "metaTitle": "Besplatan kalkulator sposobnosti otplate duga za mala preduzeća",
-    "metaDescription": "Testirajte 13-nedeljni plan otplate duga, izračunajte bezbedni nedeljni maksimum, zaštitite minimalnu rezervu gotovine i simulirajte nižu prodaju ili više troškove.",
+    "metaTitle": "Kalkulator sposobnosti otplate duga uvek besplatan",
+    "metaDescription": "Koristite 13-nedeljni kalkulator uvek besplatno za procenu bezbedne nedeljne otplate, zaštitu rezerve gotovine i stres test prodaje i troškova.",
     "keywords": "kalkulator sposobnosti otplate duga|otplata poslovnog duga|13-nedeljni tok gotovine|kapacitet servisiranja duga|analiza duga i gotovine|planiranje duga male firme",
-    "overline": "BESPLATAN ALAT ZA KAPACITET OTPLATE",
+    "overline": "ALAT ZA KAPACITET OTPLATE UVEK BESPLATAN",
     "title": "Može li firma da otplaćuje dug, a da ne isprazni račun?",
     "intro": "Povežite planirane otplate sa nedeljnom operativnom gotovinom, jednokratnim obavezama i minimalnom sigurnosnom rezervom. Menjajte pretpostavke i pronađite slabu tačku pre nego što postane hitna.",
     "badge": {
-      "free": "Besplatno korišćenje",
+      "free": "Uvek besplatno",
       "private": "Podaci ostaju u pregledaču",
       "interactive": "Interaktivni scenariji",
       "thirteenWeeks": "13-nedeljni pregled"
@@ -211,14 +212,14 @@
     "disclaimer": "Ovo je ilustrativni alat za planiranje, a ne računovodstveni, investicioni ili kreditni savet. Stvarni kapacitet zavisi i od uslova kredita, kamate, poreza, sezonalnosti i rizika naplate."
   },
   "BreakEvenPage": {
-    "metaTitle": "Besplatan kalkulator cena, profitne marže i tačke pokrića",
-    "metaDescription": "Izračunajte doprinosnu maržu, obim za pokriće, obim za ciljnu dobit i minimalnu prodajnu cenu. Besplatno testirajte niže cene ili više varijabilne troškove.",
+    "metaTitle": "Kalkulator cena, marže i tačke pokrića uvek besplatan",
+    "metaDescription": "Koristite kalkulator uvek besplatno za doprinosnu maržu, tačku pokrića, ciljnu dobit i minimalnu cenu sa stres scenarijima.",
     "keywords": "kalkulator tačke pokrića|kalkulator profitne marže|kalkulator cena za mala preduzeća|doprinosna marža|kalkulator ciljne dobiti|kalkulator cena usluga|obim prodaje za pokriće",
-    "overline": "BESPLATAN ALAT ZA CENE I TAČKU POKRIĆA",
+    "overline": "ALAT ZA CENE I TAČKU POKRIĆA UVEK BESPLATAN",
     "title": "Koliko morate prodati pre nego što posao zaista počne da zarađuje?",
     "intro": "Povežite prodajnu cenu, varijabilne troškove, mesečne fiksne troškove i očekivani obim. Kalkulator pokazuje doprinosnu maržu, tačku pokrića, zahteve ciljne dobiti i minimalnu potrebnu cenu.",
     "badge": {
-      "free": "Besplatno korišćenje",
+      "free": "Uvek besplatno",
       "private": "Podaci ostaju u pregledaču",
       "interactive": "Interaktivni scenariji",
       "businessTypes": "Jedinice, sati ili projekti"
@@ -292,14 +293,14 @@
     "disclaimer": "Iznosi koriste vašu valutu. Rezultati su ilustrativni i potpuno zavise od unetih pretpostavki o troškovima i obimu."
   },
   "ThreeStatementPage": {
-    "metaTitle": "Besplatna prognoza tri finansijska izveštaja za uslužne firme",
-    "metaDescription": "Napravite besplatnu povezanu prognozu bilansa uspeha, bilansa stanja i indirektnog toka gotovine. Podesite DSO, DPO, rast, marže, ulaganja i dug, pa izvezite radnu svesku za Excel.",
+    "metaTitle": "Prognoza tri finansijska izveštaja uvek besplatna",
+    "metaDescription": "Napravite uvek besplatnu povezanu prognozu bilansa uspeha, bilansa stanja i indirektnog toka gotovine, pa je izvezite u Excel.",
     "keywords": "besplatan finansijski model tri izveštaja|alat za finansijsku prognozu|bilans uspeha bilans stanja tok gotovine|DSO DPO prognoza|finansijski model uslužne firme|Excel finansijska prognoza|model toka gotovine za mala preduzeća",
-    "overline": "BESPLATNA PROGNOZA TRI IZVEŠTAJA",
+    "overline": "PROGNOZA TRI IZVEŠTAJA UVEK BESPLATNA",
     "title": "Pogledajte kako se dobit pretvara u gotovinu — i gde zapinje.",
     "intro": "Unesite bilans uspeha uslužne firme, početni bilans stanja i pretpostavke koje pokreću gotovinu. Model povezuje sva tri izveštaja, odmah se ažurira i pravi radnu svesku koju možete otvoriti u Excelu.",
     "badge": {
-      "free": "Besplatno korišćenje",
+      "free": "Uvek besplatno",
       "private": "Podaci ostaju u pregledaču",
       "excel": "Izvoz za Excel",
       "serviceBusiness": "Za uslužne firme"

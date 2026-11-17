@@ -1,14 +1,14 @@
 {
   "Metadata": {
     "title": "Manic Accounting: Posedlý vašimi čísly. Klid ve vašem účetnictví.",
-    "description": "Vedení účetnictví, měsíční uzávěrky, rozpočty, 13týdenní cash flow a příprava DPH pro malé firmy a OSVČ.",
-    "keywords": "účetnictví pro malé firmy|účetní pro OSVČ|vedení účetnictví|měsíční uzávěrka|13týdenní cash flow|rozpočty a výhledy|příprava DPH|manažerský reporting",
+    "description": "Účetní služby a finanční nástroje vždy zdarma pro malé firmy a OSVČ: účetnictví, cash flow, ceny, bod zvratu a finanční výhledy.",
+    "keywords": "účetnictví pro malé firmy|účetní pro OSVČ|vedení účetnictví|měsíční uzávěrka|13týdenní cash flow|rozpočty a výhledy|příprava DPH|manažerský reporting|finanční nástroje zdarma|kalkulačka bodu zvratu",
     "contactTitle": "Kontakt",
     "contactDescription": "Řekněte mi, co vám nedá spát. Odpovím do dvou pracovních dnů."
   },
   "Navigation": {
     "services": "Co dělám",
-    "tools": "Nástroje zdarma",
+    "tools": "Nástroje vždy zdarma",
     "process": "Jak spolupracujeme",
     "about": "O mně",
     "bookCall": "Domluvit hovor",
@@ -30,7 +30,7 @@
     "headlineTwo": "Klid ve vašem účetnictví.",
     "intro": "Dobrý den, jsem Manic. Deset let jsem pracoval ve finančních týmech velkých nadnárodních společností. Teď pomáhám několika menším firmám, které chtějí čisté účetnictví, včas podané daně a cash flow bez nepříjemných překvapení.",
     "bookCall": "Domluvit bezplatný úvodní hovor",
-    "tryTool": "Prozkoumat nástroje zdarma",
+    "tryTool": "Prozkoumat nástroje vždy zdarma",
     "trustOne": "Deset let ve financích a controllingu",
     "trustTwo": "DPH a daňová podání v Česku, Bulharsku a Rumunsku",
     "trustThree": "Měsíční uzávěrky pro společnosti v EU, USA a Kanadě"
@@ -136,11 +136,11 @@
     "caption": "Žádná magie. Opakovatelný proces, ve kterém lze každé číslo dohledat až ke zdroji."
   },
   "FreeToolsPreview": {
-    "overline": "FINANČNÍ NÁSTROJE ZDARMA",
+    "overline": "FINANČNÍ NÁSTROJE VŽDY ZDARMA",
     "title": "Užitečné odpovědi bez další tabulky.",
-    "intro": "Vyzkoušejte praktické plánovací nástroje pro malé a střední firmy. Bez registrace, nahrávání dat a finančního divadla.",
-    "browseAll": "Prohlédnout všechny nástroje",
-    "free": "NÁSTROJ ZDARMA",
+    "intro": "Vyzkoušejte praktické plánovací nástroje pro malé a střední firmy. Budou vždy zdarma, bez registrace, nahrávání dat a finančního divadla.",
+    "browseAll": "Prohlédnout všechny nástroje vždy zdarma",
+    "free": "VŽDY ZDARMA",
     "debtTitle": "Schopnost splácet dluh",
     "debtText": "Otestujte 13týdenní plán splácení, chraňte minimální hotovostní rezervu a zjistěte odhad bezpečného týdenního stropu.",
     "openDebt": "Otestovat schopnost splácet",
@@ -157,14 +157,15 @@
     }
   },
   "ToolsPage": {
-    "metaTitle": "Finanční nástroje zdarma pro malé a střední firmy ve službách",
-    "metaDescription": "Bezplatné finanční nástroje pro malé a střední firmy, včetně kapacity splácení, cen a bodu zvratu a výhledu tří výkazů s exportem do Excelu.",
-    "keywords": "finanční nástroje zdarma|kalkulačka bodu zvratu|kalkulačka ziskové marže|kalkulačka schopnosti splácet dluh|finanční model tří výkazů|výhled cash flow|finanční nástroje pro malé firmy",
-    "overline": "FINANČNÍ NÁSTROJE ZDARMA",
-    "title": "Užitečné finanční nástroje. Bez registrace. Bez archeologie v tabulkách.",
-    "intro": "Pro malé a střední firmy ve službách, které potřebují jasnější odpověď dříve než další schůzku. Nástroje fungují v prohlížeči, vaše data zůstávají soukromá a výsledek si můžete stáhnout.",
-    "available": "K dispozici",
-    "free": "ZDARMA",
+    "metaTitle": "Finanční kalkulačky a nástroje vždy zdarma",
+    "metaDescription": "Finanční nástroje vždy zdarma pro malé firmy: ceny a bod zvratu, schopnost splácet dluh a propojený výhled tří výkazů s exportem do Excelu.",
+    "keywords": "finanční nástroje zdarma pro malé firmy|kalkulačka bodu zvratu zdarma|kalkulačka ziskové marže|kalkulačka schopnosti splácet dluh|finanční model tří výkazů zdarma|výhled cash flow|finanční kalkulačky pro firmy",
+    "overline": "FINANČNÍ NÁSTROJE VŽDY ZDARMA",
+    "title": "Užitečné finanční nástroje. Vždy zdarma. Bez registrace.",
+    "intro": "Pro malé a střední firmy ve službách, které potřebují jasnější odpověď před další schůzkou. Každý nástroj je a zůstane zdarma. Vaše data zůstávají v prohlížeči.",
+    "available": "Začněte tím, co firmy potřebují nejčastěji",
+    "free": "VŽDY ZDARMA",
+    "backToTools": "Zpět na všechny nástroje vždy zdarma",
     "debtTitle": "13týdenní schopnost splácet dluh",
     "debtText": "Zjistěte, zda plánované splátky odpovídají hotovosti vytvořené firmou a co se stane při poklesu tržeb nebo růstu nákladů.",
     "debtOne": "Odhad bezpečného týdenního stropu splátky",
@@ -176,7 +177,7 @@
     "forecastOne": "12 měsíců, 24 měsíců, 3 roky nebo vlastní období",
     "forecastTwo": "Vlastní předpoklady DSO a DPO pro pracovní kapitál",
     "forecastThree": "Interaktivní výsledky a sešit kompatibilní s Excelem",
-    "openForecast": "Vytvořit výhled zdarma",
+    "openForecast": "Vytvořit výhled vždy zdarma",
     "breakEvenTitle": "Ceny, marže a bod zvratu",
     "breakEvenText": "Zjistěte, jak se propojují cena, variabilní náklady, fixní náklady a objem prodeje a kolik musíte prodat, než začne vznikat zisk.",
     "breakEvenOne": "Příspěvek na úhradu a jeho marže",
@@ -191,14 +192,14 @@
     }
   },
   "DebtCapacityPage": {
-    "metaTitle": "Bezplatná kalkulačka schopnosti splácet dluh pro malé firmy",
-    "metaDescription": "Otestujte 13týdenní plán splácení dluhu, vypočítejte bezpečný týdenní strop, chraňte minimální hotovostní rezervu a simulujte nižší tržby nebo vyšší náklady.",
+    "metaTitle": "Kalkulačka schopnosti splácet dluh vždy zdarma",
+    "metaDescription": "Použijte 13týdenní kalkulačku vždy zdarma pro odhad bezpečné týdenní splátky, ochranu hotovostní rezervy a stresové scénáře tržeb a nákladů.",
     "keywords": "kalkulačka schopnosti splácet dluh|splácení firemního dluhu|13týdenní cash flow|kapacita dluhové služby|analýza dluhu a cash flow|plánování dluhu malé firmy",
-    "overline": "NÁSTROJ PRO KAPACITU SPLÁCENÍ ZDARMA",
+    "overline": "NÁSTROJ PRO KAPACITU SPLÁCENÍ VŽDY ZDARMA",
     "title": "Dokáže firma splácet dluh, aniž by vyčerpala účet?",
     "intro": "Propojte plánované splátky s týdenní provozní hotovostí, jednorázovými závazky a minimální bezpečnostní rezervou. Upravujte předpoklady a odhalte slabé místo dříve, než začne být naléhavé.",
     "badge": {
-      "free": "Použití zdarma",
+      "free": "Vždy zdarma",
       "private": "Data zůstávají v prohlížeči",
       "interactive": "Interaktivní scénáře",
       "thirteenWeeks": "13týdenní pohled"
@@ -211,14 +212,14 @@
     "disclaimer": "Jde o ilustrativní plánovací nástroj, nikoli účetní, investiční nebo úvěrové poradenství. Skutečná kapacita závisí také na podmínkách úvěru, úrocích, daních, sezónnosti a riziku inkasa."
   },
   "BreakEvenPage": {
-    "metaTitle": "Bezplatná kalkulačka cen, ziskové marže a bodu zvratu",
-    "metaDescription": "Vypočítejte příspěvek na úhradu, objem bodu zvratu, objem cílového zisku a minimální prodejní cenu. Zdarma otestujte nižší ceny nebo vyšší variabilní náklady.",
+    "metaTitle": "Kalkulačka cen, marže a bodu zvratu vždy zdarma",
+    "metaDescription": "Použijte kalkulačku vždy zdarma pro příspěvek na úhradu, bod zvratu, cílový zisk a minimální cenu včetně stresových scénářů.",
     "keywords": "kalkulačka bodu zvratu|kalkulačka ziskové marže|cenová kalkulačka pro malé firmy|příspěvek na úhradu|kalkulačka cílového zisku|cenová kalkulačka služeb|objem prodeje bodu zvratu",
-    "overline": "NÁSTROJ PRO CENY A BOD ZVRATU ZDARMA",
+    "overline": "NÁSTROJ PRO CENY A BOD ZVRATU VŽDY ZDARMA",
     "title": "Kolik musíte prodat, než práce začne skutečně vydělávat?",
     "intro": "Propojte prodejní cenu, variabilní náklady, měsíční režii a očekávaný objem. Kalkulačka ukáže příspěvek na úhradu, bod zvratu, požadavky cílového zisku a minimální potřebnou cenu.",
     "badge": {
-      "free": "Použití zdarma",
+      "free": "Vždy zdarma",
       "private": "Data zůstávají v prohlížeči",
       "interactive": "Interaktivní scénáře",
       "businessTypes": "Kusy, hodiny nebo projekty"
@@ -292,14 +293,14 @@
     "disclaimer": "Částky jsou ve vaší vlastní měně. Výsledky jsou ilustrativní a zcela závisí na zadaných předpokladech nákladů a objemu."
   },
   "ThreeStatementPage": {
-    "metaTitle": "Bezplatný výhled tří finančních výkazů pro firmy ve službách",
-    "metaDescription": "Vytvořte zdarma propojený výhled výsledovky, rozvahy a nepřímého cash flow. Upravte DSO, DPO, růst, marže, investice a dluh a exportujte sešit pro Excel.",
+    "metaTitle": "Výhled tří finančních výkazů vždy zdarma",
+    "metaDescription": "Vytvořte vždy zdarma propojený výhled výsledovky, rozvahy a nepřímého cash flow. Upravte DSO, DPO, růst a dluh a exportujte jej do Excelu.",
     "keywords": "finanční model tří výkazů zdarma|nástroj pro finanční výhled|výsledovka rozvaha cash flow|výhled DSO DPO|finanční model firmy ve službách|Excel finanční výhled|cash flow model pro malé firmy",
-    "overline": "VÝHLED TŘÍ VÝKAZŮ ZDARMA",
+    "overline": "VÝHLED TŘÍ VÝKAZŮ VŽDY ZDARMA",
     "title": "Podívejte se, jak se zisk mění v hotovost — a kde se zadrhne.",
     "intro": "Zadejte výsledovku firmy ve službách, počáteční rozvahu a předpoklady, které hýbou hotovostí. Model propojí všechny tři výkazy, okamžitě se přepočítá a vytvoří sešit pro Excel.",
     "badge": {
-      "free": "Použití zdarma",
+      "free": "Vždy zdarma",
       "private": "Data zůstávají v prohlížeči",
       "excel": "Export pro Excel",
       "serviceBusiness": "Pro firmy ve službách"

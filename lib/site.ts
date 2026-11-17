@@ -29,5 +29,8 @@ export const site = {
     "budgeting and forecasting",
     "VAT preparation",
     "management reporting",
+    "free financial tools",
+    "break-even calculator",
+    "small business cash flow tools",
   ],
 } as const;

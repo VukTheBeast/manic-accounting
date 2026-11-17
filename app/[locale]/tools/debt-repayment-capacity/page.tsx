@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CashFlowTool from "@/components/CashFlowTool";
+import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { site } from "@/lib/site";
 
@@ -23,17 +24,25 @@ export async function generateMetadata({
     keywords: t("keywords").split("|"),
     alternates: {
       canonical: `/${locale}/tools/debt-repayment-capacity`,
-      languages: Object.fromEntries(
-        routing.locales.map((language) => [
-          language,
-          `/${language}/tools/debt-repayment-capacity`,
-        ]),
-      ),
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((language) => [
+            language,
+            `/${language}/tools/debt-repayment-capacity`,
+          ]),
+        ),
+        "x-default": "/en/tools/debt-repayment-capacity",
+      },
     },
     openGraph: {
       title: `${t("metaTitle")} · ${site.name}`,
       description: t("metaDescription"),
       url: `/${locale}/tools/debt-repayment-capacity`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${t("metaTitle")} · ${site.name}`,
+      description: t("metaDescription"),
     },
   };
 }
@@ -46,6 +55,7 @@ export default async function DebtRepaymentCapacityPage({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   const t = await getTranslations({ locale, namespace: "DebtCapacityPage" });
+  const toolsT = await getTranslations({ locale, namespace: "ToolsPage" });
   const url = `${site.url}/${locale}/tools/debt-repayment-capacity`;
   const jsonLd = {
     "@context": "https://schema.org",
@@ -56,10 +66,12 @@ export default async function DebtRepaymentCapacityPage({
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     inLanguage: locale,
+    isAccessibleForFree: true,
     offers: {
       "@type": "Offer",
       price: 0,
       priceCurrency: "EUR",
+      availability: "https://schema.org/OnlineOnly",
     },
     provider: {
       "@type": "AccountingService",
@@ -78,6 +90,9 @@ export default async function DebtRepaymentCapacityPage({
             __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
           }}
         />
+        <Link href="/tools" className="mb-5 inline-flex min-h-11 items-center font-bold text-ledger underline decoration-2 underline-offset-4">
+          {toolsT("backToTools")}
+        </Link>
         <div className="overline mb-3">{t("overline")}</div>
         <h1 className="mb-5 max-w-[920px] font-display text-[clamp(38px,8vw,60px)] leading-[1.04] font-bold text-ink">
           {t("title")}

@@ -30,16 +30,31 @@ export default async function Home({
   const services = getServices(locale);
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "AccountingService",
-    name: site.name,
-    url: `${site.url}/${locale}`,
-    logo: `${site.url}/icon.svg`,
-    image: `${site.url}/vukman-manic-accounting.webp`,
-    description: metadata("description"),
-    inLanguage: locale,
-    serviceType: services.filter(({ id }) => id !== "unsure").map(
-      ({ label }) => label,
-    ),
+    "@graph": [
+      {
+        "@type": "AccountingService",
+        "@id": `${site.url}/#business`,
+        name: site.name,
+        url: `${site.url}/${locale}`,
+        logo: `${site.url}/icon.svg`,
+        image: `${site.url}/vukman-manic-accounting.webp`,
+        description: metadata("description"),
+        inLanguage: locale,
+        serviceType: services.filter(({ id }) => id !== "unsure").map(
+          ({ label }) => label,
+        ),
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${site.url}/#website`,
+        name: site.name,
+        url: site.url,
+        inLanguage: locale,
+        publisher: {
+          "@id": `${site.url}/#business`,
+        },
+      },
+    ],
   };
 
   return (

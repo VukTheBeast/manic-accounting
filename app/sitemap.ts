@@ -54,11 +54,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: toolsLanguages },
     },
     {
-      url: `${site.url}/${locale}/tools/three-statement-forecast`,
+      url: `${site.url}/${locale}/tools/pricing-margin-break-even`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
-      priority: 0.9,
-      alternates: { languages: forecastLanguages },
+      priority: 0.95,
+      alternates: { languages: breakEvenLanguages },
     },
     {
       url: `${site.url}/${locale}/tools/debt-repayment-capacity`,
@@ -68,11 +68,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: debtCapacityLanguages },
     },
     {
-      url: `${site.url}/${locale}/tools/pricing-margin-break-even`,
+      url: `${site.url}/${locale}/tools/three-statement-forecast`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
-      priority: 0.9,
-      alternates: { languages: breakEvenLanguages },
+      priority: 0.85,
+      alternates: { languages: forecastLanguages },
     },
   ]);
 }

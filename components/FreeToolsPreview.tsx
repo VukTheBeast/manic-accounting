@@ -21,6 +21,29 @@ export default function FreeToolsPreview() {
       <div className="grid gap-6 lg:grid-cols-3">
         <article className="card group flex flex-col overflow-hidden">
           <div
+            className="relative flex min-h-44 items-end border-b-2 border-ink bg-ledger-tint p-6"
+            aria-hidden="true"
+          >
+            <svg viewBox="0 0 300 110" className="w-full" role="presentation">
+              <line x1="20" y1="90" x2="280" y2="20" stroke="var(--color-ledger)" strokeWidth="5" strokeLinecap="round" />
+              <line x1="20" y1="35" x2="280" y2="92" stroke="var(--color-red-pen)" strokeWidth="5" strokeLinecap="round" />
+              <circle cx="165" cy="51" r="9" fill="var(--color-marker)" stroke="var(--color-ink)" strokeWidth="3" />
+            </svg>
+          </div>
+          <div className="flex flex-1 flex-col p-6">
+            <span className="mb-3 font-mono text-xs font-bold text-ledger">{t("free")}</span>
+            <h3 className="mb-3 font-display text-2xl font-bold text-ink">
+              {t("breakEvenTitle")}
+            </h3>
+            <p className="mb-6 leading-relaxed">{t("breakEvenText")}</p>
+            <Link href="/tools/pricing-margin-break-even" className="btn-marker mt-auto">
+              {t("openBreakEven")}
+            </Link>
+          </div>
+        </article>
+
+        <article className="card group flex flex-col overflow-hidden">
+          <div
             className="grid min-h-44 grid-cols-[repeat(13,minmax(0,1fr))] items-end gap-1 border-b-2 border-ink bg-ledger-tint px-6 pt-7"
             aria-hidden="true"
           >
@@ -85,29 +108,6 @@ export default function FreeToolsPreview() {
             <p className="mb-6 leading-relaxed">{t("forecastText")}</p>
             <Link href="/tools/three-statement-forecast" className="btn-marker mt-auto">
               {t("openForecast")}
-            </Link>
-          </div>
-        </article>
-
-        <article className="card group flex flex-col overflow-hidden">
-          <div
-            className="relative flex min-h-44 items-end border-b-2 border-ink bg-ledger-tint p-6"
-            aria-hidden="true"
-          >
-            <svg viewBox="0 0 300 110" className="w-full" role="presentation">
-              <line x1="20" y1="90" x2="280" y2="20" stroke="var(--color-ledger)" strokeWidth="5" strokeLinecap="round" />
-              <line x1="20" y1="35" x2="280" y2="92" stroke="var(--color-red-pen)" strokeWidth="5" strokeLinecap="round" />
-              <circle cx="165" cy="51" r="9" fill="var(--color-marker)" stroke="var(--color-ink)" strokeWidth="3" />
-            </svg>
-          </div>
-          <div className="flex flex-1 flex-col p-6">
-            <span className="mb-3 font-mono text-xs font-bold text-ledger">{t("free")}</span>
-            <h3 className="mb-3 font-display text-2xl font-bold text-ink">
-              {t("breakEvenTitle")}
-            </h3>
-            <p className="mb-6 leading-relaxed">{t("breakEvenText")}</p>
-            <Link href="/tools/pricing-margin-break-even" className="btn-marker mt-auto">
-              {t("openBreakEven")}
             </Link>
           </div>
         </article>
