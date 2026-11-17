@@ -103,14 +103,37 @@ export default async function ToolsPage({
               </div>
             </article>
 
-            <article className="card flex flex-col border-dashed p-6 lg:col-span-2">
+            <article className="card flex flex-col overflow-hidden">
+              <div className="border-b-2 border-ink bg-paper p-6 text-ink">
+                <span className="rounded-full bg-ledger px-3 py-1 font-mono text-xs font-bold text-white">
+                  {t("free")}
+                </span>
+                <h3 className="mt-4 font-display text-2xl font-bold">{t("breakEvenTitle")}</h3>
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <p className="mb-5 leading-relaxed">{t("breakEvenText")}</p>
+                <ul className="mb-7 flex flex-col gap-2 text-sm font-semibold text-ink">
+                  {(["breakEvenOne", "breakEvenTwo", "breakEvenThree"] as const).map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="text-ledger" aria-hidden="true">✓</span>
+                      {t(item)}
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/tools/pricing-margin-break-even" className="btn-marker mt-auto">
+                  {t("openBreakEven")}
+                </Link>
+              </div>
+            </article>
+
+            <article className="card flex flex-col border-dashed p-6">
               <div className="mb-4 flex size-12 items-center justify-center rounded-[10px] border-2 border-ink bg-paper font-mono text-lg font-bold text-ledger">
                 +
               </div>
               <h3 className="mb-3 font-display text-2xl font-bold text-ink">{t("moreTitle")}</h3>
               <p className="mb-6 leading-relaxed">{t("moreText")}</p>
               <div className="mt-auto flex flex-wrap gap-2">
-                {(["pricing", "breakEven"] as const).map((item) => (
+                {(["cashRunway", "hiring"] as const).map((item) => (
                   <span key={item} className="rounded-full border border-ink bg-paper px-3 py-2 text-xs font-bold text-ink">
                     {t(`planned.${item}`)}
                   </span>

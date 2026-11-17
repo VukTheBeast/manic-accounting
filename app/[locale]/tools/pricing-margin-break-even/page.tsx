@@ -1,0 +1,120 @@
+import type { Metadata } from "next";
+import { hasLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { notFound } from "next/navigation";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import BreakEvenCalculator from "@/components/BreakEvenCalculator";
+import { routing } from "@/i18n/routing";
+import { site } from "@/lib/site";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
+
+  const t = await getTranslations({ locale, namespace: "BreakEvenPage" });
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+    keywords: t("keywords").split("|"),
+    alternates: {
+      canonical: `/${locale}/tools/pricing-margin-break-even`,
+      languages: Object.fromEntries(
+        routing.locales.map((language) => [
+          language,
+          `/${language}/tools/pricing-margin-break-even`,
+        ]),
+      ),
+    },
+    openGraph: {
+      title: `${t("metaTitle")} · ${site.name}`,
+      description: t("metaDescription"),
+      url: `/${locale}/tools/pricing-margin-break-even`,
+    },
+  };
+}
+
+export default async function PricingMarginBreakEvenPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
+  const t = await getTranslations({ locale, namespace: "BreakEvenPage" });
+  const url = `${site.url}/${locale}/tools/pricing-margin-break-even`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: t("metaTitle"),
+    description: t("metaDescription"),
+    url,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    inLanguage: locale,
+    offers: {
+      "@type": "Offer",
+      price: 0,
+      priceCurrency: "EUR",
+    },
+    provider: {
+      "@type": "AccountingService",
+      name: site.name,
+      url: site.url,
+    },
+  };
+
+  return (
+    <div className="ledger-paper">
+      <Header />
+      <main id="main-content" className="mx-auto max-w-[1200px] px-5 pt-10 pb-24 sm:px-8">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+        <div className="overline mb-3">{t("overline")}</div>
+        <h1 className="mb-5 max-w-[940px] font-display text-[clamp(38px,8vw,60px)] leading-[1.04] font-bold text-ink">
+          {t("title")}
+        </h1>
+        <p className="mb-6 max-w-[780px] text-lg leading-relaxed">{t("intro")}</p>
+        <div className="mb-10 flex flex-wrap gap-2">
+          {(["free", "private", "interactive", "businessTypes"] as const).map(
+            (item) => (
+              <span
+                key={item}
+                className="rounded-full border-2 border-ink bg-white px-3 py-2 text-xs font-bold text-ink shadow-hard-sm"
+              >
+                {t(`badge.${item}`)}
+              </span>
+            ),
+          )}
+        </div>
+
+        <BreakEvenCalculator />
+
+        <section className="mt-16 grid gap-6 lg:grid-cols-2" aria-labelledby="break-even-how">
+          <div className="card p-6 sm:p-8">
+            <h2 id="break-even-how" className="mb-4 font-display text-2xl font-bold text-ink">
+              {t("howTitle")}
+            </h2>
+            <p className="mb-4 leading-relaxed">{t("howTextOne")}</p>
+            <p className="leading-relaxed">{t("howTextTwo")}</p>
+          </div>
+          <div className="card bg-marker p-6 sm:p-8">
+            <h2 className="mb-4 font-display text-2xl font-bold text-ink">{t("useTitle")}</h2>
+            <p className="mb-4 leading-relaxed font-semibold text-ink">{t("useText")}</p>
+            <p className="text-sm leading-relaxed font-semibold text-ink">{t("disclaimer")}</p>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+}
+

@@ -147,6 +147,9 @@
     "forecastTitle": "Three-statement forecast",
     "forecastText": "Connect a service-business P&L, balance sheet and indirect cash flow, then download the forecast as an Excel workbook.",
     "openForecast": "Build a forecast",
+    "breakEvenTitle": "Pricing and break-even",
+    "breakEvenText": "Test your price, contribution margin and sales volume to see where profit begins—and what your target really requires.",
+    "openBreakEven": "Calculate break-even",
     "statement": {
       "pnl": "P&L",
       "balance": "BALANCE",
@@ -155,8 +158,8 @@
   },
   "ToolsPage": {
     "metaTitle": "Free financial tools for small and medium service businesses",
-    "metaDescription": "Free financial tools for small and medium businesses, including debt repayment capacity analysis and a three-statement forecast with Excel export.",
-    "keywords": "free financial forecasting tools|debt repayment capacity calculator|three statement financial model|cash flow forecast tool|balance sheet forecast|financial tools for small business|service business financial model",
+    "metaDescription": "Free financial tools for small and medium businesses, including debt capacity, pricing and break-even analysis, and a three-statement forecast with Excel export.",
+    "keywords": "free financial forecasting tools|break even calculator|profit margin calculator|debt repayment capacity calculator|three statement financial model|cash flow forecast tool|financial tools for small business",
     "overline": "FREE FINANCIAL TOOLS",
     "title": "Useful finance tools. No signup. No spreadsheet archaeology.",
     "intro": "Built for small and medium service businesses that need a clearer answer before they need another meeting. Use the tools in your browser, keep your data private and download the result when it is useful.",
@@ -174,11 +177,17 @@
     "forecastTwo": "Manual DSO and DPO working-capital assumptions",
     "forecastThree": "Interactive results and Excel-compatible workbook",
     "openForecast": "Build a free forecast",
+    "breakEvenTitle": "Pricing, margin and break-even",
+    "breakEvenText": "See how price, variable costs, fixed costs and sales volume combine—and how much you need to sell before profit starts.",
+    "breakEvenOne": "Contribution amount and margin",
+    "breakEvenTwo": "Break-even and target-profit volume",
+    "breakEvenThree": "Price and cost stress scenarios",
+    "openBreakEven": "Calculate break-even",
     "moreTitle": "More practical tools are coming",
     "moreText": "The library will grow around the questions owners actually ask, not finance theatre.",
     "planned": {
-      "pricing": "Pricing and margin",
-      "breakEven": "Break-even analysis"
+      "cashRunway": "Cash runway",
+      "hiring": "Hiring affordability"
     }
   },
   "DebtCapacityPage": {
@@ -200,6 +209,87 @@
     "mattersTitle": "Cash headroom matters more than a green ending balance",
     "mattersText": "A plan can finish positive and still become fragile in the middle. Focus on the lowest week, the buffer shortfall and how quickly the answer changes under stress.",
     "disclaimer": "This is an illustrative planning tool, not accounting, investment or lending advice. Actual capacity also depends on loan terms, interest, taxes, seasonality and collection risk."
+  },
+  "BreakEvenPage": {
+    "metaTitle": "Free pricing, profit margin and break-even calculator",
+    "metaDescription": "Calculate contribution margin, break-even sales volume, target-profit volume and minimum selling price. Stress-test lower prices or higher variable costs for free.",
+    "keywords": "break even calculator|profit margin calculator|pricing calculator for small business|contribution margin calculator|target profit calculator|service business pricing calculator|break even sales volume",
+    "overline": "FREE PRICING AND BREAK-EVEN TOOL",
+    "title": "How much must you sell before the work actually makes money?",
+    "intro": "Connect selling price, variable costs, monthly overhead and expected volume. The calculator shows contribution margin, break-even sales, target-profit requirements and the minimum price your plan needs.",
+    "badge": {
+      "free": "Free to use",
+      "private": "Data stays in your browser",
+      "interactive": "Interactive scenarios",
+      "businessTypes": "Units, hours or projects"
+    },
+    "howTitle": "What break-even really measures",
+    "howTextOne": "Every sale first covers its own variable cost. What remains is contribution: the amount available to cover monthly fixed costs and, only after that, profit.",
+    "howTextTwo": "Break-even volume divides fixed costs by contribution per sale. Target-profit volume adds the desired profit before performing the same calculation.",
+    "useTitle": "Use it for decisions, not decoration",
+    "useText": "Test a price increase, supplier-cost change, new monthly expense or realistic sales target. If a small assumption change destroys the margin, the plan needs more room.",
+    "disclaimer": "This is an illustrative planning calculator. It excludes VAT, income tax, financing, capacity limits, customer mix and timing differences unless you include them in your inputs."
+  },
+  "BreakEvenTool": {
+    "scenarioLabel": "PRICING SCENARIO",
+    "title": "Pricing and break-even calculator",
+    "scenario": {
+      "base": "Base plan",
+      "priceDrop": "Price −5%",
+      "costRise": "Variable cost +10%"
+    },
+    "scenarioNote": {
+      "base": "The current price, costs and expected monthly sales volume.",
+      "priceDrop": "Selling price is reduced by 5% to show how quickly a discount changes the required volume.",
+      "costRise": "Variable cost is increased by 10% to test supplier, contractor or delivery-cost pressure."
+    },
+    "saleTypeLabel": "What do you sell?",
+    "saleType": {
+      "unit": "Units",
+      "hour": "Hours",
+      "project": "Projects"
+    },
+    "saleNoun": {
+      "unit": "unit",
+      "hour": "hour",
+      "project": "project"
+    },
+    "salePlural": {
+      "unit": "units",
+      "hour": "billable hours",
+      "project": "projects"
+    },
+    "field": {
+      "price": "Selling price per {sale}",
+      "variableCost": "Variable cost per {sale}",
+      "fixedCosts": "Monthly fixed costs",
+      "volume": "Expected monthly sales volume",
+      "targetProfit": "Target monthly profit"
+    },
+    "metric": {
+      "contribution": "CONTRIBUTION PER SALE",
+      "breakEven": "BREAK-EVEN VOLUME",
+      "targetVolume": "TARGET-PROFIT VOLUME",
+      "projectedProfit": "PROJECTED PROFIT"
+    },
+    "atCurrentVolume": "at the expected monthly volume",
+    "chartTitle": "Revenue versus total costs",
+    "chartIntro": "The crossing point is break-even. Horizontal scale: {sale}.",
+    "revenue": "Revenue",
+    "totalCosts": "Total costs",
+    "chartLabel": "Chart comparing revenue and total costs. Break-even occurs at {breakEven} {sale}.",
+    "minimumPrice": "MINIMUM PRICE FOR THE TARGET",
+    "minimumPriceNote": "Price needed at the expected volume to cover costs and target profit.",
+    "breakEvenRevenue": "BREAK-EVEN REVENUE",
+    "projectedRevenue": "Expected revenue: {amount}",
+    "decisionTitle": "WHAT REALLY MATTERS",
+    "verdict": {
+      "invalid": "Variable cost is equal to or above the selling price. Each sale loses money before fixed costs, so break-even is impossible.",
+      "loss": "At the expected volume, the plan loses {profit}. Break-even starts at approximately {units} sales.",
+      "tight": "The plan is profitable, but the margin of safety is thin. Contribution is {contribution} per sale, so a small volume miss can remove the profit.",
+      "healthy": "The expected volume is comfortably above break-even. Contribution is {contribution} per sale, leaving useful room before the plan turns negative."
+    },
+    "disclaimer": "Amounts use your own currency. Results are illustrative and depend entirely on the costs and volume assumptions entered."
   },
   "ThreeStatementPage": {
     "metaTitle": "Free three-statement financial forecast for service businesses",

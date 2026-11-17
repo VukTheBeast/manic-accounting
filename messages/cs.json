@@ -147,6 +147,9 @@
     "forecastTitle": "Výhled tří finančních výkazů",
     "forecastText": "Propojte výsledovku firmy ve službách, rozvahu a nepřímé cash flow a stáhněte výhled jako sešit Excel.",
     "openForecast": "Vytvořit výhled",
+    "breakEvenTitle": "Ceny a bod zvratu",
+    "breakEvenText": "Otestujte cenu, příspěvek na úhradu a objem prodeje a zjistěte, kdy vzniká zisk a co vyžaduje váš cíl.",
+    "openBreakEven": "Vypočítat bod zvratu",
     "statement": {
       "pnl": "VÝSLEDOVKA",
       "balance": "ROZVAHA",
@@ -155,8 +158,8 @@
   },
   "ToolsPage": {
     "metaTitle": "Finanční nástroje zdarma pro malé a střední firmy ve službách",
-    "metaDescription": "Bezplatné finanční nástroje pro malé a střední firmy, včetně analýzy schopnosti splácet dluh a výhledu tří výkazů s exportem do Excelu.",
-    "keywords": "finanční nástroje zdarma|kalkulačka schopnosti splácet dluh|finanční model tří výkazů|výhled cash flow|výhled rozvahy|finanční nástroje pro malé firmy|finanční model firmy ve službách",
+    "metaDescription": "Bezplatné finanční nástroje pro malé a střední firmy, včetně kapacity splácení, cen a bodu zvratu a výhledu tří výkazů s exportem do Excelu.",
+    "keywords": "finanční nástroje zdarma|kalkulačka bodu zvratu|kalkulačka ziskové marže|kalkulačka schopnosti splácet dluh|finanční model tří výkazů|výhled cash flow|finanční nástroje pro malé firmy",
     "overline": "FINANČNÍ NÁSTROJE ZDARMA",
     "title": "Užitečné finanční nástroje. Bez registrace. Bez archeologie v tabulkách.",
     "intro": "Pro malé a střední firmy ve službách, které potřebují jasnější odpověď dříve než další schůzku. Nástroje fungují v prohlížeči, vaše data zůstávají soukromá a výsledek si můžete stáhnout.",
@@ -174,11 +177,17 @@
     "forecastTwo": "Vlastní předpoklady DSO a DPO pro pracovní kapitál",
     "forecastThree": "Interaktivní výsledky a sešit kompatibilní s Excelem",
     "openForecast": "Vytvořit výhled zdarma",
+    "breakEvenTitle": "Ceny, marže a bod zvratu",
+    "breakEvenText": "Zjistěte, jak se propojují cena, variabilní náklady, fixní náklady a objem prodeje a kolik musíte prodat, než začne vznikat zisk.",
+    "breakEvenOne": "Příspěvek na úhradu a jeho marže",
+    "breakEvenTwo": "Objem bodu zvratu a cílového zisku",
+    "breakEvenThree": "Stresové scénáře ceny a nákladů",
+    "openBreakEven": "Vypočítat bod zvratu",
     "moreTitle": "Další praktické nástroje připravujeme",
     "moreText": "Knihovna poroste podle otázek, které majitelé skutečně řeší, ne podle finančního divadla.",
     "planned": {
-      "pricing": "Ceny a marže",
-      "breakEven": "Bod zvratu"
+      "cashRunway": "Doba do vyčerpání hotovosti",
+      "hiring": "Dostupnost nového zaměstnance"
     }
   },
   "DebtCapacityPage": {
@@ -200,6 +209,87 @@
     "mattersTitle": "Prostor v hotovosti je důležitější než zelený konečný zůstatek",
     "mattersText": "Plán může skončit v plusu a přesto být uprostřed období křehký. Sledujte nejnižší týden, chybějící rezervu a citlivost výsledku na stres.",
     "disclaimer": "Jde o ilustrativní plánovací nástroj, nikoli účetní, investiční nebo úvěrové poradenství. Skutečná kapacita závisí také na podmínkách úvěru, úrocích, daních, sezónnosti a riziku inkasa."
+  },
+  "BreakEvenPage": {
+    "metaTitle": "Bezplatná kalkulačka cen, ziskové marže a bodu zvratu",
+    "metaDescription": "Vypočítejte příspěvek na úhradu, objem bodu zvratu, objem cílového zisku a minimální prodejní cenu. Zdarma otestujte nižší ceny nebo vyšší variabilní náklady.",
+    "keywords": "kalkulačka bodu zvratu|kalkulačka ziskové marže|cenová kalkulačka pro malé firmy|příspěvek na úhradu|kalkulačka cílového zisku|cenová kalkulačka služeb|objem prodeje bodu zvratu",
+    "overline": "NÁSTROJ PRO CENY A BOD ZVRATU ZDARMA",
+    "title": "Kolik musíte prodat, než práce začne skutečně vydělávat?",
+    "intro": "Propojte prodejní cenu, variabilní náklady, měsíční režii a očekávaný objem. Kalkulačka ukáže příspěvek na úhradu, bod zvratu, požadavky cílového zisku a minimální potřebnou cenu.",
+    "badge": {
+      "free": "Použití zdarma",
+      "private": "Data zůstávají v prohlížeči",
+      "interactive": "Interaktivní scénáře",
+      "businessTypes": "Kusy, hodiny nebo projekty"
+    },
+    "howTitle": "Co bod zvratu skutečně měří",
+    "howTextOne": "Každý prodej nejprve pokryje vlastní variabilní náklady. Zbytek je příspěvek na úhradu, který kryje měsíční fixní náklady a teprve poté vytváří zisk.",
+    "howTextTwo": "Objem bodu zvratu vydělí fixní náklady příspěvkem na jeden prodej. Objem cílového zisku nejprve přičte požadovaný zisk a použije stejný výpočet.",
+    "useTitle": "Používejte jej pro rozhodování, ne jako dekoraci",
+    "useText": "Otestujte zvýšení ceny, změnu nákladů dodavatele, nový měsíční výdaj nebo realistický prodejní cíl. Pokud malá změna zničí marži, plán potřebuje větší rezervu.",
+    "disclaimer": "Jde o ilustrativní plánovací kalkulačku. Nezahrnuje DPH, daň z příjmů, financování, kapacitní omezení, strukturu zákazníků ani časové rozdíly, pokud je nezahrnete do vstupů."
+  },
+  "BreakEvenTool": {
+    "scenarioLabel": "CENOVÝ SCÉNÁŘ",
+    "title": "Kalkulačka cen a bodu zvratu",
+    "scenario": {
+      "base": "Základní plán",
+      "priceDrop": "Cena −5 %",
+      "costRise": "Variabilní náklad +10 %"
+    },
+    "scenarioNote": {
+      "base": "Aktuální cena, náklady a očekávaný měsíční objem prodeje.",
+      "priceDrop": "Prodejní cena je snížena o 5 %, aby bylo vidět, jak sleva mění potřebný objem.",
+      "costRise": "Variabilní náklad je zvýšen o 10 % pro otestování tlaku dodavatelů, externistů nebo realizace."
+    },
+    "saleTypeLabel": "Co prodáváte?",
+    "saleType": {
+      "unit": "Kusy",
+      "hour": "Hodiny",
+      "project": "Projekty"
+    },
+    "saleNoun": {
+      "unit": "kus",
+      "hour": "hodinu",
+      "project": "projekt"
+    },
+    "salePlural": {
+      "unit": "kusů",
+      "hour": "fakturovatelných hodin",
+      "project": "projektů"
+    },
+    "field": {
+      "price": "Prodejní cena za {sale}",
+      "variableCost": "Variabilní náklad na {sale}",
+      "fixedCosts": "Měsíční fixní náklady",
+      "volume": "Očekávaný měsíční objem prodeje",
+      "targetProfit": "Cílový měsíční zisk"
+    },
+    "metric": {
+      "contribution": "PŘÍSPĚVEK NA PRODEJ",
+      "breakEven": "OBJEM BODU ZVRATU",
+      "targetVolume": "OBJEM CÍLOVÉHO ZISKU",
+      "projectedProfit": "OČEKÁVANÝ ZISK"
+    },
+    "atCurrentVolume": "při očekávaném měsíčním objemu",
+    "chartTitle": "Tržby versus celkové náklady",
+    "chartIntro": "Průsečík je bod zvratu. Vodorovná osa: {sale}.",
+    "revenue": "Tržby",
+    "totalCosts": "Celkové náklady",
+    "chartLabel": "Graf porovnávající tržby a celkové náklady. Bod zvratu nastává při {breakEven} {sale}.",
+    "minimumPrice": "MINIMÁLNÍ CENA PRO CÍL",
+    "minimumPriceNote": "Cena potřebná při očekávaném objemu k pokrytí nákladů a cílového zisku.",
+    "breakEvenRevenue": "TRŽBY V BODU ZVRATU",
+    "projectedRevenue": "Očekávané tržby: {amount}",
+    "decisionTitle": "NA ČEM OPRAVDU ZÁLEŽÍ",
+    "verdict": {
+      "invalid": "Variabilní náklad je stejný nebo vyšší než prodejní cena. Každý prodej prodělává ještě před fixními náklady, takže bodu zvratu nelze dosáhnout.",
+      "loss": "Při očekávaném objemu plán prodělává {profit}. Bod zvratu začíná přibližně při {units} prodejích.",
+      "tight": "Plán je ziskový, ale bezpečnostní rezerva je malá. Příspěvek je {contribution} na prodej, takže malý výpadek objemu může zisk odstranit.",
+      "healthy": "Očekávaný objem je pohodlně nad bodem zvratu. Příspěvek je {contribution} na prodej, takže zbývá užitečný prostor, než se plán dostane do ztráty."
+    },
+    "disclaimer": "Částky jsou ve vaší vlastní měně. Výsledky jsou ilustrativní a zcela závisí na zadaných předpokladech nákladů a objemu."
   },
   "ThreeStatementPage": {
     "metaTitle": "Bezplatný výhled tří finančních výkazů pro firmy ve službách",

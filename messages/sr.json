@@ -147,6 +147,9 @@
     "forecastTitle": "Prognoza tri finansijska izveštaja",
     "forecastText": "Povežite bilans uspeha uslužne firme, bilans stanja i indirektni tok gotovine, pa preuzmite prognozu kao Excel radnu svesku.",
     "openForecast": "Napravite prognozu",
+    "breakEvenTitle": "Cene i tačka pokrića",
+    "breakEvenText": "Testirajte cenu, doprinosnu maržu i obim prodaje da vidite gde počinje dobit i šta vaš cilj zaista zahteva.",
+    "openBreakEven": "Izračunajte tačku pokrića",
     "statement": {
       "pnl": "USPEH",
       "balance": "STANJE",
@@ -155,8 +158,8 @@
   },
   "ToolsPage": {
     "metaTitle": "Besplatni finansijski alati za mala i srednja uslužna preduzeća",
-    "metaDescription": "Besplatni finansijski alati za mala i srednja preduzeća, uključujući analizu sposobnosti otplate duga i prognozu tri izveštaja sa izvozom u Excel.",
-    "keywords": "besplatni finansijski alati|kalkulator sposobnosti otplate duga|finansijski model tri izveštaja|prognoza toka gotovine|prognoza bilansa stanja|finansijski alati za mala preduzeća|finansijski model uslužne firme",
+    "metaDescription": "Besplatni finansijski alati za mala i srednja preduzeća, uključujući kapacitet otplate, cene i tačku pokrića i prognozu tri izveštaja sa izvozom u Excel.",
+    "keywords": "besplatni finansijski alati|kalkulator tačke pokrića|kalkulator profitne marže|kalkulator sposobnosti otplate duga|finansijski model tri izveštaja|prognoza toka gotovine|finansijski alati za mala preduzeća",
     "overline": "BESPLATNI FINANSIJSKI ALATI",
     "title": "Korisni finansijski alati. Bez registracije. Bez arheologije po tabelama.",
     "intro": "Za mala i srednja uslužna preduzeća kojima treba jasniji odgovor pre još jednog sastanka. Alati rade u pregledaču, podaci ostaju privatni, a koristan rezultat možete preuzeti.",
@@ -174,11 +177,17 @@
     "forecastTwo": "Ručne DSO i DPO pretpostavke za obrtni kapital",
     "forecastThree": "Interaktivni rezultati i radna sveska za Excel",
     "openForecast": "Napravite besplatnu prognozu",
+    "breakEvenTitle": "Cene, marža i tačka pokrića",
+    "breakEvenText": "Pogledajte kako se povezuju cena, varijabilni troškovi, fiksni troškovi i obim prodaje i koliko morate prodati pre nego što počne dobit.",
+    "breakEvenOne": "Doprinos po prodaji i marža",
+    "breakEvenTwo": "Obim za pokriće i ciljnu dobit",
+    "breakEvenThree": "Stresni scenariji cene i troškova",
+    "openBreakEven": "Izračunajte tačku pokrića",
     "moreTitle": "Stiže još praktičnih alata",
     "moreText": "Biblioteka će rasti oko pitanja koja vlasnici zaista postavljaju, a ne oko finansijskog pozorišta.",
     "planned": {
-      "pricing": "Cene i marža",
-      "breakEven": "Tačka pokrića"
+      "cashRunway": "Koliko dugo traje gotovina",
+      "hiring": "Mogućnost novog zapošljavanja"
     }
   },
   "DebtCapacityPage": {
@@ -200,6 +209,87 @@
     "mattersTitle": "Prostor u gotovini je važniji od zelenog završnog stanja",
     "mattersText": "Plan može završiti pozitivno, a ipak postati krhak usred perioda. Pratite najnižu nedelju, manjak do rezerve i koliko se rezultat brzo menja pod stresom.",
     "disclaimer": "Ovo je ilustrativni alat za planiranje, a ne računovodstveni, investicioni ili kreditni savet. Stvarni kapacitet zavisi i od uslova kredita, kamate, poreza, sezonalnosti i rizika naplate."
+  },
+  "BreakEvenPage": {
+    "metaTitle": "Besplatan kalkulator cena, profitne marže i tačke pokrića",
+    "metaDescription": "Izračunajte doprinosnu maržu, obim za pokriće, obim za ciljnu dobit i minimalnu prodajnu cenu. Besplatno testirajte niže cene ili više varijabilne troškove.",
+    "keywords": "kalkulator tačke pokrića|kalkulator profitne marže|kalkulator cena za mala preduzeća|doprinosna marža|kalkulator ciljne dobiti|kalkulator cena usluga|obim prodaje za pokriće",
+    "overline": "BESPLATAN ALAT ZA CENE I TAČKU POKRIĆA",
+    "title": "Koliko morate prodati pre nego što posao zaista počne da zarađuje?",
+    "intro": "Povežite prodajnu cenu, varijabilne troškove, mesečne fiksne troškove i očekivani obim. Kalkulator pokazuje doprinosnu maržu, tačku pokrića, zahteve ciljne dobiti i minimalnu potrebnu cenu.",
+    "badge": {
+      "free": "Besplatno korišćenje",
+      "private": "Podaci ostaju u pregledaču",
+      "interactive": "Interaktivni scenariji",
+      "businessTypes": "Jedinice, sati ili projekti"
+    },
+    "howTitle": "Šta tačka pokrića zaista meri",
+    "howTextOne": "Svaka prodaja prvo pokriva svoj varijabilni trošak. Ono što ostane je doprinos koji pokriva mesečne fiksne troškove i tek nakon toga stvara dobit.",
+    "howTextTwo": "Obim za pokriće deli fiksne troškove doprinosom po prodaji. Obim za ciljnu dobit prvo dodaje željenu dobit, a zatim koristi isti obračun.",
+    "useTitle": "Koristite ga za odluke, ne kao ukras",
+    "useText": "Testirajte povećanje cene, promenu troška dobavljača, novi mesečni trošak ili realan cilj prodaje. Ako mala promena uništi maržu, planu treba više prostora.",
+    "disclaimer": "Ovo je ilustrativni kalkulator za planiranje. Ne uključuje PDV, porez na dobit, finansiranje, ograničenja kapaciteta, strukturu kupaca ni vremenske razlike ako ih ne unesete u pretpostavke."
+  },
+  "BreakEvenTool": {
+    "scenarioLabel": "CENOVNI SCENARIO",
+    "title": "Kalkulator cena i tačke pokrića",
+    "scenario": {
+      "base": "Osnovni plan",
+      "priceDrop": "Cena −5%",
+      "costRise": "Varijabilni trošak +10%"
+    },
+    "scenarioNote": {
+      "base": "Trenutna cena, troškovi i očekivani mesečni obim prodaje.",
+      "priceDrop": "Prodajna cena je smanjena za 5% da pokaže koliko brzo popust menja potreban obim.",
+      "costRise": "Varijabilni trošak je povećan za 10% radi testiranja pritiska dobavljača, saradnika ili realizacije."
+    },
+    "saleTypeLabel": "Šta prodajete?",
+    "saleType": {
+      "unit": "Jedinice",
+      "hour": "Sate",
+      "project": "Projekte"
+    },
+    "saleNoun": {
+      "unit": "jedinici",
+      "hour": "satu",
+      "project": "projektu"
+    },
+    "salePlural": {
+      "unit": "jedinica",
+      "hour": "naplativih sati",
+      "project": "projekata"
+    },
+    "field": {
+      "price": "Prodajna cena po {sale}",
+      "variableCost": "Varijabilni trošak po {sale}",
+      "fixedCosts": "Mesečni fiksni troškovi",
+      "volume": "Očekivani mesečni obim prodaje",
+      "targetProfit": "Ciljna mesečna dobit"
+    },
+    "metric": {
+      "contribution": "DOPRINOS PO PRODAJI",
+      "breakEven": "OBIM ZA POKRIĆE",
+      "targetVolume": "OBIM ZA CILJNU DOBIT",
+      "projectedProfit": "OČEKIVANA DOBIT"
+    },
+    "atCurrentVolume": "pri očekivanom mesečnom obimu",
+    "chartTitle": "Prihod naspram ukupnih troškova",
+    "chartIntro": "Presek je tačka pokrića. Horizontalna osa: {sale}.",
+    "revenue": "Prihod",
+    "totalCosts": "Ukupni troškovi",
+    "chartLabel": "Grafikon koji poredi prihod i ukupne troškove. Tačka pokrića je na {breakEven} {sale}.",
+    "minimumPrice": "MINIMALNA CENA ZA CILJ",
+    "minimumPriceNote": "Cena potrebna pri očekivanom obimu za pokriće troškova i ciljne dobiti.",
+    "breakEvenRevenue": "PRIHOD U TAČKI POKRIĆA",
+    "projectedRevenue": "Očekivani prihod: {amount}",
+    "decisionTitle": "ŠTA JE ZAISTA VAŽNO",
+    "verdict": {
+      "invalid": "Varijabilni trošak je jednak ili veći od prodajne cene. Svaka prodaja gubi novac pre fiksnih troškova, pa tačka pokrića nije moguća.",
+      "loss": "Pri očekivanom obimu plan gubi {profit}. Tačka pokrića počinje na približno {units} prodaja.",
+      "tight": "Plan je profitabilan, ali je sigurnosna marža mala. Doprinos je {contribution} po prodaji, pa mali pad obima može ukloniti dobit.",
+      "healthy": "Očekivani obim je sigurno iznad tačke pokrića. Doprinos je {contribution} po prodaji, pa postoji koristan prostor pre nego što plan postane negativan."
+    },
+    "disclaimer": "Iznosi koriste vašu valutu. Rezultati su ilustrativni i potpuno zavise od unetih pretpostavki o troškovima i obimu."
   },
   "ThreeStatementPage": {
     "metaTitle": "Besplatna prognoza tri finansijska izveštaja za uslužne firme",

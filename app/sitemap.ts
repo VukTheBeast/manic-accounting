@@ -24,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       `${site.url}/${locale}/tools/debt-repayment-capacity`,
     ]),
   );
+  const breakEvenLanguages = Object.fromEntries(
+    routing.locales.map((locale) => [
+      locale,
+      `${site.url}/${locale}/tools/pricing-margin-break-even`,
+    ]),
+  );
 
   return routing.locales.flatMap((locale) => [
     {
@@ -60,6 +66,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.9,
       alternates: { languages: debtCapacityLanguages },
+    },
+    {
+      url: `${site.url}/${locale}/tools/pricing-margin-break-even`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+      alternates: { languages: breakEvenLanguages },
     },
   ]);
 }
