@@ -18,6 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       `${site.url}/${locale}/tools/three-statement-forecast`,
     ]),
   );
+  const debtCapacityLanguages = Object.fromEntries(
+    routing.locales.map((locale) => [
+      locale,
+      `${site.url}/${locale}/tools/debt-repayment-capacity`,
+    ]),
+  );
 
   return routing.locales.flatMap((locale) => [
     {
@@ -47,6 +53,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.9,
       alternates: { languages: forecastLanguages },
+    },
+    {
+      url: `${site.url}/${locale}/tools/debt-repayment-capacity`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+      alternates: { languages: debtCapacityLanguages },
     },
   ]);
 }

@@ -8,7 +8,6 @@
   },
   "Navigation": {
     "services": "Co dělám",
-    "tool": "Vyzkoušet nástroj",
     "tools": "Nástroje zdarma",
     "process": "Jak spolupracujeme",
     "about": "O mně",
@@ -31,13 +30,10 @@
     "headlineTwo": "Klid ve vašem účetnictví.",
     "intro": "Dobrý den, jsem Manic. Deset let jsem pracoval ve finančních týmech velkých nadnárodních společností. Teď pomáhám několika menším firmám, které chtějí čisté účetnictví, včas podané daně a cash flow bez nepříjemných překvapení.",
     "bookCall": "Domluvit bezplatný úvodní hovor",
-    "tryTool": "Otestovat schopnost splácet",
+    "tryTool": "Prozkoumat nástroje zdarma",
     "trustOne": "Deset let ve financích a controllingu",
     "trustTwo": "DPH a daňová podání v Česku, Bulharsku a Rumunsku",
-    "trustThree": "Měsíční uzávěrky pro společnosti v EU, USA a Kanadě",
-    "toolOverline": "OTESTUJTE PLÁN SPLÁCENÍ",
-    "toolTitle": "Kolik dluhu může firma bezpečně splácet?",
-    "toolIntro": "Tento 13týdenní pohled propojuje splátky dluhu s tím podstatným: kolik hotovosti zůstane po provozu firmy. Upravte plán, chraňte minimální rezervu a otestujte pokles tržeb nebo růst nákladů."
+    "trustThree": "Měsíční uzávěrky pro společnosti v EU, USA a Kanadě"
   },
   "Services": {
     "overline": "CO DĚLÁM",
@@ -139,15 +135,39 @@
     },
     "caption": "Žádná magie. Opakovatelný proces, ve kterém lze každé číslo dohledat až ke zdroji."
   },
+  "FreeToolsPreview": {
+    "overline": "FINANČNÍ NÁSTROJE ZDARMA",
+    "title": "Užitečné odpovědi bez další tabulky.",
+    "intro": "Vyzkoušejte praktické plánovací nástroje pro malé a střední firmy. Bez registrace, nahrávání dat a finančního divadla.",
+    "browseAll": "Prohlédnout všechny nástroje",
+    "free": "NÁSTROJ ZDARMA",
+    "debtTitle": "Schopnost splácet dluh",
+    "debtText": "Otestujte 13týdenní plán splácení, chraňte minimální hotovostní rezervu a zjistěte odhad bezpečného týdenního stropu.",
+    "openDebt": "Otestovat schopnost splácet",
+    "forecastTitle": "Výhled tří finančních výkazů",
+    "forecastText": "Propojte výsledovku firmy ve službách, rozvahu a nepřímé cash flow a stáhněte výhled jako sešit Excel.",
+    "openForecast": "Vytvořit výhled",
+    "statement": {
+      "pnl": "VÝSLEDOVKA",
+      "balance": "ROZVAHA",
+      "cash": "CASH FLOW"
+    }
+  },
   "ToolsPage": {
     "metaTitle": "Finanční nástroje zdarma pro malé a střední firmy ve službách",
-    "metaDescription": "Bezplatné online nástroje pro finanční plánování firem ve službách, včetně propojeného výhledu výsledovky, rozvahy, cash flow a exportu do Excelu.",
-    "keywords": "finanční nástroje zdarma|finanční model tří výkazů|výhled cash flow|výhled rozvahy|výhled výsledovky|finanční nástroje pro malé firmy|finanční model firmy ve službách",
+    "metaDescription": "Bezplatné finanční nástroje pro malé a střední firmy, včetně analýzy schopnosti splácet dluh a výhledu tří výkazů s exportem do Excelu.",
+    "keywords": "finanční nástroje zdarma|kalkulačka schopnosti splácet dluh|finanční model tří výkazů|výhled cash flow|výhled rozvahy|finanční nástroje pro malé firmy|finanční model firmy ve službách",
     "overline": "FINANČNÍ NÁSTROJE ZDARMA",
     "title": "Užitečné finanční nástroje. Bez registrace. Bez archeologie v tabulkách.",
     "intro": "Pro malé a střední firmy ve službách, které potřebují jasnější odpověď dříve než další schůzku. Nástroje fungují v prohlížeči, vaše data zůstávají soukromá a výsledek si můžete stáhnout.",
     "available": "K dispozici",
     "free": "ZDARMA",
+    "debtTitle": "13týdenní schopnost splácet dluh",
+    "debtText": "Zjistěte, zda plánované splátky odpovídají hotovosti vytvořené firmou a co se stane při poklesu tržeb nebo růstu nákladů.",
+    "debtOne": "Odhad bezpečného týdenního stropu splátky",
+    "debtTwo": "Ochrana minimální hotovostní rezervy",
+    "debtThree": "Základní a stresové scénáře",
+    "openDebt": "Otestovat schopnost splácet",
     "forecastTitle": "Výhled tří finančních výkazů pro firmy ve službách",
     "forecastText": "Proměňte základní výsledovku, počáteční rozvahu a několik provozních předpokladů v propojený výhled výsledovky, rozvahy a nepřímého cash flow.",
     "forecastOne": "12 měsíců, 24 měsíců, 3 roky nebo vlastní období",
@@ -157,10 +177,29 @@
     "moreTitle": "Další praktické nástroje připravujeme",
     "moreText": "Knihovna poroste podle otázek, které majitelé skutečně řeší, ne podle finančního divadla.",
     "planned": {
-      "cashFlow": "13týdenní plán hotovosti",
       "pricing": "Ceny a marže",
       "breakEven": "Bod zvratu"
     }
+  },
+  "DebtCapacityPage": {
+    "metaTitle": "Bezplatná kalkulačka schopnosti splácet dluh pro malé firmy",
+    "metaDescription": "Otestujte 13týdenní plán splácení dluhu, vypočítejte bezpečný týdenní strop, chraňte minimální hotovostní rezervu a simulujte nižší tržby nebo vyšší náklady.",
+    "keywords": "kalkulačka schopnosti splácet dluh|splácení firemního dluhu|13týdenní cash flow|kapacita dluhové služby|analýza dluhu a cash flow|plánování dluhu malé firmy",
+    "overline": "NÁSTROJ PRO KAPACITU SPLÁCENÍ ZDARMA",
+    "title": "Dokáže firma splácet dluh, aniž by vyčerpala účet?",
+    "intro": "Propojte plánované splátky s týdenní provozní hotovostí, jednorázovými závazky a minimální bezpečnostní rezervou. Upravujte předpoklady a odhalte slabé místo dříve, než začne být naléhavé.",
+    "badge": {
+      "free": "Použití zdarma",
+      "private": "Data zůstávají v prohlížeči",
+      "interactive": "Interaktivní scénáře",
+      "thirteenWeeks": "13týdenní pohled"
+    },
+    "howTitle": "Jak odhad funguje",
+    "howTextOne": "Model začíná počáteční hotovostí, týdenními platbami zákazníků a provozními náklady. Poté odečte plánovanou týdenní splátku dluhu a jednorázové platby v průběhu 13 týdnů.",
+    "howTextTwo": "Bezpečný týdenní strop je nejvyšší odhadovaná splátka, při které zůstane každý týden nad vámi zvolenou minimální rezervou.",
+    "mattersTitle": "Prostor v hotovosti je důležitější než zelený konečný zůstatek",
+    "mattersText": "Plán může skončit v plusu a přesto být uprostřed období křehký. Sledujte nejnižší týden, chybějící rezervu a citlivost výsledku na stres.",
+    "disclaimer": "Jde o ilustrativní plánovací nástroj, nikoli účetní, investiční nebo úvěrové poradenství. Skutečná kapacita závisí také na podmínkách úvěru, úrocích, daních, sezónnosti a riziku inkasa."
   },
   "ThreeStatementPage": {
     "metaTitle": "Bezplatný výhled tří finančních výkazů pro firmy ve službách",

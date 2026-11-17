@@ -8,7 +8,6 @@
   },
   "Navigation": {
     "services": "Šta radim",
-    "tool": "Isprobajte alat",
     "tools": "Besplatni alati",
     "process": "Kako radimo",
     "about": "O meni",
@@ -31,13 +30,10 @@
     "headlineTwo": "Miran zbog vaših knjiga.",
     "intro": "Zdravo, ja sam Manic. Deset godina sam proveo u finansijskim timovima velikih međunarodnih kompanija. Sada pomažem manjem broju preduzeća koja žele uredne knjige, poreze predate na vreme i tok gotovine bez neprijatnih iznenađenja.",
     "bookCall": "Zakažite besplatan uvodni razgovor",
-    "tryTool": "Testirajte sposobnost otplate",
+    "tryTool": "Istražite besplatne alate",
     "trustOne": "Deset godina u finansijama i kontrolingu",
     "trustTwo": "PDV i poreske prijave u Češkoj, Bugarskoj i Rumuniji",
-    "trustThree": "Mesečno zatvaranje za firme u EU, SAD i Kanadi",
-    "toolOverline": "TESTIRAJTE PLAN OTPLATE",
-    "toolTitle": "Koliko duga firma može bezbedno da otplaćuje?",
-    "toolIntro": "Ovaj 13-nedeljni pregled povezuje otplatu duga sa onim što je zaista važno: gotovinom koja ostaje posle poslovanja. Prilagodite plan, zaštitite minimalnu rezervu i testirajte pad prodaje ili rast troškova."
+    "trustThree": "Mesečno zatvaranje za firme u EU, SAD i Kanadi"
   },
   "Services": {
     "overline": "ŠTA RADIM",
@@ -139,15 +135,39 @@
     },
     "caption": "Nije magija. To je ponovljiv proces u kojem se svaki broj može pratiti do izvora."
   },
+  "FreeToolsPreview": {
+    "overline": "BESPLATNI FINANSIJSKI ALATI",
+    "title": "Korisni odgovori pre još jedne tabele.",
+    "intro": "Isprobajte praktične alate za planiranje namenjene malim i srednjim firmama. Bez registracije, slanja podataka i finansijskog pozorišta.",
+    "browseAll": "Pogledajte sve besplatne alate",
+    "free": "BESPLATAN ALAT",
+    "debtTitle": "Sposobnost otplate duga",
+    "debtText": "Testirajte 13-nedeljni plan otplate, zaštitite minimalnu rezervu gotovine i vidite procenjeni bezbedni nedeljni maksimum.",
+    "openDebt": "Testirajte sposobnost otplate",
+    "forecastTitle": "Prognoza tri finansijska izveštaja",
+    "forecastText": "Povežite bilans uspeha uslužne firme, bilans stanja i indirektni tok gotovine, pa preuzmite prognozu kao Excel radnu svesku.",
+    "openForecast": "Napravite prognozu",
+    "statement": {
+      "pnl": "USPEH",
+      "balance": "STANJE",
+      "cash": "GOTOVINA"
+    }
+  },
   "ToolsPage": {
     "metaTitle": "Besplatni finansijski alati za mala i srednja uslužna preduzeća",
-    "metaDescription": "Besplatni onlajn alati za finansijsko planiranje uslužnih firmi, uključujući povezanu prognozu bilansa uspeha, bilansa stanja, toka gotovine i izvoz za Excel.",
-    "keywords": "besplatni finansijski alati|finansijski model tri izveštaja|prognoza toka gotovine|prognoza bilansa stanja|prognoza bilansa uspeha|finansijski alati za mala preduzeća|finansijski model uslužne firme",
+    "metaDescription": "Besplatni finansijski alati za mala i srednja preduzeća, uključujući analizu sposobnosti otplate duga i prognozu tri izveštaja sa izvozom u Excel.",
+    "keywords": "besplatni finansijski alati|kalkulator sposobnosti otplate duga|finansijski model tri izveštaja|prognoza toka gotovine|prognoza bilansa stanja|finansijski alati za mala preduzeća|finansijski model uslužne firme",
     "overline": "BESPLATNI FINANSIJSKI ALATI",
     "title": "Korisni finansijski alati. Bez registracije. Bez arheologije po tabelama.",
     "intro": "Za mala i srednja uslužna preduzeća kojima treba jasniji odgovor pre još jednog sastanka. Alati rade u pregledaču, podaci ostaju privatni, a koristan rezultat možete preuzeti.",
     "available": "Dostupno sada",
     "free": "BESPLATNO",
+    "debtTitle": "13-nedeljna sposobnost otplate duga",
+    "debtText": "Proverite da li se planirane otplate uklapaju u gotovinu koju firma stvara i šta se dešava kada prodaja oslabi ili troškovi porastu.",
+    "debtOne": "Procenjeni bezbedni nedeljni maksimum otplate",
+    "debtTwo": "Zaštita minimalne rezerve gotovine",
+    "debtThree": "Osnovni i stresni scenariji",
+    "openDebt": "Testirajte sposobnost otplate",
     "forecastTitle": "Prognoza tri finansijska izveštaja za uslužne firme",
     "forecastText": "Pretvorite osnovni bilans uspeha, početni bilans stanja i nekoliko operativnih pretpostavki u povezanu prognozu bilansa uspeha, bilansa stanja i indirektnog toka gotovine.",
     "forecastOne": "12 meseci, 24 meseca, 3 godine ili prilagođen period",
@@ -157,10 +177,29 @@
     "moreTitle": "Stiže još praktičnih alata",
     "moreText": "Biblioteka će rasti oko pitanja koja vlasnici zaista postavljaju, a ne oko finansijskog pozorišta.",
     "planned": {
-      "cashFlow": "13-nedeljni plan gotovine",
       "pricing": "Cene i marža",
       "breakEven": "Tačka pokrića"
     }
+  },
+  "DebtCapacityPage": {
+    "metaTitle": "Besplatan kalkulator sposobnosti otplate duga za mala preduzeća",
+    "metaDescription": "Testirajte 13-nedeljni plan otplate duga, izračunajte bezbedni nedeljni maksimum, zaštitite minimalnu rezervu gotovine i simulirajte nižu prodaju ili više troškove.",
+    "keywords": "kalkulator sposobnosti otplate duga|otplata poslovnog duga|13-nedeljni tok gotovine|kapacitet servisiranja duga|analiza duga i gotovine|planiranje duga male firme",
+    "overline": "BESPLATAN ALAT ZA KAPACITET OTPLATE",
+    "title": "Može li firma da otplaćuje dug, a da ne isprazni račun?",
+    "intro": "Povežite planirane otplate sa nedeljnom operativnom gotovinom, jednokratnim obavezama i minimalnom sigurnosnom rezervom. Menjajte pretpostavke i pronađite slabu tačku pre nego što postane hitna.",
+    "badge": {
+      "free": "Besplatno korišćenje",
+      "private": "Podaci ostaju u pregledaču",
+      "interactive": "Interaktivni scenariji",
+      "thirteenWeeks": "13-nedeljni pregled"
+    },
+    "howTitle": "Kako procena funkcioniše",
+    "howTextOne": "Model počinje početnom gotovinom, nedeljnim uplatama kupaca i operativnim troškovima. Zatim oduzima planiranu nedeljnu otplatu duga i jednokratna plaćanja tokom 13 nedelja.",
+    "howTextTwo": "Bezbedni nedeljni maksimum je najviša procenjena otplata pri kojoj svaka projektovana nedelja ostaje iznad minimalne rezerve koju izaberete.",
+    "mattersTitle": "Prostor u gotovini je važniji od zelenog završnog stanja",
+    "mattersText": "Plan može završiti pozitivno, a ipak postati krhak usred perioda. Pratite najnižu nedelju, manjak do rezerve i koliko se rezultat brzo menja pod stresom.",
+    "disclaimer": "Ovo je ilustrativni alat za planiranje, a ne računovodstveni, investicioni ili kreditni savet. Stvarni kapacitet zavisi i od uslova kredita, kamate, poreza, sezonalnosti i rizika naplate."
   },
   "ThreeStatementPage": {
     "metaTitle": "Besplatna prognoza tri finansijska izveštaja za uslužne firme",

@@ -11,7 +11,6 @@ const siteName = site.name;
 
 const links = [
   { href: "/#services", label: "services", section: "services" },
-  { href: "/#cashflow", label: "tool", section: "cashflow" },
   { href: "/tools", label: "tools", section: null },
   { href: "/#process", label: "process", section: "process" },
   { href: "/#about", label: "about", section: "about" },

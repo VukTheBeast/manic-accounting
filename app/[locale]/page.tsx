@@ -6,12 +6,12 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LedgerDemo from "@/components/LedgerDemo";
-import CashFlowTool from "@/components/CashFlowTool";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import About from "@/components/About";
 import ContactCta from "@/components/ContactCta";
 import WorkflowAnimation from "@/components/WorkflowAnimation";
+import FreeToolsPreview from "@/components/FreeToolsPreview";
 import { getServices } from "@/lib/services";
 import { site } from "@/lib/site";
 
@@ -66,7 +66,7 @@ export default async function Home({
             <p className="max-w-[520px] text-lg leading-relaxed">{t("intro")}</p>
             <div className="flex flex-wrap gap-3">
               <Link href="/contact" className="btn-marker">{t("bookCall")}</Link>
-              <Link href="/#cashflow" className="btn-ghost">{t("tryTool")}</Link>
+              <Link href="/tools" className="btn-ghost">{t("tryTool")}</Link>
             </div>
             <ul className="mt-2 flex flex-col gap-2.5">
               {TRUST.map((item) => (
@@ -87,12 +87,7 @@ export default async function Home({
         <Services />
         <WorkflowAnimation />
 
-        <section id="cashflow" className="mx-auto max-w-[1200px] scroll-mt-4 px-5 pb-24 sm:px-8">
-          <div className="overline mb-3">{t("toolOverline")}</div>
-          <h2 className="h2 mb-4 max-w-[760px]">{t("toolTitle")}</h2>
-          <p className="mb-8 max-w-[660px] text-[17px] leading-relaxed">{t("toolIntro")}</p>
-          <CashFlowTool />
-        </section>
+        <FreeToolsPreview />
 
         <Process />
         <About />
