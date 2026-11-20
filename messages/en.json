@@ -82,6 +82,8 @@
     "overline": "CONTACT",
     "title": "Tell me what keeps you up at night.",
     "intro": "Choose what you need help with, write a few lines, and send. I reply within two working days. The intro call is free.",
+    "directTitle": "PREFER TO WRITE DIRECTLY?",
+    "directText": "Send an email from your own inbox and I will reply within two working days.",
     "helpful": "HELPFUL TO MENTION",
     "tipOne": "What kind of business you run",
     "tipTwo": "Roughly how many invoices a month",

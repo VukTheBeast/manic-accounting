@@ -14,6 +14,7 @@ const siteUrl = (() => {
 
 export const site = {
   name: "Manic Accounting",
+  email: "contact@manic-accounting.com",
   tagline: "Manic about your numbers. Calm about your books.",
   description:
     "Virtual CFO, financial planning, management reporting, accounting, cash flow, modeling, valuation and tax support for small businesses.",

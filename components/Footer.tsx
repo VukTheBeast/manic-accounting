@@ -9,9 +9,17 @@ export default function Footer() {
           <LogoMark size={42} variant="yellow" />
           <Wordmark light />
         </div>
-        <div>
-          © {new Date().getFullYear()} {site.name}
-          {site.legal && <> · {site.legal}</>}
+        <div className="flex flex-col items-start gap-1.5 sm:items-end">
+          <a
+            href={`mailto:${site.email}`}
+            className="font-semibold text-paper transition-colors hover:text-marker"
+          >
+            {site.email}
+          </a>
+          <span>
+            © {new Date().getFullYear()} {site.name}
+            {site.legal && <> · {site.legal}</>}
+          </span>
         </div>
       </div>
     </footer>

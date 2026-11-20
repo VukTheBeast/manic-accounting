@@ -61,6 +61,33 @@ export default async function ContactPage({
         <div className="flex flex-wrap items-start gap-8">
           <div className="flex min-w-0 flex-[1_1_300px] flex-col gap-5">
             <div className="card flex flex-col gap-3 p-6">
+              <div className="text-xs font-bold tracking-[0.6px] text-ink">
+                {t("directTitle")}
+              </div>
+              <a
+                href={`mailto:${site.email}`}
+                className="flex min-h-11 items-center gap-3 font-display text-lg font-bold text-ink transition-colors hover:text-ledger"
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.9"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                  className="shrink-0 text-ledger"
+                >
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m4 7 8 6 8-6" />
+                </svg>
+                <span className="break-all">{site.email}</span>
+              </a>
+              <p className="text-sm leading-relaxed">{t("directText")}</p>
+            </div>
+            <div className="card flex flex-col gap-3 p-6">
               <div className="text-xs font-bold tracking-[0.6px] text-ink">{t("helpful")}</div>
               {TIPS.map((tip) => (
                 <div key={tip} className="flex gap-2.5 text-[15px] leading-normal">
