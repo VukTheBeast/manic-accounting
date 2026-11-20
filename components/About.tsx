@@ -3,11 +3,11 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 const FACTS = [
-  ["factFinance", "factFinanceValue"],
-  ["factTeams", "factTeamsValue"],
-  ["factVat", "factVatValue"],
-  ["factAutomation", "factAutomationValue"],
-  ["factWorking", "factWorkingValue"],
+  ["factExperience", "factExperienceValue"],
+  ["factEducation", "factEducationValue"],
+  ["factInternational", "factInternationalValue"],
+  ["factAcca", "factAccaValue"],
+  ["factApproach", "factApproachValue"],
 ] as const;
 
 export default function About() {
@@ -20,8 +20,31 @@ export default function About() {
         <h2 className="h2">{t("title")}</h2>
         <p className="text-[17px] leading-[1.7]">{t("paragraphOne")}</p>
         <p className="text-[17px] leading-[1.7]">{t("paragraphTwo")}</p>
-        <div>
+        <p className="text-[17px] leading-[1.7]">{t("paragraphThree")}</p>
+        <div className="flex flex-wrap gap-3">
           <Link href="/contact" className="btn-marker">{t("button")}</Link>
+          <a
+            href="https://www.linkedin.com/in/vukman-manic-17586145/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-ghost gap-2"
+          >
+            <svg
+              width="19"
+              height="19"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.9"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M7 9v8M7 6.5v.01M11 17v-4.5a3.5 3.5 0 0 1 7 0V17M11 9v8" />
+              <rect x="3" y="3" width="18" height="18" rx="3" />
+            </svg>
+            {t("linkedin")}
+          </a>
         </div>
       </div>
 
