@@ -1,8 +1,8 @@
 {
   "Metadata": {
     "title": "Manic Accounting: Posedlý vašimi čísly. Klid ve vašem účetnictví.",
-    "description": "Účetní služby a finanční nástroje vždy zdarma pro malé firmy a OSVČ: účetnictví, cash flow, ceny, bod zvratu a finanční výhledy.",
-    "keywords": "účetnictví pro malé firmy|účetní pro OSVČ|vedení účetnictví|měsíční uzávěrka|13týdenní cash flow|rozpočty a výhledy|příprava DPH|manažerský reporting|finanční nástroje zdarma|kalkulačka bodu zvratu",
+    "description": "Virtuální CFO, finanční plánování, reporting, účetnictví, cash flow, modelování, oceňování a daňová podpora spolu s finančními nástroji vždy zdarma.",
+    "keywords": "virtuální CFO|finanční řízení|účetnictví pro malé firmy|finanční plánování a prognózy|KPI dashboardy|IFRS účetnictví|13týdenní cash flow|finanční modelování|oceňování podniků|daně ve Velké Británii a EU|finanční nástroje zdarma",
     "contactTitle": "Kontakt",
     "contactDescription": "Řekněte mi, co vám nedá spát. Odpovím do dvou pracovních dnů."
   },
@@ -32,13 +32,13 @@
     "bookCall": "Domluvit bezplatný úvodní hovor",
     "tryTool": "Prozkoumat nástroje vždy zdarma",
     "trustOne": "Deset let ve financích a controllingu",
-    "trustTwo": "DPH a daňová podání v Česku, Bulharsku a Rumunsku",
+    "trustTwo": "Podpora s DPH a daněmi ve Velké Británii a EU",
     "trustThree": "Měsíční uzávěrky pro společnosti v EU, USA a Kanadě"
   },
   "Services": {
     "overline": "CO DĚLÁM",
-    "title": "Nudné věci, udělané pořádně.",
-    "intro": "Měsíční uzávěrky, daňové termíny, odsouhlasení a výhledy. Věci, které nikdy nepůsobí naléhavě — dokud najednou nejsou."
+    "title": "Finanční podpora, která roste s vaší firmou.",
+    "intro": "Od spolehlivého účetnictví po výhledové CFO služby: čísla, modely a reporting, které potřebujete pro jistější řízení firmy."
   },
   "Process": {
     "overline": "JAK SPOLUPRACUJEME",

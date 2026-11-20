@@ -1,8 +1,8 @@
 {
   "Metadata": {
     "title": "Manic Accounting: Manic about your numbers. Calm about your books.",
-    "description": "Accounting services and always-free financial tools for small businesses and freelancers: bookkeeping, cash flow, pricing, break-even and forecasting.",
-    "keywords": "accounting for small businesses|freelance accountant|bookkeeping services|month-end close|13-week cash flow forecast|budgeting and forecasting|VAT preparation|management reporting|free financial tools|break even calculator",
+    "description": "Virtual CFO, financial planning, reporting, accounting, cash flow, modeling, valuation and tax support, plus always-free financial tools.",
+    "keywords": "virtual CFO services|financial management|accounting for small businesses|financial planning and forecasting|KPI dashboards|IFRS accounting|13-week cash flow forecast|financial modeling|business valuation|UK and EU taxation|free financial tools",
     "contactTitle": "Contact",
     "contactDescription": "Tell me what keeps you up at night. Replies within two working days."
   },
@@ -32,13 +32,13 @@
     "bookCall": "Book a free intro call",
     "tryTool": "Explore always-free tools",
     "trustOne": "A decade in finance and controlling",
-    "trustTwo": "VAT and tax filing across Czechia, Bulgaria and Romania",
+    "trustTwo": "VAT and tax support across the UK and EU",
     "trustThree": "Month-end close for EU, US and Canadian entities"
   },
   "Services": {
     "overline": "WHAT I DO",
-    "title": "The boring stuff, done properly.",
-    "intro": "Month-end, tax deadlines, reconciliations, forecasts. The things that never feel urgent until they very much are."
+    "title": "Finance support that grows with your business.",
+    "intro": "From reliable books to forward-looking CFO support: the numbers, models and reporting you need to run the business with more confidence."
   },
   "Process": {
     "overline": "HOW WE WORK",

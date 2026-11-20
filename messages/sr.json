@@ -1,8 +1,8 @@
 {
   "Metadata": {
     "title": "Manic Accounting: Opsednut vašim brojkama. Miran zbog vaših knjiga.",
-    "description": "Računovodstvene usluge i finansijski alati uvek besplatni za mala preduzeća i preduzetnike: knjigovodstvo, tok gotovine, cene i prognoze.",
-    "keywords": "računovodstvo za mala preduzeća|knjigovođa za preduzetnike|knjigovodstvene usluge|mesečno zatvaranje|13-nedeljni tok gotovine|budžeti i prognoze|priprema PDV-a|menadžersko izveštavanje|besplatni finansijski alati|kalkulator tačke pokrića",
+    "description": "Virtuelni CFO, finansijsko planiranje, izveštavanje, računovodstvo, novčani tok, modeliranje, procena vrednosti i poreska podrška uz uvek besplatne alate.",
+    "keywords": "virtuelni CFO|finansijsko upravljanje|računovodstvo za mala preduzeća|finansijsko planiranje i prognoziranje|KPI kontrolne table|IFRS računovodstvo|13-nedeljni novčani tok|finansijsko modeliranje|procena vrednosti poslovanja|porezi u UK i EU|besplatni finansijski alati",
     "contactTitle": "Kontakt",
     "contactDescription": "Recite mi šta vam ne da da spavate. Odgovaram u roku od dva radna dana."
   },
@@ -32,13 +32,13 @@
     "bookCall": "Zakažite besplatan uvodni razgovor",
     "tryTool": "Istražite alate koji su uvek besplatni",
     "trustOne": "Deset godina u finansijama i kontrolingu",
-    "trustTwo": "PDV i poreske prijave u Češkoj, Bugarskoj i Rumuniji",
+    "trustTwo": "Podrška za PDV i poreze u Ujedinjenom Kraljevstvu i EU",
     "trustThree": "Mesečno zatvaranje za firme u EU, SAD i Kanadi"
   },
   "Services": {
     "overline": "ŠTA RADIM",
-    "title": "Dosadne stvari, urađene kako treba.",
-    "intro": "Mesečno zatvaranje, poreski rokovi, usaglašavanja i prognoze. Stvari koje nikada ne deluju hitno — sve dok odjednom ne postanu."
+    "title": "Finansijska podrška koja raste sa vašim poslovanjem.",
+    "intro": "Od pouzdanih knjiga do CFO podrške usmerene na budućnost: brojke, modeli i izveštaji potrebni za sigurnije vođenje poslovanja."
   },
   "Process": {
     "overline": "KAKO RADIMO",

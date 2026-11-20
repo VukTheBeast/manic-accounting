@@ -1,12 +1,13 @@
 import type { Locale } from "@/i18n/routing";
 
 export type ServiceId =
-  | "bookkeeping"
-  | "budgets"
-  | "cashflow"
-  | "tax"
+  | "cfo"
+  | "planning"
   | "reporting"
-  | "leasebuy"
+  | "bookkeeping"
+  | "cashflow"
+  | "modeling"
+  | "tax"
   | "unsure";
 
 export type Service = {
@@ -19,34 +20,39 @@ export type Service = {
 const servicesByLocale: Record<Locale, Service[]> = {
   en: [
     {
-      id: "bookkeeping",
-      label: "Bookkeeping & month-end close",
-      desc: "General ledger, accruals, reconciliations and a proper close. Every account explained, every month.",
+      id: "cfo",
+      label: "Financial Management & virtual CFO services",
+      desc: "Practical finance leadership without a full-time hire: priorities, performance, decisions and a clear financial rhythm for the business.",
     },
     {
-      id: "budgets",
-      label: "Budgets & forecasts",
-      desc: "An annual budget, a monthly forecast and variance reports you will actually read to the end.",
-    },
-    {
-      id: "cashflow",
-      label: "13-week cash flow",
-      desc: "Short-term cash visibility, so payday and tax day never ambush you.",
-    },
-    {
-      id: "tax",
-      label: "VAT & corporate tax prep",
-      desc: "Preparation and filing support. Experience across Czechia, Bulgaria and Romania.",
+      id: "planning",
+      label: "Financial Planning, Budgeting & Forecasting",
+      desc: "Budgets and rolling forecasts that connect your plans to revenue, costs, capacity and the decisions ahead.",
     },
     {
       id: "reporting",
-      label: "Management reporting",
-      desc: "P&L and balance sheet analysis, cost transparency and KPIs, explained in plain language.",
+      label: "Management Reporting & KPI dashboards",
+      desc: "Decision-ready reporting with the right KPIs, clear variance analysis and no spreadsheet archaeology.",
     },
     {
-      id: "leasebuy",
-      label: "Lease vs. buy & business cases",
-      desc: "Cost-benefit analysis before you sign anything: a new car, machine or office.",
+      id: "bookkeeping",
+      label: "Bookkeeping & Accounting (IFRS / US & local GAAP)",
+      desc: "Reliable books, reconciliations and month-end close, structured around the reporting framework your business needs.",
+    },
+    {
+      id: "cashflow",
+      label: "Cash Flow Forecasting",
+      desc: "Short- and medium-term cash visibility, including 13-week cash flow forecasting, so funding needs never arrive as a surprise.",
+    },
+    {
+      id: "modeling",
+      label: "Financial Modeling & Business Valuation",
+      desc: "Clear models for scenarios, investment choices, funding conversations and understanding what the business may be worth.",
+    },
+    {
+      id: "tax",
+      label: "UK & EU Taxation (Personal, Corporate & VAT)",
+      desc: "Practical support with tax planning, preparation and compliance across personal, corporate and VAT matters.",
     },
     {
       id: "unsure",
@@ -56,34 +62,39 @@ const servicesByLocale: Record<Locale, Service[]> = {
   ],
   cs: [
     {
-      id: "bookkeeping",
-      label: "Vedení účetnictví a měsíční uzávěrka",
-      desc: "Hlavní kniha, časové rozlišení, odsouhlasení a správná uzávěrka. Každý účet vysvětlený, každý měsíc.",
+      id: "cfo",
+      label: "Finanční řízení a služby virtuálního CFO",
+      desc: "Praktické finanční vedení bez potřeby zaměstnat CFO na plný úvazek: priority, výkonnost, rozhodování a jasný finanční rytmus firmy.",
     },
     {
-      id: "budgets",
-      label: "Rozpočty a výhledy",
-      desc: "Roční rozpočet, měsíční výhled a analýza odchylek, kterou skutečně dočtete do konce.",
-    },
-    {
-      id: "cashflow",
-      label: "13týdenní cash flow",
-      desc: "Krátkodobý přehled o hotovosti, aby vás výplaty ani daně nikdy nezaskočily.",
-    },
-    {
-      id: "tax",
-      label: "Příprava DPH a daně z příjmů",
-      desc: "Podpora s přípravou a podáním. Zkušenosti z Česka, Bulharska a Rumunska.",
+      id: "planning",
+      label: "Finanční plánování, rozpočty a prognózy",
+      desc: "Rozpočty a průběžné prognózy, které propojí vaše plány s tržbami, náklady, kapacitou a dalšími rozhodnutími.",
     },
     {
       id: "reporting",
-      label: "Manažerský reporting",
-      desc: "Analýza výsledovky a rozvahy, transparentní náklady a KPI vysvětlené srozumitelně.",
+      label: "Manažerský reporting a KPI dashboardy",
+      desc: "Reporting připravený pro rozhodování, se správnými KPI, srozumitelnou analýzou odchylek a bez pátrání v tabulkách.",
     },
     {
-      id: "leasebuy",
-      label: "Leasing, koupě a business case",
-      desc: "Analýza nákladů a přínosů před podpisem smlouvy na nové auto, stroj nebo kancelář.",
+      id: "bookkeeping",
+      label: "Účetnictví (IFRS / US a lokální GAAP)",
+      desc: "Spolehlivé účetnictví, odsouhlasení a měsíční uzávěrky podle účetního rámce, který vaše firma potřebuje.",
+    },
+    {
+      id: "cashflow",
+      label: "Prognózování a řízení cash flow",
+      desc: "Krátkodobý i střednědobý přehled o hotovosti včetně 13týdenního cash flow, aby vás potřeba financování nepřekvapila.",
+    },
+    {
+      id: "modeling",
+      label: "Finanční modelování a oceňování podniků",
+      desc: "Srozumitelné modely pro scénáře, investiční rozhodnutí, jednání o financování a odhad hodnoty firmy.",
+    },
+    {
+      id: "tax",
+      label: "Daně ve Velké Británii a EU (fyzické osoby, firmy a DPH)",
+      desc: "Praktická podpora při daňovém plánování, přípravě a plnění povinností u osobních, firemních a DPH záležitostí.",
     },
     {
       id: "unsure",
@@ -93,34 +104,39 @@ const servicesByLocale: Record<Locale, Service[]> = {
   ],
   sr: [
     {
-      id: "bookkeeping",
-      label: "Knjigovodstvo i mesečno zatvaranje",
-      desc: "Glavna knjiga, razgraničenja, usaglašavanja i uredno zatvaranje. Svaki račun objašnjen, svakog meseca.",
+      id: "cfo",
+      label: "Finansijsko upravljanje i usluge virtuelnog CFO-a",
+      desc: "Praktično finansijsko vođstvo bez zapošljavanja CFO-a sa punim radnim vremenom: prioriteti, učinak, odluke i jasan finansijski ritam.",
     },
     {
-      id: "budgets",
-      label: "Budžeti i prognoze",
-      desc: "Godišnji budžet, mesečna prognoza i izveštaji o odstupanjima koje ćete zaista pročitati do kraja.",
-    },
-    {
-      id: "cashflow",
-      label: "13-nedeljni tok gotovine",
-      desc: "Kratkoročna preglednost gotovine, da vas dan za plate ili porez nikada ne iznenadi.",
-    },
-    {
-      id: "tax",
-      label: "Priprema PDV-a i poreza na dobit",
-      desc: "Podrška u pripremi i podnošenju. Iskustvo u Češkoj, Bugarskoj i Rumuniji.",
+      id: "planning",
+      label: "Finansijsko planiranje, budžetiranje i prognoziranje",
+      desc: "Budžeti i tekuće prognoze koji povezuju planove sa prihodima, troškovima, kapacitetom i budućim odlukama.",
     },
     {
       id: "reporting",
-      label: "Menadžersko izveštavanje",
-      desc: "Analiza bilansa uspeha i stanja, transparentni troškovi i KPI pokazatelji objašnjeni jednostavno.",
+      label: "Menadžersko izveštavanje i KPI kontrolne table",
+      desc: "Izveštaji spremni za odlučivanje, sa pravim KPI pokazateljima, jasnom analizom odstupanja i bez kopanja po tabelama.",
     },
     {
-      id: "leasebuy",
-      label: "Lizing, kupovina i poslovni slučajevi",
-      desc: "Analiza troškova i koristi pre nego što potpišete ugovor za automobil, mašinu ili kancelariju.",
+      id: "bookkeeping",
+      label: "Knjigovodstvo i računovodstvo (IFRS / US i lokalni GAAP)",
+      desc: "Pouzdane knjige, usaglašavanja i mesečno zatvaranje prema računovodstvenom okviru koji je potreban vašem poslovanju.",
+    },
+    {
+      id: "cashflow",
+      label: "Prognoziranje i upravljanje novčanim tokom",
+      desc: "Kratkoročna i srednjoročna preglednost gotovine, uključujući 13-nedeljnu prognozu, da potreba za finansiranjem ne bude iznenađenje.",
+    },
+    {
+      id: "modeling",
+      label: "Finansijsko modeliranje i procena vrednosti poslovanja",
+      desc: "Jasni modeli za scenarije, investicione odluke, razgovore o finansiranju i razumevanje moguće vrednosti poslovanja.",
+    },
+    {
+      id: "tax",
+      label: "Porezi u Ujedinjenom Kraljevstvu i EU (lični, korporativni i PDV)",
+      desc: "Praktična podrška za poresko planiranje, pripremu i usklađenost kod ličnih, korporativnih i PDV pitanja.",
     },
     {
       id: "unsure",

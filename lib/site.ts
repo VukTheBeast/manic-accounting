@@ -16,7 +16,7 @@ export const site = {
   name: "Manic Accounting",
   tagline: "Manic about your numbers. Calm about your books.",
   description:
-    "Bookkeeping, month-end close, budgets, 13-week cash flow and VAT preparation for small businesses and freelancers.",
+    "Virtual CFO, financial planning, management reporting, accounting, cash flow, modeling, valuation and tax support for small businesses.",
   url: siteUrl,
   legal: process.env.NEXT_PUBLIC_LEGAL_TEXT ?? "",
   locale: "en_GB",
@@ -29,6 +29,9 @@ export const site = {
     "budgeting and forecasting",
     "VAT preparation",
     "management reporting",
+    "virtual CFO services",
+    "financial modeling",
+    "business valuation",
     "free financial tools",
     "break-even calculator",
     "small business cash flow tools",
