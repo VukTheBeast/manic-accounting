@@ -1,24 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #14171a;
-  --color-ledger: #0b6b4f;
-  --color-ledger-tint: #ddefe6;
-  --color-marker: #ffe14d;
-  --color-marker-dark: #f2cf1f;
-  --color-paper: #fbfbf6;
-  --color-body: #3d4650;
-  --color-grid: #dcebdd;
+  --color-ink: #0b2447;
+  --color-ledger: #b07f20;
+  --color-ledger-tint: #f8efd9;
+  --color-marker: #c8962e;
+  --color-marker-dark: #b07f20;
+  --color-marker-light: #e2b55a;
+  --color-paper: #f7f8fb;
+  --color-body: #4b5563;
+  --color-grid: #dde3ec;
   --color-red-pen: #b3202f;
   --color-red-tint: #fbe0e2;
-  --color-mute: #6b746e;
+  --color-mute: #7a8594;
 
-  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
-  --font-sans: var(--font-plex-sans), system-ui, sans-serif;
+  --font-display: var(--font-montserrat), system-ui, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
   --font-mono: var(--font-plex-mono), ui-monospace, monospace;
 
-  --shadow-hard: 5px 5px 0 #14171a;
-  --shadow-hard-sm: 3px 3px 0 #14171a;
+  --shadow-hard: 4px 4px 0 #0b2447;
+  --shadow-hard-sm: 2px 2px 0 #0b2447;
 
   --radius-card: 14px;
 }
@@ -32,13 +33,13 @@
     @apply bg-paper font-sans text-body antialiased;
     overflow-x: clip;
     background-image:
-      linear-gradient(var(--color-grid) 1px, transparent 1px),
-      linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+      linear-gradient(color-mix(in srgb, var(--color-grid) 38%, transparent) 1px, transparent 1px),
+      linear-gradient(90deg, color-mix(in srgb, var(--color-grid) 38%, transparent) 1px, transparent 1px);
     background-size: 32px 32px;
     background-attachment: fixed;
   }
   :focus-visible {
-    outline: 3px solid #0b6b4f;
+    outline: 3px solid var(--color-ledger);
     outline-offset: 2px;
   }
   section[id]:target {
@@ -194,24 +195,36 @@
     }
   }
   .card {
-    @apply rounded-card border-2 border-ink bg-white shadow-hard;
+    @apply rounded-card border-2 border-ink/15 bg-white shadow-[0_10px_30px_rgba(11,36,71,0.08)];
   }
   .overline {
-    @apply text-xs font-bold tracking-[0.6px] text-ledger;
+    @apply text-[11px] font-bold tracking-[1.4px] text-ledger uppercase;
   }
   .h2 {
-    @apply font-display text-[clamp(32px,7.5vw,46px)] leading-[1.08] font-bold text-ink;
+    @apply font-display text-[clamp(32px,7.5vw,48px)] leading-[1.06] font-bold tracking-[-0.025em] text-ink;
   }
   .btn-marker {
-    @apply inline-flex min-h-12 items-center justify-center rounded-[10px] border-2 border-ink bg-marker px-6 py-4 text-[17px] font-bold text-ink shadow-hard-sm transition-colors hover:bg-marker-dark;
+    @apply inline-flex min-h-12 items-center justify-center rounded-[8px] border-2 border-marker bg-marker px-6 py-3.5 text-base font-bold text-ink transition-[background-color,transform] hover:-translate-y-0.5 hover:border-marker-dark hover:bg-marker-dark;
   }
   .btn-ghost {
-    @apply inline-flex min-h-12 items-center justify-center rounded-[10px] border-2 border-ink px-6 py-4 text-[17px] font-bold text-ink transition-colors hover:bg-ledger-tint;
+    @apply inline-flex min-h-12 items-center justify-center rounded-[8px] border-2 border-ink/20 bg-white px-6 py-3.5 text-base font-bold text-ink transition-[background-color,transform,border-color] hover:-translate-y-0.5 hover:border-ink hover:bg-ledger-tint;
   }
   .btn-dark {
-    @apply inline-flex min-h-12 items-center justify-center rounded-[10px] bg-ink px-6 py-4 text-[17px] font-bold text-white transition-colors hover:bg-ledger;
+    @apply inline-flex min-h-12 items-center justify-center rounded-[9px] border-2 border-ink bg-ink px-6 py-3.5 text-base font-bold text-white transition-[background-color,transform] hover:-translate-y-0.5 hover:bg-ledger;
   }
   .field {
     @apply min-h-12 w-full rounded-[10px] border-2 border-ink bg-white px-4 py-3.5 text-base text-ink;
+  }
+  .section-shell {
+    @apply mx-auto max-w-[1200px] px-5 py-24 sm:px-8 lg:py-28;
+  }
+  .section-intro {
+    @apply max-w-[680px] text-[17px] leading-[1.75] text-body;
+  }
+  .professional-card {
+    @apply transition-[transform,box-shadow,border-color] duration-200 hover:-translate-y-1 hover:border-ledger/50 hover:shadow-[0_14px_34px_rgba(11,36,71,0.12)];
+  }
+  .hero-shell .card {
+    box-shadow: 0 18px 48px rgba(11, 36, 71, 0.12);
   }
 }

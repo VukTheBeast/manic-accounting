@@ -7,19 +7,20 @@ export default function FreeToolsPreview() {
   return (
     <section
       id="free-tools"
-      className="mx-auto max-w-[1200px] scroll-mt-4 px-5 pb-24 sm:px-8"
+      className="scroll-mt-4 border-y border-ink/10 bg-white/75"
     >
-      <div className="overline mb-3">{t("overline")}</div>
-      <div className="mb-9 flex flex-wrap items-end justify-between gap-5">
-        <div>
-          <h2 className="h2 mb-4 max-w-[760px]">{t("title")}</h2>
-          <p className="max-w-[680px] text-[17px] leading-relaxed">{t("intro")}</p>
+      <div className="section-shell">
+        <div className="overline mb-3">{t("overline")}</div>
+        <div className="mb-9 flex flex-wrap items-end justify-between gap-5">
+          <div>
+            <h2 className="h2 mb-4 max-w-[760px]">{t("title")}</h2>
+            <p className="section-intro">{t("intro")}</p>
+          </div>
+          <Link href="/tools" className="btn-ghost">{t("browseAll")}</Link>
         </div>
-        <Link href="/tools" className="btn-ghost">{t("browseAll")}</Link>
-      </div>
 
-      <div className="grid gap-6 lg:grid-cols-3">
-        <article className="card group flex flex-col overflow-hidden">
+        <div className="grid gap-6 lg:grid-cols-3">
+        <article className="professional-card card group flex flex-col overflow-hidden">
           <div
             className="relative flex min-h-44 items-end border-b-2 border-ink bg-ledger-tint p-6"
             aria-hidden="true"
@@ -42,7 +43,7 @@ export default function FreeToolsPreview() {
           </div>
         </article>
 
-        <article className="card group flex flex-col overflow-hidden">
+        <article className="professional-card card group flex flex-col overflow-hidden">
           <div
             className="grid min-h-44 grid-cols-[repeat(13,minmax(0,1fr))] items-end gap-1 border-b-2 border-ink bg-ledger-tint px-6 pt-7"
             aria-hidden="true"
@@ -71,7 +72,7 @@ export default function FreeToolsPreview() {
           </div>
         </article>
 
-        <article className="card group flex flex-col overflow-hidden">
+        <article className="professional-card card group flex flex-col overflow-hidden">
           <div
             className="flex min-h-44 items-center justify-center border-b-2 border-ink bg-paper p-6"
             aria-hidden="true"
@@ -111,6 +112,7 @@ export default function FreeToolsPreview() {
             </Link>
           </div>
         </article>
+        </div>
       </div>
     </section>
   );

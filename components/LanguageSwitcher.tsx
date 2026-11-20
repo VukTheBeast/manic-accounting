@@ -49,7 +49,7 @@ export default function LanguageSwitcher() {
 
   return (
     <div
-      className="flex items-center gap-1 rounded-[10px] border-2 border-ink bg-white p-1"
+      className="flex items-center gap-1 rounded-[9px] border border-ink/25 bg-white p-1"
       aria-label={navigation("language")}
       role="group"
     >

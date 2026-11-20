@@ -14,7 +14,7 @@ export default function About() {
   const t = useTranslations("About");
 
   return (
-    <section id="about" className="mx-auto flex max-w-[1200px] scroll-mt-4 flex-wrap items-start gap-x-14 gap-y-12 px-5 py-24 sm:px-8">
+    <section id="about" className="section-shell flex scroll-mt-4 flex-wrap items-center gap-x-16 gap-y-12">
       <div className="flex min-w-0 flex-[1_1_480px] flex-col gap-5">
         <div className="overline">{t("overline")}</div>
         <h2 className="h2">{t("title")}</h2>
@@ -36,15 +36,15 @@ export default function About() {
             className="h-auto w-full"
           />
         </div>
-        <div className="card flex flex-col gap-3.5 p-6">
-          <div className="text-xs font-bold tracking-[0.6px] text-ink">{t("shortVersion")}</div>
+        <div className="card flex flex-col gap-3.5 border-ink bg-ink p-6 text-paper/75">
+          <div className="text-[11px] font-bold tracking-[1.2px] text-marker uppercase">{t("shortVersion")}</div>
           {FACTS.map(([k, v], i) => (
             <div
               key={k}
-              className={`flex justify-between gap-4 text-[15px] ${i < FACTS.length - 1 ? "border-b border-mute/25 pb-3" : ""}`}
+              className={`flex justify-between gap-4 text-[15px] ${i < FACTS.length - 1 ? "border-b border-paper/20 pb-3" : ""}`}
             >
               <span>{t(k)}</span>
-              <strong className="text-right text-ink">{t(v)}</strong>
+              <strong className="text-right text-paper">{t(v)}</strong>
             </div>
           ))}
         </div>

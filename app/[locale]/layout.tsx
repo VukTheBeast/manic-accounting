@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import { Inter, Montserrat, IBM_Plex_Mono } from "next/font/google";
 import { hasLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -9,15 +9,15 @@ import { routing, type Locale } from "@/i18n/routing";
 import { site } from "@/lib/site";
 import "../globals.css";
 
-const display = Space_Grotesk({
+const display = Montserrat({
   subsets: ["latin", "latin-ext"],
-  weight: ["500", "700"],
-  variable: "--font-space-grotesk",
+  weight: ["500", "700", "800"],
+  variable: "--font-montserrat",
 });
-const sans = IBM_Plex_Sans({
+const sans = Inter({
   subsets: ["latin", "latin-ext"],
   weight: ["500", "600", "700"],
-  variable: "--font-plex-sans",
+  variable: "--font-inter",
 });
 const mono = IBM_Plex_Mono({
   subsets: ["latin", "latin-ext"],
@@ -94,7 +94,7 @@ export async function generateMetadata({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0B6B4F",
+  themeColor: "#0B2447",
 };
 
 export default async function LocaleLayout({

@@ -41,11 +41,11 @@ export default async function OpenGraphImage({
       <div
         style={{
           alignItems: "center",
-          backgroundColor: "#fbfbf6",
+          backgroundColor: "#f7f8fb",
           backgroundImage:
-            "linear-gradient(#dcebdd 2px, transparent 2px), linear-gradient(90deg, #dcebdd 2px, transparent 2px)",
+            "linear-gradient(#dde3ec 2px, transparent 2px), linear-gradient(90deg, #dde3ec 2px, transparent 2px)",
           backgroundSize: "48px 48px",
-          color: "#14171a",
+          color: "#0b2447",
           display: "flex",
           fontFamily: "Arial, sans-serif",
           height: "100%",
@@ -57,9 +57,9 @@ export default async function OpenGraphImage({
         <div
           style={{
             backgroundColor: "#ffffff",
-            border: "4px solid #14171a",
+            border: "4px solid #0b2447",
             borderRadius: "28px",
-            boxShadow: "14px 14px 0 #14171a",
+            boxShadow: "14px 14px 0 #0b2447",
             display: "flex",
             flexDirection: "column",
             gap: "28px",
@@ -67,18 +67,17 @@ export default async function OpenGraphImage({
             width: "100%",
           }}
         >
-          <div style={{ color: "#0b6b4f", display: "flex", fontSize: 30, fontWeight: 700 }}>
+          <div style={{ color: "#b07f20", display: "flex", fontSize: 30, fontWeight: 700 }}>
             {site.name.toUpperCase()}
           </div>
           <div style={{ display: "flex", flexDirection: "column", fontSize: 68, fontWeight: 700, lineHeight: 1.05 }}>
             <span>{text.lineOne}</span>
             <span
               style={{
-                backgroundColor: "#ffe14d",
+                color: "#b07f20",
                 borderRadius: "12px",
                 display: "flex",
                 marginTop: "12px",
-                padding: "4px 14px",
                 alignSelf: "flex-start",
               }}
             >

@@ -68,24 +68,34 @@ export default async function Home({
             __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
           }}
         />
-        <section className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-x-14 gap-y-14 px-5 pt-12 pb-22 sm:px-8">
-          <div className="flex min-w-0 flex-[1_1_480px] flex-col gap-6">
-            <div className="overline">{t("overline")}</div>
-            <h1 className="font-display text-[clamp(40px,10.5vw,68px)] leading-[1.02] font-bold text-ink">
-              {t("headlineOne")}
-              <br />
-              <span className="box-decoration-clone rounded-md bg-marker px-2.5 text-ink">
-                {t("headlineTwo")}
-              </span>
-            </h1>
-            <p className="max-w-[520px] text-lg leading-relaxed">{t("intro")}</p>
-            <div className="flex flex-wrap gap-3">
-              <Link href="/contact" className="btn-marker">{t("bookCall")}</Link>
-              <Link href="/tools" className="btn-ghost">{t("tryTool")}</Link>
+        <section className="hero-shell">
+          <div className="mx-auto max-w-[1200px] px-5 pt-14 pb-20 sm:px-8 lg:pt-20 lg:pb-24">
+            <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
+              <div className="flex min-w-0 flex-col gap-7">
+                <div className="text-[11px] font-bold tracking-[2.4px] text-body uppercase">
+                  {t("overline")}
+                </div>
+                <h1 className="max-w-[720px] font-display text-[clamp(42px,8.5vw,68px)] leading-[1.02] font-bold tracking-[-0.04em] text-ink">
+                  {t("headlineOne")}
+                  <br />
+                  <span className="text-ledger">{t("headlineTwo")}</span>
+                </h1>
+                <p className="max-w-[620px] text-lg leading-[1.7] text-body">{t("intro")}</p>
+                <div className="flex flex-wrap gap-3">
+                  <Link href="/contact" className="btn-marker">{t("bookCall")}</Link>
+                  <Link href="/tools" className="btn-ghost">{t("tryTool")}</Link>
+                </div>
+              </div>
+              <div className="min-w-0">
+                <LedgerDemo />
+              </div>
             </div>
-            <ul className="mt-2 flex flex-col gap-2.5">
+            <ul className="mt-14 grid gap-3 sm:grid-cols-3">
               {TRUST.map((item) => (
-                <li key={item} className="flex items-center gap-2.5 text-[15px] font-semibold text-ink">
+                <li
+                  key={item}
+                  className="flex min-h-14 items-center gap-3 text-sm font-semibold leading-relaxed text-ink"
+                >
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="flex-none text-ledger">
                     <path d="M5 12.5l4.5 4.5L19 7.5" />
                   </svg>
@@ -93,9 +103,6 @@ export default async function Home({
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="min-w-0 flex-[1_1_440px]">
-            <LedgerDemo />
           </div>
         </section>
 

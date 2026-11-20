@@ -54,8 +54,8 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-40 border-b-2 border-ink bg-paper">
-      <div className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-x-3 gap-y-3 px-4 py-3 sm:px-8">
+    <header className="sticky top-0 z-40 border-b border-ink/15 bg-paper/95">
+      <div className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-x-3 gap-y-3 px-4 py-3.5 sm:px-8">
         <Link href="/" className="flex min-h-11 items-center gap-3" aria-label={t("home", { name: siteName })}>
           <LogoMark />
           <span className="hidden sm:block">
@@ -79,7 +79,7 @@ export default function Header() {
                 onClick={() => setActiveSection(link.section)}
                 className={`inline-flex min-h-11 shrink-0 items-center rounded-md px-3 text-sm font-bold transition-colors ${
                   active
-                    ? "bg-ledger-tint text-ledger"
+                    ? "bg-ledger text-white"
                     : "text-ink hover:bg-ledger-tint hover:text-ledger"
                 }`}
               >
@@ -93,7 +93,7 @@ export default function Header() {
           <Link
             href="/contact"
             aria-current={pathname === "/contact" ? "page" : undefined}
-            className={`hidden rounded-[10px] border-2 border-ink px-5 py-3 text-[15px] font-bold shadow-hard-sm transition-colors xl:inline-flex ${
+            className={`hidden min-h-11 items-center rounded-[9px] border-2 border-ink px-5 text-[15px] font-bold shadow-hard-sm transition-colors xl:inline-flex ${
               pathname === "/contact"
                 ? "bg-ledger text-white"
                 : "bg-marker text-ink hover:bg-marker-dark"
@@ -108,7 +108,7 @@ export default function Header() {
             aria-controls="mobile-navigation"
             aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
             onClick={() => setMobileOpen((open) => !open)}
-            className="flex size-11 items-center justify-center rounded-[10px] border-2 border-ink bg-white text-ink transition-colors hover:bg-ledger-tint xl:hidden"
+            className="flex size-11 items-center justify-center rounded-[9px] border-2 border-ink bg-white text-ink transition-colors hover:bg-ledger-tint xl:hidden"
           >
             <svg
               width="22"

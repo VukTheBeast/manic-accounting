@@ -37,20 +37,20 @@ export default function Services() {
   const cards = getServices(locale).filter((service) => service.id !== "unsure");
 
   return (
-    <section id="services" className="mx-auto max-w-[1200px] scroll-mt-4 px-5 pt-10 pb-24 sm:px-8">
+    <section id="services" className="section-shell scroll-mt-4">
       <div className="overline mb-3">{t("overline")}</div>
-      <h2 className="h2 mb-4 max-w-[720px]">{t("title")}</h2>
-      <p className="mb-10 max-w-[640px] text-[17px] leading-relaxed">{t("intro")}</p>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))] gap-5">
+      <h2 className="h2 mb-5 max-w-[720px]">{t("title")}</h2>
+      <p className="section-intro mb-10">{t("intro")}</p>
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {cards.map((s) => (
-          <div key={s.id} className="card flex flex-col gap-3.5 p-7">
-            <div className="flex size-12 items-center justify-center rounded-full bg-marker/40 text-ledger">
+          <div key={s.id} className="professional-card card flex flex-col gap-4 p-7">
+            <div className="flex size-12 items-center justify-center rounded-full bg-ledger-tint text-ledger">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 {ICONS[s.id as Exclude<ServiceId, "unsure">]}
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-ink">{s.label}</h3>
-            <p className="text-[15px] leading-relaxed">{s.desc}</p>
+            <h3 className="font-display text-xl font-bold text-ink">{s.label}</h3>
+            <p className="text-[15px] leading-[1.7]">{s.desc}</p>
           </div>
         ))}
       </div>

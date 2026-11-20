@@ -33,7 +33,7 @@ export default function LedgerDemo() {
   const canFix = any && diff !== 0 && !fixed;
 
   const status = !any
-    ? { label: t("nothing"), cls: "bg-[#ecefe6] text-body" }
+    ? { label: t("nothing"), cls: "bg-grid/60 text-body" }
     : diff === 0
       ? { label: t("balanced"), cls: "bg-ledger-tint text-ledger" }
       : { label: t("offBy", { amount: fmt(Math.abs(diff)) }), cls: "bg-red-tint text-red-pen" };
@@ -48,7 +48,7 @@ export default function LedgerDemo() {
           {t("balancedStamp")}
         </div>
       )}
-      <div className="card flex flex-col gap-4 p-6">
+      <div className="card flex flex-col gap-4 border-paper bg-paper p-6 text-body">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div className="text-xs font-bold tracking-[0.6px] text-ink">{t("title")}</div>
           <div className={`rounded-md px-3 py-1.5 text-[12.5px] font-bold ${status.cls}`}>
@@ -69,7 +69,7 @@ export default function LedgerDemo() {
                 aria-pressed={on}
                 onClick={() => toggle(i)}
                 className={`flex w-full items-center gap-3.5 rounded-[10px] p-3.5 text-left transition-colors hover:border-ink ${
-                  on ? "border-2 border-ink bg-white" : "border-[1.5px] border-dashed border-[#9aa39c] bg-paper"
+                  on ? "border-2 border-ink bg-white" : "border-[1.5px] border-dashed border-mute bg-paper"
                 }`}
               >
                 {on ? (
@@ -94,7 +94,7 @@ export default function LedgerDemo() {
           })}
         </div>
 
-        <div className="flex flex-wrap gap-x-6 gap-y-2 border-t border-[#dde3dc] pt-3.5 font-mono text-sm font-semibold text-ink tabular-nums">
+        <div className="flex flex-wrap gap-x-6 gap-y-2 border-t border-grid pt-3.5 font-mono text-sm font-semibold text-ink tabular-nums">
           <span>{t("debits", { amount: fmt(debit) })}</span>
           <span>{t("credits", { amount: fmt(credit) })}</span>
           <span>{t("difference", { amount: fmt(Math.abs(diff)) })}</span>

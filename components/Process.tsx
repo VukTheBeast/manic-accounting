@@ -11,18 +11,20 @@ export default function Process() {
   const t = useTranslations("Process");
 
   return (
-    <section id="process" className="scroll-mt-4 bg-ink text-paper/80">
-      <div className="mx-auto max-w-[1200px] px-5 pt-22 pb-24 sm:px-8">
-        <div className="mb-3 text-xs font-bold tracking-[0.6px] text-marker">{t("overline")}</div>
-        <h2 className="mb-12 max-w-[720px] font-display text-[clamp(32px,7.5vw,46px)] leading-[1.08] font-bold text-paper">
+    <section id="process" className="scroll-mt-4 bg-ink text-paper">
+      <div className="section-shell">
+        <div className="mb-3 text-[11px] font-bold tracking-[1.4px] text-marker uppercase">{t("overline")}</div>
+        <h2 className="mb-12 max-w-[720px] font-display text-[clamp(32px,7.5vw,48px)] leading-[1.06] font-bold tracking-[-0.025em] text-paper">
           {t("title")}
         </h2>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,230px),1fr))] gap-8">
+        <div className="grid gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((s) => (
-            <div key={s.n} className="flex flex-col gap-2.5">
-              <div className="font-display text-[56px] leading-none font-bold text-marker">{s.n}</div>
-              <h3 className="text-xl font-bold text-paper">{t(s.title)}</h3>
-              <p className="text-[15px] leading-relaxed">{t(s.text)}</p>
+            <div key={s.n} className="border-t border-paper/25 pt-5">
+              <div className="mb-4 font-mono text-sm font-bold text-marker tabular-nums">{s.n}</div>
+              <div>
+                <h3 className="mb-2 font-display text-xl font-bold text-paper">{t(s.title)}</h3>
+                <p className="text-[15px] leading-[1.7] text-paper/70">{t(s.text)}</p>
+              </div>
             </div>
           ))}
         </div>

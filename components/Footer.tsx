@@ -1,13 +1,13 @@
-import { LogoMark } from "./Logo";
+import { LogoMark, Wordmark } from "./Logo";
 import { site } from "@/lib/site";
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-paper/80">
-      <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-x-6 gap-y-3 px-5 py-8 text-[13px] sm:px-8">
+    <footer className="border-t border-paper/15 bg-ink text-paper/70">
+      <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-x-6 gap-y-5 px-5 py-10 text-[13px] sm:px-8">
         <div className="flex items-center gap-2.5">
-          <LogoMark size={30} variant="yellow" />
-          <span className="font-display text-lg font-bold text-paper">{site.name}</span>
+          <LogoMark size={42} variant="yellow" />
+          <Wordmark light />
         </div>
         <div>
           © {new Date().getFullYear()} {site.name}

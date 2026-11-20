@@ -56,12 +56,15 @@ export default function WorkflowAnimation() {
   }, []);
 
   return (
-    <section id="workflow" className="workflow-section mx-auto max-w-[1200px] scroll-mt-4 px-5 pb-24 sm:px-8">
-      <div className="overline mb-3">{t("overline")}</div>
-      <h2 className="h2 mb-4 max-w-[760px]">{t("title")}</h2>
-      <p className="mb-9 max-w-[700px] text-[17px] leading-relaxed">{t("intro")}</p>
+    <section id="workflow" className="workflow-section scroll-mt-4 border-y border-ledger/15 bg-ledger-tint/55">
+      <div className="section-shell">
+        <div className="overline mb-3">{t("overline")}</div>
+        <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
+          <h2 className="h2 max-w-[760px]">{t("title")}</h2>
+          <p className="section-intro max-w-[470px]">{t("intro")}</p>
+        </div>
 
-      <div className="card overflow-hidden p-[clamp(18px,4vw,32px)]">
+        <div className="card overflow-hidden p-[clamp(18px,4vw,32px)]">
         <div className="mb-7 grid grid-cols-3 gap-2" role="group" aria-label={t("phaseLabel")}>
           {PHASES.map((phaseName, index) => (
             <button
@@ -225,7 +228,8 @@ export default function WorkflowAnimation() {
           </div>
         </div>
 
-        <p className="mt-6 text-center text-sm font-semibold text-body">{t("caption")}</p>
+          <p className="mt-6 text-center text-sm font-semibold text-body">{t("caption")}</p>
+        </div>
       </div>
     </section>
   );

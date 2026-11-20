@@ -1,14 +1,25 @@
 type Variant = "green" | "yellow" | "dark";
 
-const colors: Record<Variant, { bg: string; m: string; tick: string }> = {
-  green: { bg: "#0B6B4F", m: "#FFFFFF", tick: "#FFE14D" },
-  yellow: { bg: "#FFE14D", m: "#14171A", tick: "#0B6B4F" },
-  dark: { bg: "#14171A", m: "#FFFFFF", tick: "#FFE14D" },
+const colors: Record<Variant, { m: string; chart: string; bars: string }> = {
+  green: {
+    m: "var(--color-ink)",
+    chart: "var(--color-marker)",
+    bars: "var(--color-marker-light)",
+  },
+  yellow: {
+    m: "#ffffff",
+    chart: "var(--color-marker)",
+    bars: "var(--color-marker-light)",
+  },
+  dark: {
+    m: "var(--color-ink)",
+    chart: "var(--color-marker)",
+    bars: "var(--color-marker-light)",
+  },
 };
 
-/** The "M" mark. The yellow tick is the acute accent of the ć. */
 export function LogoMark({
-  size = 42,
+  size = 54,
   variant = "green",
 }: {
   size?: number;
@@ -16,33 +27,43 @@ export function LogoMark({
 }) {
   const c = colors[variant];
   return (
-    <svg width={size} height={size} viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-      <rect width="64" height="64" rx="18" fill={c.bg} />
-      <path
-        d="M15 49V30L32 46L49 30V49"
-        fill="none"
-        stroke={c.m}
-        strokeWidth="6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path d="M40 20L50 11" stroke={c.tick} strokeWidth="6" strokeLinecap="round" />
+    <svg width={size} height={size * 0.75} viewBox="0 0 480 360" aria-hidden="true" focusable="false">
+      <defs>
+        <mask id="manic-logo-cutout" maskUnits="userSpaceOnUse" x="0" y="0" width="480" height="360">
+          <rect width="480" height="360" fill="#ffffff" />
+          <path
+            d="M8 353C130 268 330 215 475 62C455 170 330 300 135 353Z"
+            fill="#000000"
+            stroke="#000000"
+            strokeWidth="14"
+            strokeLinejoin="round"
+          />
+        </mask>
+      </defs>
+      <path mask="url(#manic-logo-cutout)" fill={c.m} d="M0 7H96L241 185L388 7H475V340H360V215C300 262 150 318 0 340Z" />
+      <rect x="48" y="238" width="28" height="82" rx="4" fill={c.bars} />
+      <rect x="103" y="196" width="28" height="100" rx="4" fill={c.bars} />
+      <rect x="158" y="154" width="28" height="100" rx="4" fill={c.bars} />
+      <path d="M8 353C130 268 330 215 475 62C455 170 330 300 135 353Z" fill={c.chart} />
     </svg>
   );
 }
 
 export function Wordmark({ light = false }: { light?: boolean }) {
   return (
-    <span className="flex flex-col leading-none">
-      <span
-        className={`font-display text-[26px] font-bold ${light ? "text-paper" : "text-ink"}`}
-      >
-        Manic
-      </span>
-      <span
-        className={`mt-[3px] text-[10px] font-bold tracking-[2.2px] ${light ? "text-marker" : "text-ledger"}`}
-      >
-        ACCOUNTING
+    <span className="flex items-center gap-3 leading-none">
+      <span className={`h-10 w-0.5 rounded-full ${light ? "bg-white" : "bg-ink"}`} />
+      <span className="flex flex-col">
+        <span
+          className={`font-display text-[22px] font-extrabold tracking-[0.08em] ${light ? "text-paper" : "text-ink"}`}
+        >
+          MANIC
+        </span>
+        <span
+          className={`mt-1.5 text-[9px] font-medium tracking-[0.42em] ${light ? "text-paper" : "text-ink"}`}
+        >
+          ACCOUNTING
+        </span>
       </span>
     </span>
   );
