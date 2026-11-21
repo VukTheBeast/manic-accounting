@@ -81,7 +81,7 @@ export default function HeroFinanceVisual({
     <div className="relative min-h-[570px] min-w-0 self-end sm:min-h-[640px] lg:h-full lg:min-h-[650px]">
       <div className="absolute inset-x-[12%] top-[8%] bottom-0 rounded-t-[22px] border border-paper/15 bg-[#12315b]" />
       <Image
-        src="/manic-vukman-hero.png"
+        src="/manic-vukman-hero.webp"
         alt={portraitAlt}
         fill
         priority
