@@ -129,6 +129,44 @@
   }
 }
 
+@keyframes hero-card-float-one {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes hero-card-float-two {
+  0%,
+  100% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes hero-trend-draw {
+  from {
+    stroke-dashoffset: 280;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes hero-cash-grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -150,6 +188,17 @@
 
   .workflow-packet {
     display: none;
+  }
+
+  .hero-float-profit,
+  .hero-float-cash,
+  .hero-trend-line,
+  .hero-cash-bar {
+    animation: none !important;
+  }
+
+  .hero-trend-line {
+    stroke-dashoffset: 0 !important;
   }
 
   .workflow-section *,
@@ -226,5 +275,23 @@
   }
   .hero-shell .card {
     box-shadow: 0 18px 48px rgba(11, 36, 71, 0.12);
+  }
+  .hero-trend-line {
+    stroke-dasharray: 280;
+    stroke-dashoffset: 280;
+    animation: hero-trend-draw 1800ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .hero-cash-bar {
+    transform-origin: bottom;
+    animation: hero-cash-grow 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @media (min-width: 640px) {
+    .hero-float-profit {
+      animation: hero-card-float-one 7s ease-in-out infinite;
+    }
+    .hero-float-cash {
+      animation: hero-card-float-two 8.5s ease-in-out infinite;
+    }
   }
 }
