@@ -515,9 +515,15 @@
   },
   "Email": {
     "subject": "Poptávka: {service} ({name})",
+    "source": "Zdroj",
     "name": "Jméno",
     "email": "E-mail",
-    "service": "Služba"
+    "service": "Služba",
+    "acknowledgementSubject": "Vaši zprávu jsme přijali | Manic Accounting",
+    "acknowledgementGreeting": "Dobrý den, {name},",
+    "acknowledgementReceived": "Děkuji, že jste kontaktovali Manic Accounting prostřednictvím webu. Vaše zpráva dorazila v pořádku.",
+    "acknowledgementResponse": "Podrobnosti si projdu a osobně odpovím do dvou pracovních dnů.",
+    "acknowledgementClosing": "S pozdravem\nVukman Manić"
   },
   "Errors": {
     "notFoundOverline": "404 · CHYBĚJÍCÍ POLOŽKA",

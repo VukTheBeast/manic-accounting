@@ -3,7 +3,9 @@
 import { headers } from "next/headers";
 import { hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { Resend } from "resend";
 import { routing } from "@/i18n/routing";
+import { sendAcknowledgement } from "@/lib/email";
 import { getServices, serviceById } from "@/lib/services";
 import { checkContactRateLimit } from "@/lib/rate-limit";
 
@@ -76,7 +78,8 @@ export async function sendContactMessage(
   }
 
   const key = process.env.RESEND_API_KEY;
-  const to = process.env.CONTACT_TO_EMAIL;
+  const to =
+    process.env.CONTACT_FORWARD_TO_EMAIL ?? process.env.CONTACT_TO_EMAIL;
   const from = process.env.CONTACT_FROM_EMAIL;
 
   if (!key || !to || !from) {
@@ -87,52 +90,53 @@ export async function sendContactMessage(
   }
 
   const t = await getTranslations({ locale, namespace: "Email" });
+  const resend = new Resend(key);
 
   try {
-    const response = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${key}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from,
-        to,
-        reply_to: email,
-        subject: t("subject", {
-          service: singleLine(service.label),
-          name: singleLine(name),
-        }),
-        text: `${t("name")}: ${name}\n${t("email")}: ${email}\n${t("service")}: ${service.label}\n\n${message}`,
-      }),
-      cache: "no-store",
-      signal: AbortSignal.timeout(10_000),
+    const notification = await resend.emails.send({
+      from,
+      to,
+      replyTo: email,
+      subject: `[Website contact form] ${t("subject", {
+        service: singleLine(service.label),
+        name: singleLine(name),
+      })}`,
+      text: `${t("source")}: manic-accounting.com\n${t("name")}: ${name}\n${t("email")}: ${email}\n${t("service")}: ${service.label}\n\n${message}`,
     });
 
-    if (!response.ok) {
-      const errorBody: unknown = await response.json().catch(() => null);
-      const resendError =
-        errorBody && typeof errorBody === "object"
-          ? {
-              name:
-                "name" in errorBody && typeof errorBody.name === "string"
-                  ? errorBody.name
-                  : undefined,
-              message:
-                "message" in errorBody && typeof errorBody.message === "string"
-                  ? redactEmails(errorBody.message)
-                  : undefined,
-            }
-          : {};
-
+    if (notification.error) {
       console.error("Resend rejected a contact form request", {
-        status: response.status,
-        ...resendError,
+        status: notification.error.statusCode,
+        name: notification.error.name,
+        message: redactEmails(notification.error.message),
       });
       return {
         status: "error",
         code: "sendFailed",
       };
+    }
+
+    const acknowledgement = await sendAcknowledgement({
+      resend,
+      fromAddress: "contact@manic-accounting.com",
+      to: email,
+      subject: t("acknowledgementSubject"),
+      greeting: t("acknowledgementGreeting", { name: singleLine(name) }),
+      paragraphs: [
+        t("acknowledgementReceived"),
+        t("acknowledgementResponse"),
+      ],
+      closing: t("acknowledgementClosing"),
+      idempotencyKey: `contact-form-ack-${notification.data.id}`,
+    });
+
+    if (acknowledgement.error) {
+      console.error("Contact form acknowledgement failed", {
+        submissionId: notification.data.id,
+        status: acknowledgement.error.statusCode,
+        name: acknowledgement.error.name,
+        message: redactEmails(acknowledgement.error.message),
+      });
     }
   } catch (error) {
     console.error("Contact form delivery failed", error);

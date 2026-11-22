@@ -515,9 +515,15 @@
   },
   "Email": {
     "subject": "Enquiry: {service} ({name})",
+    "source": "Source",
     "name": "Name",
     "email": "Email",
-    "service": "Service"
+    "service": "Service",
+    "acknowledgementSubject": "We received your message | Manic Accounting",
+    "acknowledgementGreeting": "Hello {name},",
+    "acknowledgementReceived": "Thank you for contacting Manic Accounting through the website. Your message has arrived safely.",
+    "acknowledgementResponse": "I will review the details and reply personally within two working days.",
+    "acknowledgementClosing": "Best regards,\nVukman Manić"
   },
   "Errors": {
     "notFoundOverline": "404 · MISSING ENTRY",
