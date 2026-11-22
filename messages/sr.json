@@ -50,6 +50,15 @@
     "title": "Finansijska podrška koja raste sa vašim poslovanjem.",
     "intro": "Od pouzdanih knjiga do CFO podrške usmerene na budućnost: brojke, modeli i izveštaji potrebni za sigurnije vođenje poslovanja."
   },
+  "Systems": {
+    "overline": "SISTEMI U KOJIMA RADIM",
+    "title": "Na čemu god vodite knjige, verovatno sam već radio u tome.",
+    "intro": "Od računovodstvenih programa za mala preduzeća do globalnih ERP platformi. Praktično iskustvo, ne samo stavka u biografiji.",
+    "accountingTitle": "Računovodstveni softver",
+    "accountingText": "Praktični alati koje mala preduzeća i preduzetnici koriste za svakodnevno vođenje knjiga.",
+    "erpTitle": "ERP sistemi",
+    "erpText": "Poslovne platforme sa kojima sam radio tokom godina u međunarodnim finansijskim timovima."
+  },
   "Process": {
     "overline": "KAKO RADIMO",
     "title": "Bez žargona. Bez iznenađenja. Pomalo opsesivno.",

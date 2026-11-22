@@ -50,6 +50,15 @@
     "title": "Finance support that grows with your business.",
     "intro": "From reliable books to forward-looking CFO support: the numbers, models and reporting you need to run the business with more confidence."
   },
+  "Systems": {
+    "overline": "SYSTEMS I WORK IN",
+    "title": "Whatever you run your books on, I’ve probably been there.",
+    "intro": "From small-business accounting software to global ERP platforms. Hands-on experience, not just a line on a CV.",
+    "accountingTitle": "Accounting software",
+    "accountingText": "The practical tools small businesses and freelancers use for their day-to-day books.",
+    "erpTitle": "ERP systems",
+    "erpText": "Enterprise platforms used across years inside international finance teams."
+  },
   "Process": {
     "overline": "HOW WE WORK",
     "title": "No jargon. No surprises. Slightly obsessive.",

@@ -6,6 +6,7 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroFinanceVisual from "@/components/HeroFinanceVisual";
+import SystemsExperience from "@/components/SystemsExperience";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import About from "@/components/About";
@@ -120,6 +121,7 @@ export default async function Home({
         </section>
 
         <Services />
+        <SystemsExperience />
         <WorkflowAnimation />
 
         <FreeToolsPreview />

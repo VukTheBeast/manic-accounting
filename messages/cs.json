@@ -50,6 +50,15 @@
     "title": "Finanční podpora, která roste s vaší firmou.",
     "intro": "Od spolehlivého účetnictví po výhledové CFO služby: čísla, modely a reporting, které potřebujete pro jistější řízení firmy."
   },
+  "Systems": {
+    "overline": "SYSTÉMY, VE KTERÝCH PRACUJI",
+    "title": "Ať vedete účetnictví v čemkoli, pravděpodobně to znám.",
+    "intro": "Od účetních programů pro malé firmy po globální ERP platformy. Praktická zkušenost, ne jen položka v životopise.",
+    "accountingTitle": "Účetní software",
+    "accountingText": "Praktické nástroje, které malé firmy a OSVČ používají pro každodenní účetnictví.",
+    "erpTitle": "ERP systémy",
+    "erpText": "Podnikové platformy, se kterými jsem pracoval během let v mezinárodních finančních týmech."
+  },
   "Process": {
     "overline": "JAK SPOLUPRACUJEME",
     "title": "Bez žargonu. Bez překvapení. Trochu posedle.",
