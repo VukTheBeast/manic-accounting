@@ -126,7 +126,10 @@ export async function sendContactMessage(
         t("acknowledgementReceived"),
         t("acknowledgementResponse"),
       ],
+      responseLabel: t("acknowledgementResponseLabel"),
+      responseValue: t("acknowledgementResponseValue"),
       closing: t("acknowledgementClosing"),
+      signatureRole: t("acknowledgementSignatureRole"),
       idempotencyKey: `contact-form-ack-${notification.data.id}`,
     });
 

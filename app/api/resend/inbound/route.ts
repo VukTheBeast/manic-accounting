@@ -116,7 +116,10 @@ export async function POST(request: Request) {
         "Thank you for contacting Manic Accounting. Your email has arrived safely.",
         "I will review your message and reply personally within two working days.",
       ],
+      responseLabel: "Expected response",
+      responseValue: "Within two working days",
       closing: `Best regards,\n${recipient === "vukman.manic@manic-accounting.com" ? "Vukman Manić" : "Manic Accounting"}`,
+      signatureRole: "Finance professional · Manic Accounting",
       idempotencyKey: `inbound-ack-${event.data.email_id}`,
     });
 

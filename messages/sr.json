@@ -523,7 +523,10 @@
     "acknowledgementGreeting": "Poštovani/a {name},",
     "acknowledgementReceived": "Hvala što ste kontaktirali Manic Accounting putem sajta. Vaša poruka je uspešno primljena.",
     "acknowledgementResponse": "Pregledaću detalje i lično odgovoriti u roku od dva radna dana.",
-    "acknowledgementClosing": "Srdačan pozdrav,\nVukman Manić"
+    "acknowledgementResponseLabel": "Očekivani odgovor",
+    "acknowledgementResponseValue": "U roku od dva radna dana",
+    "acknowledgementClosing": "Srdačan pozdrav,\nVukman Manić",
+    "acknowledgementSignatureRole": "Finansijski profesionalac · Manic Accounting"
   },
   "Errors": {
     "notFoundOverline": "404 · NEDOSTAJE STAVKA",

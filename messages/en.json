@@ -523,7 +523,10 @@
     "acknowledgementGreeting": "Hello {name},",
     "acknowledgementReceived": "Thank you for contacting Manic Accounting through the website. Your message has arrived safely.",
     "acknowledgementResponse": "I will review the details and reply personally within two working days.",
-    "acknowledgementClosing": "Best regards,\nVukman Manić"
+    "acknowledgementResponseLabel": "Expected response",
+    "acknowledgementResponseValue": "Within two working days",
+    "acknowledgementClosing": "Best regards,\nVukman Manić",
+    "acknowledgementSignatureRole": "Finance professional · Manic Accounting"
   },
   "Errors": {
     "notFoundOverline": "404 · MISSING ENTRY",

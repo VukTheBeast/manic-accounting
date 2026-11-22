@@ -523,7 +523,10 @@
     "acknowledgementGreeting": "Dobrý den, {name},",
     "acknowledgementReceived": "Děkuji, že jste kontaktovali Manic Accounting prostřednictvím webu. Vaše zpráva dorazila v pořádku.",
     "acknowledgementResponse": "Podrobnosti si projdu a osobně odpovím do dvou pracovních dnů.",
-    "acknowledgementClosing": "S pozdravem\nVukman Manić"
+    "acknowledgementResponseLabel": "Očekávaná odpověď",
+    "acknowledgementResponseValue": "Do dvou pracovních dnů",
+    "acknowledgementClosing": "S pozdravem\nVukman Manić",
+    "acknowledgementSignatureRole": "Finanční profesionál · Manic Accounting"
   },
   "Errors": {
     "notFoundOverline": "404 · CHYBĚJÍCÍ POLOŽKA",
